@@ -10,9 +10,104 @@
   <title>topdom invest</title>
 </head>
 
-<body class="font-other">
-  <h1 class="title-desktop text-slate-600 font-semibold">Доходность 17%
-    годовых по вкладам с ежемесячной выплатой процентов</h1>
+<body class="font-primary bg-gray py-20">
+  <div class="container">
+    <section class="lg:pb-[45px] xl:pt-12 overflow-hidden">
+      <div class="lg:w-[700px] xl:w-[837px] mx-auto text-center">
+        <h1
+          class="mb-[38px] font-secondary text-black/80 lg:text-[44px] xl:text-[55px] lg:leading-[48px] xl:leading-[70px] text-center font-bold">
+          Доходность <span
+            class="uppercase inline-block lg:text-[60px] xl:text-[75px] font-bold text-white lg:w-[123px] lg:h-[57px] xl:w-[132px] xl:h-[73px] grad rounded-2xl lg:leading-[60px] xl:leading-[80px] relative lg:top-[-2px]">
+            17%</span> годовых по вкладам с ежемесячной выплатой процентов
+        </h1>
+
+        <a href="#deposit"
+          class="text-center text-[15px] leading-5 font-light text-white grad rounded-xl px-[10px] py-[18px] deposit-btn text-shadow-sm relative z-10">Открыть
+          вклад</a>
+
+        <div
+          class="lg:w-[655px] h-[425px] bg-[url(/img/rich.png)] bg-contain bg-no-repeat mx-auto mt-[-110px] mb-[45px]">
+        </div>
+
+        <strong
+          class="block mb-[57px] uppercase font-secondary text-[44px] leading-[48px] font-bold text-black/80">Открыть
+          вклад легко</strong>
+
+        <div class="flex lg:justify-between lg:w-[700px] lg:mx-auto">
+          <div
+            class="max-h-[66px] w-[151px] pt-[21px] pb-[17px] px-[12px] rounded-[24px] bg-white big-shadow relative">
+            <div
+              class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]">
+              1</div>
+            <span
+              class="block w-[96px] mx-auto text-[14px] leading-none font-light">Заполните
+              онлайн заявку</span>
+          </div>
+          <div
+            class="max-h-[66px] w-[151px] pt-[21px] pb-[17px] px-[12px] rounded-[24px] bg-white big-shadow relative">
+            <div
+              class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]">
+              2</div>
+            <span
+              class="block w-[115px] mx-auto text-[14px] leading-none font-light">Посетите
+              один из наших офисов</span>
+          </div>
+          <div
+            class="max-h-[66px] w-[151px] pt-[21px] pb-[17px] px-[12px] rounded-[24px] bg-white big-shadow relative">
+            <div
+              class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]">
+              3</div>
+            <span
+              class="block w-[110px] mx-auto text-[14px] leading-none font-light">Подписание
+              договора займа</span>
+          </div>
+          <div
+            class="max-h-[66px] w-[151px] pt-[12px] pb-[12px] px-[12px] rounded-[24px] bg-white big-shadow relative">
+            <div
+              class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]">
+              4</div>
+            <span
+              class="block w-[126px] mx-auto text-[14px] leading-none font-light">Страховка
+              инвестиций нашей недвижимостью</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-[880px] min-h-[745px] mb-[80px] mx-auto pt-[52px] pb-[64px] bg-white rounded-[24px] big-shadow">
+      <div class="flex lg:justify-between lg:w-[690px] lg:mx-auto">
+        <form action="/blagodarim" method="POST">
+          <span
+            class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-black/80 mb-[14px]">Подберите
+            условия</span>
+          <div class="flex justify-between gap-x-3 mb-[30px]">
+            <div
+              class="rounded-xl bg-[#244A7F0F] w-[190px] pt-[8px] pl-[20px] pr-[30px] relative">
+              <span
+                class="text-[13px] rounded-[20px] font-light text-black/[54%]">
+                Сумма вклада
+              </span>
+              <b class="block text-[14px] leading-6 font-extrabold">
+                <span id="deposit"> 50000</span> ₽
+              </b>
+
+              <div class="w-[172px] absolute bottom-0 left-1/2 transform -translate-x-1/2">
+                <input id="deposit-range" type="range" class="cursor-pointer w-full block mx-auto" />
+                <div id="deposit-stripe" class="w-1/2 h-[2px] bg-primary rounded-bl-[2px] absolute bottom-0">adsf</div>
+              </div>
+            </div>
+          </div>
+
+          <span
+            class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-black/80 mb-[14px]">Ваши
+            контакты</span>
+
+
+        </form>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
