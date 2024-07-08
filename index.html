@@ -78,8 +78,8 @@
 
     <section
       class="w-[880px] min-h-[745px] mb-[80px] mx-auto pt-[52px] pb-[64px] bg-white rounded-[24px] big-shadow">
-      <div class="flex lg:justify-between lg:w-[690px] lg:mx-auto">
-        <form action="/blagodarim" method="POST" class="lg:w-[396px]">
+      <div class="flex lg:justify-between lg:w-[699px] lg:mx-auto">
+        <form id="calc-form" method="POST" class="lg:w-[396px] lg:mt-[3px]">
           <span
             class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-black/80 mb-[14px]">Подберите
             условия</span>
@@ -117,13 +117,13 @@
 
             <div>
               <div
-                class="rounded-xl min-h-[56px] bg-[rgba(36,74,127,0.06)] w-[190px] pt-[8px] pl-[20px] pr-[30px] relative">
+                class="rounded-xl min-h-[56px] bg-[rgba(36,74,127,0.06)] w-[190px] mb-[5px] pt-[8px] pl-[20px] pr-[30px] relative">
                 <span
                   class="block text-[13px] rounded-[20px] font-light text-black/[54%]">
                   Срок вклада
                 </span>
                 <b class="block text-[14px] leading-6 font-extrabold">
-                  <span id="months">12</span> месяцев
+                  <span data-period>12</span> месяцев
                 </b>
 
                 <div
@@ -146,33 +146,169 @@
             </div>
           </div>
 
+          <!-- payments -->
+          <div id="payments" class="flex justify-between flex-wrap gap-y-[13px] mb-[40px]">
+            <div data-payment="active"
+              class="flex justify-between w-[47.7%] h-[56px] py-4 pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio active">
+              <span
+                class="font-primary text-[10px] leading-6 font-light text-black/80">Ежемесячные
+                выплаты</span>
+              <div
+                class="flex justify-center items-center size-[19px] rounded-full">
+                <div class="size-[11px] bg-white rounded-full"></div>
+              </div>
+            </div>
+            <div data-payment="0"
+              class="flex justify-between w-[47.7%] h-[56px] py-4 pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio">
+              <span
+                class="font-primary text-[10px] leading-6 font-light text-black/80">Ежеквартальные
+                выплаты</span>
+              <div
+                class="flex justify-center items-center size-[19px] rounded-full">
+                <div class="size-[11px] bg-white rounded-full"></div>
+              </div>
+            </div>
+            <div data-payment="0"
+              class="flex justify-between w-[47.7%] h-[56px] py-4 pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio">
+              <span
+                class="font-primary text-[10px] leading-6 font-light text-black/80">Выплата
+                раз в пол года</span>
+              <div
+                class="flex justify-center items-center size-[19px] rounded-full">
+                <div class="size-[11px] bg-white rounded-full"></div>
+              </div>
+            </div>
+            <div data-payment="0"
+              class="flex justify-between w-[47.7%] h-[56px] py-4 pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio">
+              <span
+                class="font-primary text-[10px] leading-6 font-light text-black/80">Выплата
+                раз в год</span>
+              <div
+                class="flex justify-center items-center size-[19px] rounded-full">
+                <div class="size-[11px] bg-white rounded-full"></div>
+              </div>
+            </div>
+          </div>
+          <input type="hidden" id="payment" name="payment"
+            value="Ежемесячные выплаты">
+
+          <!-- contacts -->
           <span
             class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-black/80 mb-[14px]">Ваши
             контакты
           </span>
 
-          <!-- contacts -->
           <div class="flex flex-wrap justify-between gap-y-[11px] mb-[33px]">
             <input type="text" name="name" placeholder="Фамилия, имя и отчество"
-              class="field w-full">
-            <input type="text" name="phone" placeholder="Мобильный телефон"
-              class="field w-[60%]">
+              class="field w-full name">
+            <input type="text" id="phone" name="phone"
+              placeholder="Мобильный телефон" class="field w-[60%] phone">
             <input id="birth" type="text" name="birth"
               placeholder="Дата рождения" class="field w-[37.6%]">
           </div>
 
-          <span class="block mb-[29px] text-[15px] font-light leading-6 text-black/80 ">
+          <span
+            class="block mb-[29px] text-[15px] font-light leading-6 text-black/80 ">
             Гражданство РФ?
           </span>
 
           <!-- citizenship -->
           <div class="flex justify-between mb-[90px]">
-            <div class="w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer" data-citizen="true">
-              <span class="font-other text-[15px] leading-6 font-normal text-black/80">Да</span>
-
+            <div data-citizen="active"
+              class="flex justify-between w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio active">
+              <span
+                class="font-other text-[15px] leading-6 font-normal text-black/80">Да</span>
+              <div
+                class="flex justify-center items-center size-[24px] rounded-full">
+                <div class="size-[14px] bg-white rounded-full"></div>
+              </div>
+            </div>
+            <div data-citizen
+              class="flex justify-between w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio">
+              <span
+                class="font-other text-[15px] leading-6 font-normal text-black/80">Нет</span>
+              <div
+                class="flex justify-center items-center size-[24px] rounded-full bg-[rgba(36,74,127,0.06)]">
+                <div class="size-[14px] rounded-full bg-transparent"></div>
+              </div>
             </div>
           </div>
+          <input type="hidden" id="citizen" name="citizen" value="Да">
+
+          <!-- dividier -->
+          <div class="h-[2px] bg-darkgray mb-[42px]"></div>
+
+          <div class="flex justify-between items-start mb-4">
+            <p
+              class="block w-[216px] font-other text-[10px] leading-5 text-black/[54%]">
+              Заполняя форму, я принимаю 
+              <a href="#" class="text-primary">условия передачи информации и даю
+                согласие на получение информации</a>
+              о продуктах и услугах Компании
+            </p>
+            <button type="submit"
+              class="px-[10px] py-[18px] rounded-xl text-[15px] font-normal text-white text-shadow-sm grad deposit-btn">Оставить
+              заявку</button>
+          </div>
         </form>
+
+        <!-- roi -->
+        <div class="w-[269px]">
+          <div
+            class="mb-5 px-5 pt-[10px] pb-[12px] h-[101px] rounded-lg bg-darkgray">
+            <span
+              class="block mb-[6px] text-[13px] font-light leading-5 text-black/[54%]">Накопление
+              в конце срока</span>
+            <div class="flex items-center mb-3 w-[148px]">
+              <div
+                class="size-[21px] mr-[11px] bg-[url('/img/roi-icon.png')] bg-contain bg-no-repeat">
+              </div>
+              <strong
+                class="text-[22px] black/80 font-extrabold leading-7"><span
+                  id="roi-text">1 170 075</span> ₽</strong>
+              <input type="hidden" id="roi" name="roi">
+            </div>
+            <span
+              class="block text-[11px] leading-4 font-light text-black/[54%]">Расчет
+              носит информационный характер</span>
+          </div>
+
+          <!-- annual yield -->
+          <div class="flex items-center">
+            <span
+              class="text-[13px] font-light leading-5 text-black/[54%]">Доходность
+              в годовых
+            </span>
+            <div
+              class="size-[11px] ml-[11px] bg-[url('/img/qmark-icon.png')] bg-contain bg-no-repeat cursor-pointer">
+            </div>
+          </div>
+          <strong
+            class="block mb-[23px] text-black/80 text-[22px] font-extrabold leading-7"><span
+              id="yeild-text">19.8</span> %</strong>
+          <input type="hidden" id="yeild" name="yield">
+
+          <!-- rate & period -->
+          <div class="flex justify-between w-[260px]">
+            <div>
+              <span
+                class="block text-[13px] font-light leading-5 text-black/[54%]">Ставка</span>
+              <strong
+                class="block text-black/80 text-[22px] font-extrabold leading-7"><span
+                  id="rate-text">19.8</span> %</strong>
+              <input type="hidden" id="rate" name="rate">
+            </div>
+            <div>
+              <span
+                class="block text-[13px] font-light leading-5 text-black/[54%]">Срок
+                вклада</span>
+              <strong
+                class="block text-black/80 text-[22px] font-extrabold leading-7"><span
+                  data-period>12</span> месяцев</strong>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
