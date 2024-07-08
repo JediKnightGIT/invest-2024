@@ -299,7 +299,7 @@
     border-radius: 50%;
 
     cursor: grab;
-    transition: .1s ease-in;
+    transition: 0.1s ease-in;
   }
   input[type='range']::-webkit-slider-thumb:hover {
     margin-top: -3px;
@@ -326,7 +326,7 @@
     border-radius: 50%;
 
     cursor: grab;
-    transition: .1s ease-in;
+    transition: 0.1s ease-in;
   }
   input[type='range']::-moz-range-thumb:hover {
     margin-top: -3px;
@@ -358,5 +358,18 @@
   }
   .field:focus {
     outline: none;
+  }
+
+  .radio > div {
+    background: rgba(36,74,127,0.06);
+  }
+  .radio > div > div {
+    background: transparent;
+  }
+  .radio.active > div {
+    background: linear-gradient(180deg, rgb(49, 255, 45), rgb(9, 162, 24) 100%);
+  }
+  .radio.active > div > div {
+    background: white;
   }
 }
