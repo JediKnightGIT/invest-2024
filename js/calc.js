@@ -9,7 +9,7 @@ const months = document.querySelectorAll('[data-period]');
 const monthsInput = document.getElementById('months-input');
 const monthsRange = document.getElementById('months-range');
 
-const payments = document.getElementById('payments');
+const paymentsList = document.getElementById('payments');
 const rateText = document.getElementById('rate-text')
 const yieldText = document.getElementById('yeild-text')
 const roiText = document.getElementById('roi-text')
@@ -22,7 +22,7 @@ rateInput.value = rateText.innerText
 
 depositInput.addEventListener('input', () => calc(depositInput, depositRange, deposit));
 monthsInput.addEventListener('input', () => calc(monthsInput, monthsRange, months));
-payments.addEventListener('click', changeRate);
+paymentsList.addEventListener('click', changeRate);
 
 function calc(input, range, text) {
   const min = parseInt(input.min);
@@ -51,6 +51,7 @@ function changeRate() {
 
   rateText.innerText = rates[index]
   yieldText.innerText = calculateAPY(rateText.innerText, freq[index])
+  roiText.innerText = formatNumber(Math.round(calcCompoundInterest(depositInput.value, rateText.innerText, monthsInput.value, freq[index])))
 }
 
 function calcCompoundInterest(initialInvestment, interestRate, months, compoundingFrequency) {

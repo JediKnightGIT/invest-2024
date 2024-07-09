@@ -31,7 +31,7 @@ module.exports = {
       },
       textShadow: {
         sm: '0 0 6px white',
-        DEFAULT: '0 2px 4px white',
+        DEFAULT: '0 4px 4px rgb(9, 162, 24)',
         lg: '0 8px 16px white',
       },
     },
