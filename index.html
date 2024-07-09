@@ -78,8 +78,9 @@
 
     <section
       class="w-[880px] min-h-[745px] mb-[80px] mx-auto pt-[52px] pb-[64px] bg-white rounded-[24px] big-shadow">
-      <div class="flex lg:justify-between lg:w-[699px] lg:mx-auto">
-        <form id="calc-form" method="POST" class="lg:w-[396px] lg:mt-[3px]">
+      <form id="calc-form" method="POST"
+        class="flex lg:justify-between lg:w-[699px] lg:mx-auto">
+        <div class="lg:w-[396px] lg:mt-[3px]">
           <span
             class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-black/80 mb-[14px]">Подберите
             условия</span>
@@ -93,7 +94,7 @@
                   Сумма вклада
                 </span>
                 <b class="block text-[14px] leading-6 font-extrabold">
-                  <span id="deposit">500000</span> ₽
+                  <span id="deposit">500 000</span> ₽
                 </b>
 
                 <div
@@ -107,10 +108,12 @@
               </div>
               <div class="flex justify-between">
                 <span
-                  class="text-black/[54%] text-[11px] font-light leading-5">500000
+                  class="text-black/[54%] text-[11px] font-light leading-5">500
+                  000
                   ₽</span>
                 <span
-                  class="text-black/[54%] text-[11px] font-light leading-5">30000000
+                  class="text-black/[54%] text-[11px] font-light leading-5">30
+                  000 000
                   ₽</span>
               </div>
             </div>
@@ -147,7 +150,8 @@
           </div>
 
           <!-- payments -->
-          <div id="payments" class="flex justify-between flex-wrap gap-y-[13px] mb-[40px]">
+          <div id="payments"
+            class="flex justify-between flex-wrap gap-y-[13px] mb-[40px]">
             <div data-payment="active"
               class="flex justify-between w-[47.7%] h-[56px] py-4 pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio active">
               <span
@@ -250,7 +254,7 @@
               class="px-[10px] py-[18px] rounded-xl text-[15px] font-normal text-white text-shadow-sm grad deposit-btn">Оставить
               заявку</button>
           </div>
-        </form>
+        </div>
 
         <!-- roi -->
         <div class="w-[269px]">
@@ -259,7 +263,7 @@
             <span
               class="block mb-[6px] text-[13px] font-light leading-5 text-black/[54%]">Накопление
               в конце срока</span>
-            <div class="flex items-center mb-3 w-[148px]">
+            <div class="flex items-center mb-3 w-[169px]">
               <div
                 class="size-[21px] mr-[11px] bg-[url('/img/roi-icon.png')] bg-contain bg-no-repeat">
               </div>
@@ -280,13 +284,14 @@
               в годовых
             </span>
             <div
+              title="Если вы решите оставлять заработанные проценты на вкладе, на них тоже будут начисляться проценты — так доходность вклада окажется выше, чем процентная ставка по нему"
               class="size-[11px] ml-[11px] bg-[url('/img/qmark-icon.png')] bg-contain bg-no-repeat cursor-pointer">
             </div>
           </div>
           <strong
             class="block mb-[23px] text-black/80 text-[22px] font-extrabold leading-7"><span
-              id="yeild-text">19.8</span> %</strong>
-          <input type="hidden" id="yeild" name="yield">
+              id="yeild-text">21.7</span> %</strong>
+          <input type="hidden" id="yield" name="yield">
 
           <!-- rate & period -->
           <div class="flex justify-between w-[260px]">
@@ -309,7 +314,7 @@
           </div>
         </div>
 
-      </div>
+      </form>
     </section>
   </div>
 </body>
