@@ -1,5 +1,6 @@
 const deposit = document.getElementById('deposit');
 const depositInput = document.getElementById('deposit-input');
+const depositValue = document.getElementById('deposit-value');
 const depositRange = document.getElementById('deposit-range');
 const roiInput = document.getElementById('roi')
 const yieldInput = document.getElementById('yield')
@@ -21,19 +22,33 @@ yieldInput.value = yieldText.innerText
 rateInput.value = rateText.innerText
 
 depositInput.addEventListener('input', () => calc(depositInput, depositRange, deposit));
+depositValue.addEventListener('input', (e) => {
+  let value = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+  e.target.dataset.rawValue = e.target.value.replace(/\s/g, "");
+
+  if (e.target.dataset.rawValue < 499999) {
+    e.target.dataset.rawValue = 500000
+  }
+  if (e.target.dataset.rawValue > 30000001) {
+    e.target.dataset.rawValue = 30000000
+  }
+
+  value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ' '); // Add space every 3 digits
+
+  e.target.value = value;
+  depositInput.value = depositValue.dataset.rawValue
+  deposit.innerText = depositValue.value
+  mapRange(depositInput.min, depositInput.max, depositValue.dataset.rawValue, depositRange)
+})
+
 monthsInput.addEventListener('input', () => calc(monthsInput, monthsRange, months));
 paymentsList.addEventListener('click', changeRate);
 
 function calc(input, range, text) {
-  const min = parseInt(input.min);
-  const max = parseInt(input.max);
-  const val = parseInt(input.value);
-  const percent = (val - min) / (max - min) * 100;
-  range.style.width = percent + '%';
   if (text.length) {
-    text.forEach((item) => item.innerText = val)
+    text.forEach((item) => item.innerText = input.value)
   } else {
-    text.innerText = formatNumber(val)
+    text.innerText = formatNumber(input.value)
   }
   const payments = [...document.querySelectorAll('[data-payment]')];
   const index = payments.findIndex((item) => item.classList.contains("active"))
@@ -42,6 +57,8 @@ function calc(input, range, text) {
   roiInput.value = roiText.innerText
   yieldInput.value = yieldText.innerText
   rateInput.value = rateText.innerText
+
+  mapRange(input.min, input.max, input.value, range)
 }
 
 function changeRate() {
@@ -115,4 +132,15 @@ function formatNumber(num) {
 
 function gigaRound(num) {
   return Math.round((num + Number.EPSILON) * 100) / 100
+}
+
+function numberWithSpaces(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+
+function mapRange(min, max, val, range) {
+  const percent = (val - min) / (max - min) * 100;
+
+  if (+val >= +min && +val <= +max)
+    range.style.width = percent + '%'
 }

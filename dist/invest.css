@@ -827,7 +827,8 @@ input[type='range']:focus {
 /* slider track */
 
 input[type='range']::-webkit-slider-runnable-track {
-  background-color: transparent;
+  background-color: #244A7F0F;
+  /* background-color: transparent; */
   height: 2px;
 }
 
@@ -860,7 +861,8 @@ input[type='range']::-webkit-slider-thumb:hover {
 /* slider track */
 
 input[type='range']::-moz-range-track {
-  background-color: transparent;
+  background-color: #244A7F0F;
+  /* background-color: transparent; */
   height: 2px;
 }
 
@@ -1083,6 +1085,10 @@ input[type='range']:active::-moz-range-thumb {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1106,6 +1112,10 @@ input[type='range']:active::-moz-range-thumb {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mb-3 {
@@ -1172,6 +1182,10 @@ input[type='range']:active::-moz-range-thumb {
   margin-bottom: 6px;
 }
 
+.mb-\[7px\] {
+  margin-bottom: 7px;
+}
+
 .mb-\[80px\] {
   margin-bottom: 80px;
 }
@@ -1190,10 +1204,6 @@ input[type='range']:active::-moz-range-thumb {
 
 .mt-\[-110px\] {
   margin-top: -110px;
-}
-
-.mb-\[7px\] {
-  margin-bottom: 7px;
 }
 
 .block {
@@ -1256,6 +1266,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .h-\[56px\] {
   height: 56px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[66px\] {
@@ -1467,20 +1481,20 @@ input[type='range']:active::-moz-range-thumb {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/igor\.png\'\)\] {
-  background-image: url('/img/igor.png');
+.bg-\[url\(\'\.\.\/img\/igor\.png\'\)\] {
+  background-image: url('../img/igor.png');
 }
 
-.bg-\[url\(\'\/img\/qmark-icon\.png\'\)\] {
-  background-image: url('/img/qmark-icon.png');
+.bg-\[url\(\'\.\.\/img\/qmark-icon\.png\'\)\] {
+  background-image: url('../img/qmark-icon.png');
 }
 
-.bg-\[url\(\'\/img\/roi-icon\.png\'\)\] {
-  background-image: url('/img/roi-icon.png');
+.bg-\[url\(\'\.\.\/img\/roi-icon\.png\'\)\] {
+  background-image: url('../img/roi-icon.png');
 }
 
-.bg-\[url\(\/img\/rich\.png\)\] {
-  background-image: url(/img/rich.png);
+.bg-\[url\(\.\.\/img\/rich\.png\)\] {
+  background-image: url(../img/rich.png);
 }
 
 .bg-contain {
@@ -1537,6 +1551,10 @@ input[type='range']:active::-moz-range-thumb {
   padding-left: 18px;
 }
 
+.pl-\[19px\] {
+  padding-left: 19px;
+}
+
 .pl-\[20px\] {
   padding-left: 20px;
 }
@@ -1567,6 +1585,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .pt-\[21px\] {
   padding-top: 21px;
+}
+
+.pt-\[23px\] {
+  padding-top: 23px;
 }
 
 .pt-\[52px\] {
@@ -1698,9 +1720,21 @@ input[type='range']:active::-moz-range-thumb {
   color: rgb(49 255 45 / var(--tw-text-opacity));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.duration-\[200ms\] {
+  transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-shadow {
@@ -1709,6 +1743,28 @@ input[type='range']:active::-moz-range-thumb {
 
 .text-shadow-sm {
   text-shadow: 0 0 6px white;
+}
+
+.focus\:border-\[1px\]:focus {
+  border-width: 1px;
+}
+
+.focus\:border-black\/30:focus {
+  border-color: rgb(0 0 0 / 0.3);
+}
+
+.focus\:bg-white:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.focus\:text-black:focus {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.focus\:outline-0:focus {
+  outline-width: 0px;
 }
 
 @media (min-width: 1360px) {
@@ -1721,6 +1777,10 @@ input[type='range']:active::-moz-range-thumb {
     margin-right: auto;
   }
 
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .lg\:mb-7 {
     margin-bottom: 1.75rem;
   }
@@ -1729,12 +1789,20 @@ input[type='range']:active::-moz-range-thumb {
     margin-bottom: 30px;
   }
 
-  .lg\:mt-\[3px\] {
-    margin-top: 3px;
+  .lg\:mb-\[68px\] {
+    margin-bottom: 68px;
+  }
+
+  .lg\:mb-\[71px\] {
+    margin-bottom: 71px;
   }
 
   .lg\:mt-\[14px\] {
     margin-top: 14px;
+  }
+
+  .lg\:mt-\[3px\] {
+    margin-top: 3px;
   }
 
   .lg\:flex {
@@ -1830,6 +1898,10 @@ input[type='range']:active::-moz-range-thumb {
     padding-top: 49px;
   }
 
+  .lg\:text-\[25px\] {
+    font-size: 25px;
+  }
+
   .lg\:text-\[44px\] {
     font-size: 44px;
   }
@@ -1840,10 +1912,6 @@ input[type='range']:active::-moz-range-thumb {
 
   .lg\:text-\[60px\] {
     font-size: 60px;
-  }
-
-  .lg\:text-\[25px\] {
-    font-size: 25px;
   }
 
   .lg\:leading-\[48px\] {
