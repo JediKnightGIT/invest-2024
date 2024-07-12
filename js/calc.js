@@ -23,22 +23,43 @@ rateInput.value = rateText.innerText
 
 depositInput.addEventListener('input', () => calc(depositInput, depositRange, deposit));
 depositValue.addEventListener('input', (e) => {
-  let value = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+  e.target.value = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+
+  deposit.innerText = numberWithSpaces(e.target.value)
+  depositRange.style.width = mapRange(+depositInput.min, +depositInput.max, +e.target.dataset.rawValue)
+  if (!+e.target.dataset.rawValue) {
+    depositInput.value = 500000
+    depositRange.style.width = 0
+  } else {
+    depositInput.value = e.target.dataset.rawValue
+    depositRange.style.width = mapRange(+depositInput.min, +depositInput.max, +e.target.dataset.rawValue)
+  }
+  if (+e.target.dataset.rawValue > 30000000 && +e.target.value > 30000000) {
+    deposit.innerText = '30 000 000'
+    e.target.value = '30 000 000';
+    e.target.dataset.rawValue = 30000000
+    depositInput.value = 30000000
+    depositRange.style.width = 100 + '%'
+  }
   e.target.dataset.rawValue = e.target.value.replace(/\s/g, "");
 
-  if (e.target.dataset.rawValue < 499999) {
+  // e.target.value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ' '); // Add space every 3 digits
+
+})
+
+depositValue.addEventListener('focusout', (e) => {
+  if (+e.target.dataset.rawValue < 500000) {
+    e.target.value = '500 000'
     e.target.dataset.rawValue = 500000
+    deposit.innerText = '500 000'
+    depositInput.value = 500000
   }
-  if (e.target.dataset.rawValue > 30000001) {
+  if (+e.target.dataset.rawValue > 30000000) {
+    e.target.value = '30 000 000'
     e.target.dataset.rawValue = 30000000
+    deposit.innerText = '30 000 000'
+    depositInput.value = 30000000
   }
-
-  value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ' '); // Add space every 3 digits
-
-  e.target.value = value;
-  depositInput.value = depositValue.dataset.rawValue
-  deposit.innerText = depositValue.value
-  mapRange(depositInput.min, depositInput.max, depositValue.dataset.rawValue, depositRange)
 })
 
 monthsInput.addEventListener('input', () => calc(monthsInput, monthsRange, months));
@@ -48,17 +69,26 @@ function calc(input, range, text) {
   if (text.length) {
     text.forEach((item) => item.innerText = input.value)
   } else {
-    text.innerText = formatNumber(input.value)
+    text.innerText = numberWithSpaces(input.value)
   }
   const payments = [...document.querySelectorAll('[data-payment]')];
   const index = payments.findIndex((item) => item.classList.contains("active"))
 
-  roiText.innerText = formatNumber(Math.round(calcCompoundInterest(depositInput.value, rateText.innerText, monthsInput.value, freq[index])))
+  roiText.innerText = numberWithSpaces(Math.round(calcCompoundInterest(depositInput.value, rateText.innerText, monthsInput.value, freq[index])))
   roiInput.value = roiText.innerText
   yieldInput.value = yieldText.innerText
   rateInput.value = rateText.innerText
 
-  mapRange(input.min, input.max, input.value, range)
+  if (input.id === 'deposit-input') {
+    depositValue.value = numberWithSpaces(input.value)
+    deposit.innerText = numberWithSpaces(input.value)
+  }
+  else {
+    monthsInput.value = input.value
+    months.innerText = input.value
+  }
+
+  range.style.width = mapRange(+input.min, +input.max, +input.value)
 }
 
 function changeRate() {
@@ -68,7 +98,7 @@ function changeRate() {
 
   rateText.innerText = rates[index]
   yieldText.innerText = calculateAPY(rateText.innerText, freq[index])
-  roiText.innerText = formatNumber(Math.round(calcCompoundInterest(depositInput.value, rateText.innerText, monthsInput.value, freq[index])))
+  roiText.innerText = numberWithSpaces(Math.round(calcCompoundInterest(depositInput.value, rateText.innerText, monthsInput.value, freq[index])))
 }
 
 function calcCompoundInterest(initialInvestment, interestRate, months, compoundingFrequency) {
@@ -126,10 +156,6 @@ function getCompoundingPeriodsPerYear(compoundingFrequency) {
   return n;
 }
 
-function formatNumber(num) {
-  return num.toLocaleString().replace(/,/g, ' ');
-}
-
 function gigaRound(num) {
   return Math.round((num + Number.EPSILON) * 100) / 100
 }
@@ -138,9 +164,9 @@ function numberWithSpaces(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 
-function mapRange(min, max, val, range) {
+function mapRange(min, max, val) {
   const percent = (val - min) / (max - min) * 100;
 
-  if (+val >= +min && +val <= +max)
-    range.style.width = percent + '%'
+  if (val <= max)
+    return percent + '%'
 }
