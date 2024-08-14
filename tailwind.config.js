@@ -1,19 +1,19 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.{html,js}"],
+  content: ['*.{html,js}'],
   theme: {
     container: {
       center: true,
-      padding: '80px',
+      // padding: '80px',
     },
-    screens: {
-      sm: '350px',
-      md: '768px',
-      lg: '1360px',
-      xl: '1920px',
-    },
+    // screens: {
+    //   sm: '350px',
+    //   md: '768px',
+    //   lg: '1360px',
+    //   xl: '1920px',
+    // },
     extend: {
       fontFamily: {
         primary: ['Gilroy', 'sans-serif'],
@@ -33,6 +33,7 @@ module.exports = {
         sm: '0 0 6px white',
         DEFAULT: '0 4px 4px rgb(9, 162, 24)',
         lg: '0 8px 16px white',
+        black: '0 14px 15px rgba(0, 0, 0, .5)',
       },
     },
   },
@@ -44,8 +45,8 @@ module.exports = {
             textShadow: value,
           }),
         },
-        { values: theme('textShadow') }
-      )
+        { values: theme('textShadow') },
+      );
     }),
   ],
-}
+};
