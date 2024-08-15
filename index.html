@@ -13,15 +13,19 @@
     <title>topdom invest</title>
   </head>
 
-  <body class="font-primary py-20">
-    <section class="lg:pb-[45px] xl:pt-12 relative hero">
+  <body class="font-primary">
+    <section class="relative hero">
       <div class="hero-ellipse-left ellipse"></div>
       <div class="hero-ellipse-top ellipse"></div>
       <div class="hero-ellipse-right ellipse"></div>
+      <div class="hero-safe"></div>
+      <div class="hero-coins"></div>
+      <div class="hero-curve"></div>
+
       <div class="container">
         <div class="mx-auto">
           <h1
-            class="mb-2 font-secondary text-white text-[65px] lg:text-[180px] leading-[60px] lg:leading-[148px] text-center font-bold text-white-grad"
+            class="mb-2 lg:mb-6 font-secondary text-white text-[65px] lg:text-[180px] leading-[60px] lg:leading-[148px] text-center font-bold text-white-grad"
           >
             Вклад 30% годовых
             <span
@@ -31,7 +35,7 @@
           </h1>
 
           <p
-            class="mb-[36px] max-w-[220px] mx-auto text-[15px] font-light leading-[18px] text-white/75 text-center"
+            class="mb-[36px] lg:mb-[65px] max-w-[220px] lg:max-w-[920px] mx-auto text-[15px] lg:text-[30px] font-light leading-[18px] lg:leading-10 text-white/75 text-center"
           >
             Откройте вклад в компании ТОПДОМ:
             <b class="font-extrabold">доходность 30% годовых</b> в рублях,
@@ -40,24 +44,25 @@
 
           <div class="hero-card">
             <span
-              class="block mb-[16px] w-[181px] h-6 rounded-[7px] border border-solid border-white text-[15px] text-white font-light text-center"
+              class="block mb-[16px] w-[181px] lg:w-[595px] h-6 lg:h-[83px] lg:flex lg:justify-center lg:items-center rounded-[7px] border border-solid border-white text-[15px] lg:text-[40px] lg:leading-10 text-white font-light text-center"
               >Акция до конца августа</span
             >
             <div class="flex">
               <b
-                class="ml-[10px] text-[80px] leading-[59px] text-white-grad text-shadow-black"
-                >30<span class="text-[40px]">%</span></b
+                class="ml-[10px] lg:ml-[30px] text-white font-extrabold text-[80px] lg:text-[250px] leading-[59px] lg:leading-[252px] rate"
+                >30<span class="text-[40px] lg:text-[150px]">%</span></b
               >
-              <small class="ml-[-23px] text-[15px] font-light text-white"
+              <small
+                class="ml-[-23px] lg:ml-[-95px] lg:mt-[33px] text-[15px] lg:text-[43px] lg:leading-10 font-light text-white"
                 >Годовых</small
               >
             </div>
           </div>
 
-          <div class="text-center">
+          <div class="text-center z-10 lg:relative lg:top-[-400px]">
             <a
               href="#open-deposit"
-              class="text-center text-[15px] leading-5 font-light text-white grad rounded-xl px-[10px] py-[18px] deposit-btn text-shadow-sm relative z-10"
+              class="inline-block w-[168px] lg:w-[184px] text-center text-[15px] lg:text-[18px] leading-5 font-light text-white rounded-xl px-[10px] py-[18px] deposit-btn text-shadow-sm relative button"
               >Открыть вклад</a
             >
           </div>
@@ -68,60 +73,62 @@
 
           <strong
             id="open-deposit"
-            class="block mb-[57px] uppercase font-secondary text-[44px] leading-[48px] font-bold text-black/80"
+            class="block mt-[45px] mb-[48px] text-center uppercase font-secondary text-[35px] leading-[48px] font-bold text-black/80 open-deposit-text lg:mt-0 lg:text-[80px] lg:leading-[80px]"
             >Открыть вклад легко</strong
           >
 
-          <div class="flex lg:justify-between lg:w-[700px] lg:mx-auto">
+          <div
+            class="flex items-center flex-col gap-y-10 lg:flex-row lg:justify-between lg:w-[1214px] lg:mx-auto lg:gap-x-[84px]"
+          >
             <div
-              class="max-h-[66px] w-[151px] pt-[21px] pb-[17px] px-[12px] rounded-[24px] bg-white big-shadow relative"
+              class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
             >
               <div
-                class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]"
+                class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
               >
                 1
               </div>
               <span
-                class="block w-[96px] mx-auto text-[14px] leading-none font-light"
+                class="block w-[96px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[165px]"
                 >Заполните онлайн заявку</span
               >
             </div>
             <div
-              class="max-h-[66px] w-[151px] pt-[21px] pb-[17px] px-[12px] rounded-[24px] bg-white big-shadow relative"
+              class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
             >
               <div
-                class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]"
+                class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
               >
                 2
               </div>
               <span
-                class="block w-[115px] mx-auto text-[14px] leading-none font-light"
+                class="block w-[115px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[165px]"
                 >Посетите один из наших офисов</span
               >
             </div>
             <div
-              class="max-h-[66px] w-[151px] pt-[21px] pb-[17px] px-[12px] rounded-[24px] bg-white big-shadow relative"
+              class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
             >
               <div
-                class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]"
+                class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
               >
                 3
               </div>
               <span
-                class="block w-[110px] mx-auto text-[14px] leading-none font-light"
+                class="block w-[110px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[165px]"
                 >Подписание договора займа</span
               >
             </div>
             <div
-              class="max-h-[66px] w-[151px] pt-[12px] pb-[12px] px-[12px] rounded-[24px] bg-white big-shadow relative"
+              class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[12px] pb-[12px] px-[12px] relative hero-mini-card"
             >
               <div
-                class="size-[35px] rounded-[11px] grad text-shadow-sm text-white text-[24px] absolute left-[-8px] top-[-14px]"
+                class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
               >
                 4
               </div>
               <span
-                class="block w-[126px] mx-auto text-[14px] leading-none font-light"
+                class="block w-[126px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[180px]"
                 >Страховка инвестиций нашей недвижимостью</span
               >
             </div>
