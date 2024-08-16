@@ -482,6 +482,15 @@
     z-index: 0;
   }
 
+  .hero-curve {
+    transform: translate(-104px, 182px);
+
+    width: 618px;
+    height: 226px;
+
+    background-image: url('../img/curve.png');
+  }
+
   .rate {
     background: -webkit-linear-gradient(#ffffff 49%, #999999 100%);
     -webkit-background-clip: text;
@@ -605,8 +614,6 @@
       width: 2073px;
       height: 778px;
 
-      background-image: url('../img/curve.png');
-
       /* z-index: 2; */
     }
     .hero-card {
@@ -623,6 +630,29 @@
       background-color: rgba(255, 255, 255, 0.03);
 
       transform: rotate(9.86deg);
+    }
+    .mini-ellipse-1 {
+      transform: translate(88px, 51px);
+      width: 180px;
+      height: 180px;
+    }
+    .mini-ellipse-2 {
+      transform: translate(412px, 51px);
+      width: 180px;
+      height: 180px;
+    }
+    .mini-ellipse-3 {
+      transform: translate(735px, 51px);
+      width: 180px;
+      height: 180px;
+    }
+    .mini-ellipse-4 {
+      transform: translate(1061px, 51px);
+      width: 180px;
+      height: 180px;
+    }
+    .right-ellipse-5 {
+      display: none;
     }
   }
 
