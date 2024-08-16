@@ -401,25 +401,6 @@
     text-fill-color: transparent;
   }
 
-  .hero::after {
-    content: '';
-
-    position: absolute;
-    top: -140px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 657.61px;
-    height: 679px;
-
-    background-image: url('../img/mob-hero-g.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    z-index: -1;
-  }
-
   .hero {
     overflow: hidden;
   }
@@ -454,7 +435,51 @@
   .hero-safe,
   .hero-coins,
   .hero-curve {
-    display: none;
+    position: absolute;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hero-ellipse-left {
+    top: 420px;
+    left: -180px;
+    width: 336px;
+    height: 321px;
+  }
+
+  .hero-ellipse-top {
+    top: -100px;
+    right: -119px;
+    width: 456px;
+    height: 430px;
+  }
+
+  .hero-ellipse-right {
+    top: 280px;
+    right: -160px;
+    width: 456px;
+    height: 430px;
+  }
+
+  .hero-safe {
+    transform: translate(-65px, 254px) scaleX(-1);
+
+    width: 144px;
+    height: 144px;
+
+    background-image: url('../img/safe.png');
+    z-index: 2;
+  }
+
+  .hero-coins {
+    transform: translate(-24px, 253px);
+    width: 192px;
+    height: 185px;
+
+    background-image: url('../img/coins.png');
+
+    z-index: 0;
   }
 
   .rate {
@@ -494,6 +519,32 @@
     background: rgba(255, 255, 255, 0.05);
   }
 
+  .mini-ellipse-1 {
+    transform: translate(0px, 30px);
+    width: 140px;
+    height: 140px;
+  }
+  .mini-ellipse-2 {
+    transform: translate(0px, 160px);
+    width: 140px;
+    height: 140px;
+  }
+  .mini-ellipse-3 {
+    transform: translate(0px, 285px);
+    width: 140px;
+    height: 140px;
+  }
+  .mini-ellipse-4 {
+    transform: translate(0px, 415px);
+    width: 140px;
+    height: 140px;
+  }
+  .right-ellipse-5 {
+    transform: translate(50px, 100px);
+    width: 470px;
+    height: 451px;
+  }
+
   @media (min-width: 1024px) {
     section {
       /* max-width: 1920px; */
@@ -514,71 +565,47 @@
       background-image: none;
     }
     .hero-ellipse-left {
-      display: block;
-      top: 0;
-      left: -260px;
+      top: 170px;
+      left: -300px;
 
-      width: 754px;
-      height: 675px;
+      width: 974px;
+      height: 929px;
     }
     .hero-ellipse-top {
-      display: block;
-      top: -530px;
-      left: 520px;
+      right: auto;
+      top: -460px;
+      left: 500px;
 
-      width: 1223px;
-      height: 1095px;
+      width: 1353px;
+      height: 1283px;
     }
     .hero-ellipse-right {
-      display: block;
-      top: 300px;
-      left: 1240px;
+      right: auto;
+      top: 420px;
+      left: 890px;
 
-      width: 471px;
-      height: 422px;
+      width: 771px;
+      height: 735px;
     }
     .hero-safe {
-      display: block;
-      position: absolute;
-      transform: translate(240px, 340px);
+      transform: translate(240px, 340px) scaleX(1);
 
       width: 396px;
       height: 396px;
-
-      background-image: url('../img/safe.png');
-      background-position: 0 0;
-      background-size: contain;
-      background-repeat: no-repeat;
-
-      z-index: 2;
     }
     .hero-coins {
-      display: block;
-      position: absolute;
       transform: translate(450px, 369px);
 
       width: 349px;
       height: 547px;
-
-      background-image: url('../img/coins.png');
-      background-position: 0 0;
-      background-size: contain;
-      background-repeat: no-repeat;
-
-      z-index: 0;
     }
     .hero-curve {
-      display: block;
-      position: absolute;
       transform: translate(-110px, 230px);
 
       width: 2073px;
       height: 778px;
 
       background-image: url('../img/curve.png');
-      background-position: 0 0;
-      background-size: contain;
-      background-repeat: no-repeat;
 
       /* z-index: 2; */
     }
