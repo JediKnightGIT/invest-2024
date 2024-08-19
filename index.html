@@ -24,7 +24,7 @@
       <div class="hero-coins"></div>
       <div class="hero-curve"></div>
 
-      <div class="container max-w-[320px]">
+      <div class="container max-w-[320px] lg:max-w-none">
         <div class="mx-auto">
           <h1
             class="mx-auto mb-2 lg:mb-6 font-secondary text-white text-[65px] w-[330px] lg:w-auto lg:text-[180px] leading-[60px] lg:leading-[148px] text-center font-bold text-white-grad"
@@ -64,7 +64,7 @@
           <div class="text-center z-10 lg:relative lg:top-[-400px]">
             <a
               href="#open-deposit"
-              class="inline-block w-[168px] lg:w-[184px] text-center text-[15px] lg:text-[18px] leading-5 font-light text-white rounded-xl px-[10px] py-[18px] deposit-btn text-shadow-sm relative button"
+              class="inline-block w-[168px] lg:w-[184px] text-center text-[15px] lg:text-[18px] leading-5 font-light text-white rounded-xl px-[10px] py-[18px] deposit-btn relative button"
               >Открыть вклад</a
             >
           </div>
@@ -92,7 +92,7 @@
                 class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
                 >
                   1
                 </div>
@@ -105,7 +105,7 @@
                 class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
                 >
                   2
                 </div>
@@ -118,7 +118,7 @@
                 class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
                 >
                   3
                 </div>
@@ -131,7 +131,7 @@
                 class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[12px] pb-[12px] px-[12px] relative hero-mini-card"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-shadow-sm text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
                 >
                   4
                 </div>
@@ -146,16 +146,18 @@
       </div>
     </section>
 
-    <section class="mb-[80px] px-[11px] max-w-[320px] mx-auto">
+    <section
+      class="mb-[80px] lg:mb-[146px] px-[11px] max-w-[320px] lg:max-w-none mx-auto"
+    >
       <div
-        class="container lg:w-[880px] min-h-[745px] px-3 pt-[12px] pb-[25px] rounded-[12px] calc-section"
+        class="container lg:w-[990px] min-h-[745px] px-3 pt-[12px] lg:pt-[59px] pb-[25px] lg:pb-[105px] rounded-[12px] shadow-section"
       >
         <form
           id="calc-form"
           method="POST"
-          class="flex flex-col lg:flex-row lg:justify-between lg:w-[699px] lg:mx-auto relative"
+          class="flex flex-col lg:flex-row lg:justify-between lg:w-[786px] lg:mx-auto relative"
         >
-          <div class="lg:w-[396px] lg:mt-[3px]">
+          <div class="lg:w-[444px] lg:mt-[3px]">
             <span
               class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-white/[80%] mb-[18px]"
               >Подберите условия</span
@@ -163,11 +165,11 @@
 
             <!-- conditions -->
             <div
-              class="flex flex-col lg:flex-row lg:justify-between gap-x-3 mb-[30px]"
+              class="flex flex-col lg:flex-row lg:justify-between gap-x-3 mb-[30px] lg:mb-[20px]"
             >
               <div class="mb-4 lg:mb-0">
                 <div
-                  class="rounded-xl min-h-[56px] bg-[#244A7F0F] lg:w-[190px] mb-[5px] pt-[8px] pl-[20px] pr-[30px] relative input-grad"
+                  class="rounded-xl min-h-[56px] bg-[#244A7F0F] lg:w-[212px] mb-[5px] pt-[8px] pl-[20px] pr-[30px] relative input-grad"
                 >
                   <span
                     class="block text-[13px] font-light text-black/[54%] relative z-10"
@@ -219,7 +221,7 @@
 
               <div>
                 <div
-                  class="rounded-xl min-h-[56px] bg-[rgba(36,74,127,0.06)] lg:w-[190px] mb-[5px] pt-[8px] pl-[20px] pr-[30px] relative input-grad"
+                  class="rounded-xl min-h-[56px] bg-[rgba(36,74,127,0.06)] lg:w-[212px] mb-[5px] pt-[8px] pl-[20px] pr-[30px] relative input-grad"
                 >
                   <span
                     class="block text-[13px] rounded-[20px] font-light text-black/[54%]"
@@ -264,60 +266,60 @@
             <!-- payments -->
             <div
               id="payments"
-              class="flex flex-col lg:flex-row lg:justify-between flex-wrap gap-y-[13px] mb-[40px]"
+              class="flex flex-col lg:flex-row lg:justify-between flex-wrap gap-y-[13px] mb-[26px] lg:mb-[46px]"
             >
               <div
                 data-payment="active"
-                class="flex justify-between lg:w-[47.7%] h-[44px] lg:h-[56px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio active"
+                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] rounded-[12px] cursor-pointer radio input-grad active"
               >
                 <span
                   class="font-primary text-[10px] leading-6 font-light text-black/80"
                   >Ежемесячные выплаты</span
                 >
                 <div
-                  class="flex justify-center items-center size-[21px] rounded-full inner-shadow"
+                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
                 >
                   <div class="size-[12px] bg-white rounded-full"></div>
                 </div>
               </div>
               <div
                 data-payment="0"
-                class="flex justify-between lg:w-[47.7%] h-[44px] lg:h-[56px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio"
+                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] cursor-pointer radio input-grad"
               >
                 <span
                   class="font-primary text-[10px] leading-6 font-light text-black/80"
                   >Ежеквартальные выплаты</span
                 >
                 <div
-                  class="flex justify-center items-center size-[21px] rounded-full inner-shadow"
+                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
                 >
                   <div class="size-[12px] bg-white rounded-full"></div>
                 </div>
               </div>
               <div
                 data-payment="0"
-                class="flex justify-between lg:w-[47.7%] h-[44px] lg:h-[56px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio"
+                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] cursor-pointer radio input-grad"
               >
                 <span
                   class="font-primary text-[10px] leading-6 font-light text-black/80"
                   >Выплата раз в пол года</span
                 >
                 <div
-                  class="flex justify-center items-center size-[21px] rounded-full inner-shadow"
+                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
                 >
                   <div class="size-[12px] bg-white rounded-full"></div>
                 </div>
               </div>
               <div
                 data-payment="0"
-                class="flex justify-between lg:w-[47.7%] h-[44px] lg:h-[56px] py-[11px] pl-[22px] pr:[11px] lg:pr-[15px] bg-white rounded-[12px] border border-[#244A7F0F] cursor-pointer radio"
+                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] cursor-pointer radio input-grad"
               >
                 <span
                   class="font-primary text-[10px] leading-6 font-light text-black/80"
                   >Выплата раз в год</span
                 >
                 <div
-                  class="flex justify-center items-center size-[21px] rounded-full inner-shadow"
+                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
                 >
                   <div class="size-[12px] bg-white rounded-full"></div>
                 </div>
@@ -332,11 +334,13 @@
 
             <!-- contacts -->
             <span
-              class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-black/80 mb-[14px]"
+              class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-white/80 mb-[14px]"
               >Ваши контакты
             </span>
 
-            <div class="flex flex-wrap justify-between gap-y-[11px] mb-[33px]">
+            <div
+              class="flex flex-col lg:flex-row lg:flex-wrap justify-between gap-y-[12px] mb-[27px] lg:mb-[37px]"
+            >
               <input
                 type="text"
                 name="name"
@@ -348,62 +352,66 @@
                 id="phone"
                 name="phone"
                 placeholder="Мобильный телефон"
-                class="field w-[60%] phone input-grad"
+                class="field w-full lg:w-[60%] phone input-grad"
               />
               <input
                 id="birth"
                 type="text"
                 name="birth"
                 placeholder="Дата рождения"
-                class="field w-[37.6%] input-grad"
+                class="field w-full lg:w-[37.6%] input-grad"
               />
             </div>
 
             <span
-              class="block mb-[29px] text-[15px] font-light leading-6 text-white/80"
+              class="block mb-4 lg:mb-[33px] text-[15px] font-light leading-6 text-white/80"
             >
               Гражданство РФ?
             </span>
 
             <!-- citizenship -->
-            <div class="flex justify-between mb-[90px]">
+            <div
+              class="flex flex-col lg:flex-row gap-y-[7px] lg:gap-0 lg:justify-between mb-4 lg:mb-[48px]"
+            >
               <div
                 data-citizen="active"
-                class="flex justify-between w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] cursor-pointer radio active input-grad"
+                class="flex justify-between w-full lg:w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] cursor-pointer radio active input-grad"
               >
                 <span
                   class="font-other text-[15px] leading-6 font-normal text-black/80"
                   >Да</span
                 >
                 <div
-                  class="flex justify-center items-center size-[24px] rounded-full"
+                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
                 >
-                  <div class="size-[14px] bg-white rounded-full"></div>
+                  <div class="size-[12px] bg-white rounded-full"></div>
                 </div>
               </div>
               <div
                 data-citizen
-                class="flex justify-between w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] cursor-pointer radio input-grad"
+                class="flex justify-between w-full lg:w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] cursor-pointer radio input-grad"
               >
                 <span
                   class="font-other text-[15px] leading-6 font-normal text-black/80"
                   >Нет</span
                 >
                 <div
-                  class="flex justify-center items-center size-[24px] rounded-full bg-[rgba(36,74,127,0.06)]"
+                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
                 >
-                  <div class="size-[14px] rounded-full bg-transparent"></div>
+                  <div class="size-[12px] bg-white rounded-full"></div>
                 </div>
               </div>
             </div>
             <input type="hidden" id="citizen" name="citizen" value="Да" />
 
             <!-- dividier -->
-            <div class="h-[2px] bg-darkgray mb-[42px]"></div>
+            <div class="hidden lg:block h-[2px] bg-darkgray mb-[47px]"></div>
 
-            <div class="flex justify-between items-start mb-4">
+            <div
+              class="flex flex-col lg:flex-row lg:justify-between items-start mb-0 lg:mb-4"
+            >
               <p
-                class="block w-[216px] font-other text-[10px] leading-5 text-black/[54%]"
+                class="block mb-[26px] lg:mb-0 max-w-[260px] lg:max-w-none lg:w-[243px] font-other text-[10px] leading-5 text-white/[54%]"
               >
                 Заполняя форму, я принимаю 
                 <a href="#" class="text-primary"
@@ -412,19 +420,21 @@
                 >
                 о продуктах и услугах Компании
               </p>
-              <button
-                type="submit"
-                class="px-[10px] py-[18px] rounded-xl text-[15px] font-normal text-white text-shadow-sm grad deposit-btn"
-              >
-                Оставить заявку
-              </button>
+              <div class="mx-auto lg:mx-0">
+                <button
+                  type="submit"
+                  class="px-[10px] py-[18px] w-[168px] lg:w-[160px] rounded-xl text-[15px] lg:text-[16px] font-normal text-white grad deposit-btn grad"
+                >
+                  Оставить заявку
+                </button>
+              </div>
             </div>
           </div>
 
           <!-- roi -->
-          <div class="top-0 -order-1 lg:order-1">
+          <div class="top-0 -order-1 lg:order-1 lg:w-[302px]">
             <div
-              class="mb-4 px-5 pr-2 pt-[10px] pb-[12px] h-[101px] rounded-lg bg-darkgray result-block"
+              class="mb-4 lg:mb-[23px] px-5 pr-2 pt-[10px] pb-[12px] h-[101px] rounded-lg bg-darkgray result-block"
             >
               <span
                 class="block mb-[6px] text-[13px] font-light leading-5 text-black/[54%]"
@@ -444,35 +454,36 @@
               >
             </div>
 
-            <div class="flex justify-between mb-3">
+            <div
+              class="flex justify-between lg:flex-wrap lg:justify-start mb-3"
+            >
               <!-- annual yield -->
-              <div class="annual-yield">
+              <div class="lg:w-full lg:mb-[25px]">
                 <div class="flex items-center">
                   <span
-                    class="text-[11px] font-light leading-5 text-white/[80%] h-5 overflow-y-hidden lg:overflow-y-visible"
-                    >Доходность <br />
-                    в годовых
+                    class="text-[11px] lg:text-[13px] font-light leading-5 text-white/[80%] h-5 overflow-y-hidden lg:overflow-y-visible"
+                    >Доходность<span class="hidden lg:inline">, годовых</span>
                   </span>
                   <div
                     title="Если вы решите оставлять заработанные проценты на вкладе, на них тоже будут начисляться проценты — так доходность вклада окажется выше, чем процентная ставка по нему"
-                    class="hidden size-[11px] ml-[11px] bg-[url('../img/qmark-icon.png')] bg-contain bg-no-repeat cursor-pointer"
+                    class="hidden lg:block size-[15.75px] ml-[27px] bg-[url('../img/qmark-icon.svg')] bg-contain bg-no-repeat cursor-pointer"
                   ></div>
                 </div>
                 <strong
-                  class="block lg:mb-[23px] text-white/[80%] text-[18px] font-extrabold leading-7"
+                  class="block text-white/[80%] text-[18px] lg:text-[22px] font-extrabold leading-7"
                   ><span id="yeild-text">21.7</span> %</strong
                 >
                 <input type="hidden" id="yield" name="yield" />
               </div>
 
               <!-- rate -->
-              <div>
+              <div class="lg:mr-[84px]">
                 <span
-                  class="block text-[11px] font-light leading-5 text-white/[80%]"
+                  class="block text-[11px] lg:text-[13px] font-light leading-5 text-white/[80%]"
                   >Ставка</span
                 >
                 <strong
-                  class="block text-white/[80%] text-[18px] font-extrabold leading-7"
+                  class="block text-white/[80%] text-[18px] lg:text-[22px] font-extrabold leading-7"
                   ><span id="rate-text">19.8</span> %</strong
                 >
                 <input type="hidden" id="rate" name="rate" />
@@ -480,11 +491,11 @@
               <!--  period -->
               <div>
                 <span
-                  class="block text-[11px] font-light leading-5 text-white/[80%]"
+                  class="block text-[11px] lg:text-[13px] font-light leading-5 text-white/[80%]"
                   >Срок вклада</span
                 >
                 <strong
-                  class="block text-white/[80%] text-[18px] font-extrabold leading-7"
+                  class="block text-white/[80%] text-[18px] lg:text-[22px] font-extrabold leading-7"
                   ><span data-period>12</span> месяцев</strong
                 >
               </div>
@@ -496,95 +507,101 @@
       </div>
     </section>
 
-    <section class="hidden mb-20">
+    <section class="mb-[35px] lg:mb-[122px]">
       <h2
-        class="lg:mb-[68px] font-secondary text-center text-[44px] leading-[48px] font-bold uppercase text-white/[80%]"
+        class="mb-[37px] lg:mb-[68px] font-secondary text-center text-[44px] lg:text-[80px] leading-[48px] font-bold uppercase text-white/[80%]"
       >
         Наша компания
       </h2>
       <div
-        class="big-shadow mx-auto lg:flex lg:justify-between lg:items-center lg:pt-[49px] lg:pb-[44px] lg:pl-[54px] lg:pr-[60px] lg:rounded-3xl lg:w-[872px] lg:min-h-[513px] bg-white"
+        class="mx-auto max-w-[320px] lg:max-w-none lg:flex lg:justify-between lg:items-center p-8 lg:pt-[47px] lg:pb-[44px] lg:pl-[54px] lg:pr-[58px] lg:rounded-3xl lg:w-[872px] lg:min-h-[513px] rounded-xl shadow-section"
       >
-        <div class="lg:w-[234px]">
+        <div class="mb-[42px] lg:w-[234px]">
           <div
-            class="mx-auto lg:size-[180px] bg-[url('../img/igor.png')] bg-contain bg-no-repeat mb-[16px]"
+            class="mx-auto size-[180px] bg-[url('../img/igor.png')] bg-contain bg-no-repeat mb-[16px]"
           ></div>
           <b
-            class="block lg:mb-[30px] text-center text-[30px] leading-[30px] font-extrabold"
+            class="block mb-[30px] text-white/80 text-center text-[30px] leading-[30px] font-extrabold"
             >Игорь Балашников</b
           >
           <span
-            class="block lg:mb-7 text-center text-[15px] leading-5 font-light"
+            class="block mb-[31px] lg:mb-7 text-white/80 text-center text-[15px] leading-5 font-light"
           >
             Вице-президент Всероссийской Федерации ИЖС
           </span>
           <span
-            class="block mx-auto lg:w-[163px] text-center text-[15px] leading-5 font-light"
+            class="block mx-auto w-[163px] text-white/80 text-center text-[15px] leading-5 font-light"
           >
             Основатель компании ТОПDОМ
           </span>
         </div>
 
         <div
-          class="lg:w-[473px] lg:flex lg:justify-between lg:gap-y-5 flex-wrap"
+          class="lg:w-[473px] flex flex-col lg:flex-row lg:justify-between gap-y-5 lg:flex-wrap"
         >
-          <div class="lg:w-[202px]">
+          <div class="mx-auto w-[202px]">
             <div
-              class="grad mb-[7px] rounded-xl flex justify-center items-center text-white text-shadow lg:text-[50px] font-extrabold"
+              class="input-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
             >
               1200+
             </div>
-            <span class="block text-center text-[15px] font-light leading-5"
+            <span
+              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
               >Коттеджей построили за все время работы</span
             >
           </div>
-          <div class="lg:w-[202px]">
+          <div class="mx-auto w-[202px]">
             <div
-              class="grad mb-[7px] rounded-xl flex justify-center items-center text-white text-shadow lg:text-[50px] font-extrabold"
+              class="input-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
             >
               14 лет
             </div>
-            <span class="block text-center text-[15px] font-light leading-5"
+            <span
+              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
               >Занимаемся строительством</span
             >
           </div>
-          <div class="lg:w-[202px]">
+          <div class="mx-auto w-[202px]">
             <div
-              class="grad mb-[7px] rounded-xl flex justify-center items-center text-white text-shadow lg:text-[50px] font-extrabold"
+              class="input-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
             >
               10 лет
             </div>
-            <span class="block text-center text-[15px] font-light leading-5"
+            <span
+              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
               >Опыта в сфере инвестиций</span
             >
           </div>
-          <div class="lg:w-[202px]">
+          <div class="mx-auto w-[202px]">
             <div
-              class="grad mb-[7px] rounded-xl flex justify-center items-center text-white text-shadow lg:text-[50px] font-extrabold"
+              class="input-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
             >
               70+
             </div>
-            <span class="block text-center text-[15px] font-light leading-5"
+            <span
+              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
               >Инвесторов</span
             >
           </div>
-          <div class="lg:w-[202px]">
+          <div class="mx-auto w-[202px]">
             <div
-              class="grad mb-[7px] rounded-xl flex justify-center items-center text-white text-shadow lg:text-[50px] font-extrabold"
+              class="input-grad mb-[7px] rounded-xl flex justify-center items-end text-black/80 text-[50px] font-extrabold"
             >
-              1,7<small class="lg:text-[25px] lg:mt-[14px]">млрд</small>
+              1,7<small class="mb-[10px] text-[25px] lg:mt-[14px]">млрд</small>
             </div>
-            <span class="block text-center text-[15px] font-light leading-5"
+            <span
+              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
               >В управлении компании</span
             >
           </div>
-          <div class="lg:w-[202px]">
+          <div class="mx-auto w-[202px]">
             <div
-              class="grad mb-[7px] rounded-xl flex justify-center items-center text-white text-shadow lg:text-[50px] font-extrabold"
+              class="input-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
             >
               7
             </div>
-            <span class="block text-center text-[15px] font-light leading-5"
+            <span
+              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
               >Коттеджных поселков</span
             >
           </div>
@@ -592,14 +609,16 @@
       </div>
     </section>
 
-    <section class="hidden lg:mb-20">
+    <section class="mb-10 lg:mb-20 max-w-[320px] mx-auto lg:max-w-none">
       <h2
-        class="lg:mb-[71px] font-secondary text-center text-[44px] leading-[48px] font-bold uppercase text-black/80"
+        class="mb-[25px] lg:mb-[71px] font-secondary text-center text-[44px] lg:text-[80px] leading-[48px] font-bold uppercase text-white/80"
       >
         Наши инвесторы
       </h2>
 
-      <div class="w-[744px] mx-auto flex justify-between">
+      <div
+        class="max-w-[320px] lg:max-w-none lg:w-[744px] mx-auto flex flex-col gap-y-[35px] lg:gap-0 items-center lg:flex-row lg:justify-between"
+      >
         <div
           class="bg-white rounded-[25px] px-5 pt-[43px] pb-[18px] w-[200px] min-h-[334px] md-shadow"
         >
@@ -615,7 +634,7 @@
           >
           <a
             href="#"
-            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-light leading-[48px] text-center text-shadow-sm"
+            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-light leading-[48px] text-center"
             >Сайт ВДело</a
           >
         </div>
@@ -636,7 +655,7 @@
           >
           <a
             href="#"
-            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-light leading-[48px] text-center text-shadow-sm"
+            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-light leading-[48px] text-center"
             >Смотрите ролик</a
           >
         </div>
@@ -657,16 +676,18 @@
           >
           <a
             href="#"
-            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-light leading-[48px] text-center text-shadow-sm"
+            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-light leading-[48px] text-center"
             >Наш ютуб канал</a
           >
         </div>
       </div>
     </section>
 
-    <section class="hidden lg:mb-[130px] lg:w-[1110px] lg:mx-auto">
+    <section
+      class="lg:mb-[130px] max-w-[320px] mx-auto lg:max-w-none lg:w-[1110px] lg:mx-auto"
+    >
       <h2
-        class="lg:mb-[68px] font-secondary text-center text-[44px] leading-[48px] font-bold uppercase text-black/80"
+        class="mb-[17px] lg:mb-[45px] font-secondary text-center text-[44px] lg:text-[80px] leading-[48px] font-bold uppercase text-white/80"
       >
         Наши коттеджные поселки
       </h2>
