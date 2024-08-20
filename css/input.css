@@ -579,7 +579,7 @@
       rgba(36, 74, 127, 0.08);
   }
 
-  .input-grad {
+  .white-grad {
     background: linear-gradient(
         180deg,
         rgb(255, 255, 255) 28.169%,
@@ -596,10 +596,6 @@
     section {
       /* max-width: 1920px; */
       margin: 0 auto;
-    }
-    .hero {
-      /* max-width: 2073px; */
-      padding: 300px 0;
     }
     .hero::after {
       top: -720px;
@@ -635,13 +631,13 @@
       height: 735px;
     }
     .hero-safe {
-      transform: translate(240px, 340px) scaleX(1);
+      transform: translate(-80px, 340px) scaleX(1);
 
       width: 396px;
       height: 396px;
     }
     .hero-coins {
-      transform: translate(450px, 369px);
+      transform: translate(110px, 369px);
 
       width: 349px;
       height: 547px;
@@ -706,6 +702,18 @@
     }
     .mini-ellipse-4 {
       transform: translate(898px, -37px);
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .hero-safe {
+      transform: translate(240px, 340px) scaleX(1);
+    }
+    .hero-coins {
+      transform: translate(450px, 369px);
+    }
+    .hero-curve {
+      transform: translate(-110px, 230px);
     }
   }
 
