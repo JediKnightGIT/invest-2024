@@ -1,44 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
   const birthInput = document.getElementById('birth');
-  const nameInput = document.querySelector('.name');
-  const phoneInput = document.querySelector('.phone');
+  const nameInputs = document.querySelectorAll('.name');
+  const phoneInputs = document.querySelectorAll('.phone');
 
   const payments = document.querySelectorAll('[data-payment]');
   const citizenships = document.querySelectorAll('[data-citizen]');
 
   const calcForm = document.getElementById('calc-form');
 
-  payments.forEach((item, _, array) => toggleRadio(item, 'payment', array))
-  citizenships.forEach((item, _, array) => toggleRadio(item, 'citizen', array))
+  payments.forEach((item, _, array) => toggleRadio(item, 'payment', array));
+  citizenships.forEach((item, _, array) => toggleRadio(item, 'citizen', array));
 
-  nameInput.addEventListener('input', function () {
-    // Get the value of the input field
-    const inputValue = this.value;
+  nameInputs.forEach((item) => {
+    item.addEventListener('input', function () {
+      // Get the value of the input field
+      const inputValue = this.value;
 
-    // Check if the input value matches the allowed pattern
-    const isValid = /^[ A-Za-zА-Яа-яЁё]+$/.test(inputValue);
+      // Check if the input value matches the allowed pattern
+      const isValid = /^[ A-Za-zА-Яа-яЁё]+$/.test(inputValue);
 
-    // If the input value is not valid, clear the input field
-    if (!isValid) {
-      nameInput.value = inputValue.replace(/[^ A-Za-zА-Яа-яЁё]/g, '');
-    }
-  })
-
-  phoneInput.addEventListener('focus', function () {
-    // Set the value to start with '+7' when the input is in focus
-    if (!phoneInput.value.startsWith('+7')) {
-      phoneInput.value = '+7';
-    }
+      // If the input value is not valid, clear the input field
+      if (!isValid) {
+        item.value = inputValue.replace(/[^ A-Za-zА-Яа-яЁё]/g, '');
+      }
+    });
   });
 
-  phoneInput.addEventListener('input', (event) => {
-    let inputValue = event.target.value;
-    inputValue = inputValue.replace(/[^\d]/g, ""); // удаляем все не цифры
-    if (inputValue.length > 11) {
-      inputValue = inputValue.substr(0, 11); // обрезаем до 11 символов
-    }
-    inputValue = "+7" + inputValue.substr(1); // добавляем +7 в начало
-    event.target.value = inputValue;
+  phoneInputs.forEach((item) => {
+    item.addEventListener('focus', function () {
+      // Set the value to start with '+7' when the input is in focus
+      if (!item.value.startsWith('+7')) {
+        item.value = '+7';
+      }
+    });
+    item.addEventListener('input', (event) => {
+      let inputValue = event.target.value;
+      inputValue = inputValue.replace(/[^\d]/g, ''); // удаляем все не цифры
+      if (inputValue.length > 11) {
+        inputValue = inputValue.substr(0, 11); // обрезаем до 11 символов
+      }
+      inputValue = '+7' + inputValue.substr(1); // добавляем +7 в начало
+      event.target.value = inputValue;
+    });
   });
 
   birthInput.addEventListener('input', (event) => {
@@ -60,14 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
   function toggleRadio(item, dataValue, array) {
     item.addEventListener('click', () => {
       array.forEach((btn) => {
-        btn.classList.remove('active')
-        btn.dataset[dataValue] = ''
-      })
+        btn.classList.remove('active');
+        btn.dataset[dataValue] = '';
+      });
 
-      item.classList.add('active')
-      item.dataset[dataValue] = 'active'
-      document.getElementById(dataValue).value = item.querySelector('span').innerText
-    })
+      item.classList.add('active');
+      item.dataset[dataValue] = 'active';
+      document.getElementById(dataValue).value =
+        item.querySelector('span').innerText;
+    });
   }
 
   function clearDate(event) {
@@ -86,4 +90,4 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(pair[0] + ': ' + pair[1]);
     }
   }
-})
+});

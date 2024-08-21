@@ -1743,4 +1743,23 @@ button.swiper-pagination-bullet {
   }
 
   /* #endregion */
+
+  /* #region Consult */
+  .consult-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    column-gap: 72px;
+  }
+
+  .consult-img {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  .consult-text {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .consult-form {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  /* #endregion */
 }
