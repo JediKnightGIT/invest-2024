@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,11 +13,15 @@
     <title>topdom invest</title>
   </head>
 
-  <body class="font-primary">
+  <body class="font-primary lg:relative lg:overflow-x-hidden lg:pb-[545px]">
     <div class="calc-left-ellipse ellipse"></div>
     <div class="calc-right-ellipse ellipse"></div>
+    <div class="slider-left-ellipse ellipse"></div>
+    <!-- <div class="consult-right-ellipse ellipse"></div> -->
+    <div class="end-left-ellipse ellipse"></div>
+    <!-- <div class="end-right-ellipse ellipse"></div> -->
     <section
-      class="mb-[30px] lg:mb-[97px] pt-[125px] sm:pt-[220px] lg:pt-[200px] relative hero"
+      class="hero relative mb-[30px] pt-[125px] sm:pt-[220px] lg:mb-[97px] lg:pt-[200px]"
     >
       <div class="hero-ellipse-left ellipse"></div>
       <div class="hero-ellipse-top ellipse"></div>
@@ -29,17 +33,17 @@
       <div class="container max-w-[320px] lg:max-w-none">
         <div class="mx-auto">
           <h1
-            class="mx-auto mb-2 lg:mb-6 font-secondary text-white text-[65px] w-[330px] lg:w-auto lg:text-[140px] xl:text-[180px] leading-[60px] lg:leading-[148px] text-center font-bold text-white-grad"
+            class="text-white-grad mx-auto mb-2 w-[330px] text-center font-secondary text-[65px] font-bold leading-[60px] text-white lg:mb-6 lg:w-auto lg:text-[140px] lg:leading-[148px] xl:text-[180px]"
           >
             Вклад 30% годовых
             <span
-              class="text-[28px] lg:text-[70px] xl:text-[100px] leading-8 lg:leading-[110px] font-bold block"
+              class="block text-[28px] font-bold leading-8 lg:text-[70px] lg:leading-[110px] xl:text-[100px]"
               >c ежемесячной выплатой процентов</span
             >
           </h1>
 
           <p
-            class="mb-[36px] lg:mb-[175px] xl:mb-[65px] max-w-[220px] lg:max-w-[920px] mx-auto text-[15px] lg:text-[30px] font-light leading-[18px] lg:leading-10 text-white/75 text-center"
+            class="mx-auto mb-[36px] max-w-[220px] text-center text-[15px] font-light leading-[18px] text-white/75 lg:mb-[175px] lg:max-w-[920px] lg:text-[30px] lg:leading-10 xl:mb-[65px]"
           >
             Откройте вклад в компании ТОПДОМ:
             <b class="font-extrabold">доходность 30% годовых</b> в рублях,
@@ -48,27 +52,27 @@
 
           <div class="hero-card">
             <span
-              class="block mb-[16px] w-[181px] lg:w-[595px] h-6 lg:h-[83px] lg:flex lg:justify-center lg:items-center rounded-[7px] border border-solid border-white text-[15px] lg:text-[40px] lg:leading-10 text-white font-light text-center"
+              class="mb-[16px] block h-6 w-[181px] rounded-[7px] border border-solid border-white text-center text-[15px] font-light text-white lg:flex lg:h-[83px] lg:w-[595px] lg:items-center lg:justify-center lg:text-[40px] lg:leading-10"
               >Акция до конца августа</span
             >
             <div class="flex">
               <b
-                class="ml-[10px] lg:ml-[30px] text-white font-extrabold text-[80px] lg:text-[250px] leading-[61px] lg:leading-[252px] rate"
+                class="rate ml-[10px] text-[80px] font-extrabold leading-[61px] text-white lg:ml-[30px] lg:text-[250px] lg:leading-[252px]"
                 >30<span class="text-[40px] lg:text-[150px]">%</span></b
               >
               <small
-                class="ml-[-23px] lg:ml-[-95px] lg:mt-[33px] text-[15px] lg:text-[43px] lg:leading-10 font-light text-white"
+                class="ml-[-23px] text-[15px] font-light text-white lg:ml-[-95px] lg:mt-[33px] lg:text-[43px] lg:leading-10"
                 >Годовых</small
               >
             </div>
           </div>
 
           <div
-            class="text-center z-10 lg:relative lg:top-[-530px] xl:top-[-400px]"
+            class="z-10 text-center lg:relative lg:top-[-530px] xl:top-[-400px]"
           >
             <a
               href="#open-deposit"
-              class="inline-block w-[168px] lg:w-[184px] text-center text-[15px] lg:text-[18px] leading-5 font-light text-white rounded-xl px-[10px] py-[18px] deposit-btn relative button"
+              class="deposit-btn button relative inline-block w-[168px] rounded-xl px-[10px] py-[18px] text-center text-[15px] font-light leading-5 text-white lg:w-[184px] lg:text-[18px]"
               >Открыть вклад</a
             >
           </div>
@@ -81,66 +85,66 @@
             <div class="ellipse right-ellipse-5"></div>
             <strong
               id="open-deposit"
-              class="block mt-[45px] mb-[48px] text-center uppercase font-secondary text-[35px] leading-[48px] font-bold text-black/80 open-deposit-text lg:mt-0 lg:text-[80px] lg:leading-[80px]"
+              class="open-deposit-text mb-[48px] mt-[45px] block text-center font-secondary text-[35px] font-bold uppercase leading-[48px] text-black/80 lg:mt-0 lg:text-[80px] lg:leading-[80px]"
               >Открыть вклад легко</strong
             >
 
             <div
-              class="flex items-center flex-col gap-y-10 lg:grid lg:grid-cols-2 lg: justify-items-center lg:items-center lg:gap-y-16 lg:mx-auto lg:w-[1024px] xl:flex xl:justify-between xl:flex-nowrap xl:lg:flex-row xl:w-[1214px]"
+              class="lg: flex flex-col items-center justify-items-center gap-y-10 lg:mx-auto lg:grid lg:w-[1024px] lg:grid-cols-2 lg:items-center lg:gap-y-16 xl:lg:flex-row xl:flex xl:w-[1214px] xl:flex-nowrap xl:justify-between"
             >
               <div class="ellipse mini-ellipse-1"></div>
               <div class="ellipse mini-ellipse-2"></div>
               <div class="ellipse mini-ellipse-3"></div>
               <div class="ellipse mini-ellipse-4"></div>
               <div
-                class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
+                class="hero-mini-card relative flex h-[88px] w-[207px] items-center justify-center px-[12px] pb-[17px] pt-[21px] lg:h-[103px] lg:w-[241px]"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="grad absolute left-[-8px] top-[-14px] flex size-[35px] items-center justify-center rounded-[11px] text-center text-[24px] text-white lg:size-[51px] lg:text-[30px]"
                 >
                   1
                 </div>
                 <span
-                  class="block w-[96px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[165px]"
+                  class="mx-auto block w-[96px] text-center text-[14px] font-light leading-none text-white lg:w-[165px] lg:text-[20px] lg:leading-[22px]"
                   >Заполните онлайн заявку</span
                 >
               </div>
               <div
-                class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
+                class="hero-mini-card relative flex h-[88px] w-[207px] items-center justify-center px-[12px] pb-[17px] pt-[21px] lg:h-[103px] lg:w-[241px]"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="grad absolute left-[-8px] top-[-14px] flex size-[35px] items-center justify-center rounded-[11px] text-center text-[24px] text-white lg:size-[51px] lg:text-[30px]"
                 >
                   2
                 </div>
                 <span
-                  class="block w-[115px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[165px]"
+                  class="mx-auto block w-[115px] text-center text-[14px] font-light leading-none text-white lg:w-[165px] lg:text-[20px] lg:leading-[22px]"
                   >Посетите один из наших офисов</span
                 >
               </div>
               <div
-                class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[21px] pb-[17px] px-[12px] relative hero-mini-card"
+                class="hero-mini-card relative flex h-[88px] w-[207px] items-center justify-center px-[12px] pb-[17px] pt-[21px] lg:h-[103px] lg:w-[241px]"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="grad absolute left-[-8px] top-[-14px] flex size-[35px] items-center justify-center rounded-[11px] text-center text-[24px] text-white lg:size-[51px] lg:text-[30px]"
                 >
                   3
                 </div>
                 <span
-                  class="block w-[110px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[165px]"
+                  class="mx-auto block w-[110px] text-center text-[14px] font-light leading-none text-white lg:w-[165px] lg:text-[20px] lg:leading-[22px]"
                   >Подписание договора займа</span
                 >
               </div>
               <div
-                class="flex justify-center items-center h-[88px] w-[207px] lg:w-[241px] lg:h-[103px] pt-[12px] pb-[12px] px-[12px] relative hero-mini-card"
+                class="hero-mini-card relative flex h-[88px] w-[207px] items-center justify-center px-[12px] pb-[12px] pt-[12px] lg:h-[103px] lg:w-[241px]"
               >
                 <div
-                  class="flex justify-center items-center size-[35px] lg:size-[51px] text-center rounded-[11px] grad text-white text-[24px] lg:text-[30px] absolute left-[-8px] top-[-14px]"
+                  class="grad absolute left-[-8px] top-[-14px] flex size-[35px] items-center justify-center rounded-[11px] text-center text-[24px] text-white lg:size-[51px] lg:text-[30px]"
                 >
                   4
                 </div>
                 <span
-                  class="block w-[126px] mx-auto text-[14px] leading-none font-light text-center text-white lg:text-[20px] lg:leading-[22px] lg:w-[180px]"
+                  class="mx-auto block w-[126px] text-center text-[14px] font-light leading-none text-white lg:w-[180px] lg:text-[20px] lg:leading-[22px]"
                   >Страховка инвестиций нашей недвижимостью</span
                 >
               </div>
@@ -151,36 +155,36 @@
     </section>
 
     <section
-      class="mb-[80px] lg:mb-[146px] px-[11px] max-w-[320px] lg:max-w-none mx-auto"
+      class="mx-auto mb-[80px] max-w-[320px] px-[11px] lg:mb-[146px] lg:max-w-none"
     >
       <div
-        class="container lg:w-[990px] min-h-[745px] px-3 pt-[12px] lg:pt-[59px] pb-[25px] lg:pb-[105px] rounded-[12px] shadow-section"
+        class="shadow-section container min-h-[745px] rounded-[12px] px-3 pb-[25px] pt-[12px] lg:w-[990px] lg:pb-[105px] lg:pt-[59px]"
       >
         <form
           id="calc-form"
           method="POST"
-          class="flex flex-col lg:flex-row lg:justify-between lg:w-[786px] lg:mx-auto relative"
+          class="relative flex flex-col lg:mx-auto lg:w-[786px] lg:flex-row lg:justify-between"
         >
-          <div class="lg:w-[444px] lg:mt-[3px]">
+          <div class="lg:mt-[3px] lg:w-[444px]">
             <span
-              class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-white/[80%] mb-[18px]"
+              class="mb-[18px] block font-secondary text-[23px] font-bold uppercase leading-[28px] text-white/[80%]"
               >Подберите условия</span
             >
 
             <!-- conditions -->
             <div
-              class="flex flex-col lg:flex-row lg:justify-between gap-x-3 mb-[30px] lg:mb-[20px]"
+              class="mb-[30px] flex flex-col gap-x-3 lg:mb-[20px] lg:flex-row lg:justify-between"
             >
               <div class="mb-4 lg:mb-0">
                 <div
-                  class="rounded-xl min-h-[56px] bg-[#244A7F0F] lg:w-[212px] mb-[5px] pt-[8px] pl-[20px] pr-[30px] relative white-grad"
+                  class="white-grad relative mb-[5px] min-h-[56px] rounded-xl bg-[#244A7F0F] pl-[20px] pr-[30px] pt-[8px] lg:w-[212px]"
                 >
                   <span
-                    class="block text-[13px] font-light text-black/[54%] relative z-10"
+                    class="relative z-10 block text-[13px] font-light text-black/[54%]"
                   >
                     Сумма вклада
                   </span>
-                  <b class="block text-[14px] leading-6 font-extrabold">
+                  <b class="block text-[14px] font-extrabold leading-6">
                     <span id="deposit">500 000</span> ₽
                   </b>
                   <input
@@ -190,11 +194,11 @@
                     value="500 000"
                     maxlength="10"
                     data-raw-value="500000"
-                    class="absolute pt-[23px] pl-[19px] w-full h-full inset-0 rounded-xl bg-transparent focus:bg-white focus:outline-0 focus:border-black/30 focus:border-[1px] text-transparent focus:text-black text-[14px] leading-6 font-extrabold transition-[background-color border] ease-in-out duration-[200ms]"
+                    class="transition-[background-color border] absolute inset-0 h-full w-full rounded-xl bg-transparent pl-[19px] pt-[23px] text-[14px] font-extrabold leading-6 text-transparent duration-[200ms] ease-in-out focus:border-[1px] focus:border-black/30 focus:bg-white focus:text-black focus:outline-0"
                   />
 
                   <div
-                    class="w-[254px] lg:w-[172px] absolute bottom-0 left-1/2 transform -translate-x-1/2"
+                    class="absolute bottom-0 left-1/2 w-[254px] -translate-x-1/2 transform lg:w-[172px]"
                   >
                     <input
                       id="deposit-input"
@@ -207,17 +211,17 @@
                     />
                     <div
                       id="deposit-range"
-                      class="w-0 h-[2px] bg-white rounded-bl-[2px] absolute bottom-0"
+                      class="absolute bottom-0 h-[2px] w-0 rounded-bl-[2px] bg-white"
                     ></div>
                   </div>
                 </div>
                 <div class="flex justify-between">
                   <span
-                    class="text-white/[54%] text-[11px] font-light leading-5"
+                    class="text-[11px] font-light leading-5 text-white/[54%]"
                     >500 000 ₽</span
                   >
                   <span
-                    class="text-white/[54%] text-[11px] font-light leading-5"
+                    class="text-[11px] font-light leading-5 text-white/[54%]"
                     >30 000 000 ₽</span
                   >
                 </div>
@@ -225,19 +229,19 @@
 
               <div>
                 <div
-                  class="rounded-xl min-h-[56px] bg-[rgba(36,74,127,0.06)] lg:w-[212px] mb-[5px] pt-[8px] pl-[20px] pr-[30px] relative white-grad"
+                  class="white-grad relative mb-[5px] min-h-[56px] rounded-xl bg-[rgba(36,74,127,0.06)] pl-[20px] pr-[30px] pt-[8px] lg:w-[212px]"
                 >
                   <span
-                    class="block text-[13px] rounded-[20px] font-light text-black/[54%]"
+                    class="block rounded-[20px] text-[13px] font-light text-black/[54%]"
                   >
                     Срок вклада
                   </span>
-                  <b class="block text-[14px] leading-6 font-extrabold">
+                  <b class="block text-[14px] font-extrabold leading-6">
                     <span data-period>12</span> месяцев
                   </b>
 
                   <div
-                    class="w-[254px] lg:w-[172px] absolute bottom-0 left-1/2 transform -translate-x-1/2"
+                    class="absolute bottom-0 left-1/2 w-[254px] -translate-x-1/2 transform lg:w-[172px]"
                   >
                     <input
                       id="months-input"
@@ -250,17 +254,17 @@
                     />
                     <div
                       id="months-range"
-                      class="w-0 h-[2px] bg-white rounded-bl-[2px] absolute bottom-0"
+                      class="absolute bottom-0 h-[2px] w-0 rounded-bl-[2px] bg-white"
                     ></div>
                   </div>
                 </div>
                 <div class="flex justify-between">
                   <span
-                    class="text-white/[54%] text-[11px] font-light leading-5"
+                    class="text-[11px] font-light leading-5 text-white/[54%]"
                     >12 месяцев</span
                   >
                   <span
-                    class="text-white/[54%] text-[11px] font-light leading-5"
+                    class="text-[11px] font-light leading-5 text-white/[54%]"
                     >24 месяца</span
                   >
                 </div>
@@ -270,62 +274,62 @@
             <!-- payments -->
             <div
               id="payments"
-              class="flex flex-col lg:flex-row lg:justify-between flex-wrap gap-y-[13px] mb-[26px] lg:mb-[46px]"
+              class="mb-[26px] flex flex-col flex-wrap gap-y-[13px] lg:mb-[46px] lg:flex-row lg:justify-between"
             >
               <div
                 data-payment="active"
-                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] rounded-[12px] cursor-pointer radio white-grad active"
+                class="radio white-grad active flex h-[44px] cursor-pointer justify-between rounded-[12px] py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] leading-6 font-light text-black/80"
+                  class="font-primary text-[10px] font-light leading-6 text-black/80"
                   >Ежемесячные выплаты</span
                 >
                 <div
-                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
+                  class="inner-shadow flex size-[22px] items-center justify-center rounded-full"
                 >
-                  <div class="size-[12px] bg-white rounded-full"></div>
+                  <div class="size-[12px] rounded-full bg-white"></div>
                 </div>
               </div>
               <div
                 data-payment="0"
-                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] cursor-pointer radio white-grad"
+                class="radio white-grad flex h-[44px] cursor-pointer justify-between rounded-[12px] bg-white py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] leading-6 font-light text-black/80"
+                  class="font-primary text-[10px] font-light leading-6 text-black/80"
                   >Ежеквартальные выплаты</span
                 >
                 <div
-                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
+                  class="inner-shadow flex size-[22px] items-center justify-center rounded-full"
                 >
-                  <div class="size-[12px] bg-white rounded-full"></div>
+                  <div class="size-[12px] rounded-full bg-white"></div>
                 </div>
               </div>
               <div
                 data-payment="0"
-                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] cursor-pointer radio white-grad"
+                class="radio white-grad flex h-[44px] cursor-pointer justify-between rounded-[12px] bg-white py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] leading-6 font-light text-black/80"
+                  class="font-primary text-[10px] font-light leading-6 text-black/80"
                   >Выплата раз в пол года</span
                 >
                 <div
-                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
+                  class="inner-shadow flex size-[22px] items-center justify-center rounded-full"
                 >
-                  <div class="size-[12px] bg-white rounded-full"></div>
+                  <div class="size-[12px] rounded-full bg-white"></div>
                 </div>
               </div>
               <div
                 data-payment="0"
-                class="flex justify-between lg:w-[213px] h-[44px] py-[11px] pl-[22px] pr-[15px] bg-white rounded-[12px] cursor-pointer radio white-grad"
+                class="radio white-grad flex h-[44px] cursor-pointer justify-between rounded-[12px] bg-white py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] leading-6 font-light text-black/80"
+                  class="font-primary text-[10px] font-light leading-6 text-black/80"
                   >Выплата раз в год</span
                 >
                 <div
-                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
+                  class="inner-shadow flex size-[22px] items-center justify-center rounded-full"
                 >
-                  <div class="size-[12px] bg-white rounded-full"></div>
+                  <div class="size-[12px] rounded-full bg-white"></div>
                 </div>
               </div>
               <input
@@ -338,84 +342,84 @@
 
             <!-- contacts -->
             <span
-              class="block uppercase font-secondary text-[23px] font-bold leading-[28px] text-white/80 mb-[14px]"
+              class="mb-[14px] block font-secondary text-[23px] font-bold uppercase leading-[28px] text-white/80"
               >Ваши контакты
             </span>
 
             <div
-              class="flex flex-col lg:flex-row lg:flex-wrap justify-between gap-y-[12px] mb-[27px] lg:mb-[37px]"
+              class="mb-[27px] flex flex-col justify-between gap-y-[12px] lg:mb-[37px] lg:flex-row lg:flex-wrap"
             >
               <input
                 type="text"
                 name="name"
                 placeholder="Фамилия, имя и отчество"
-                class="field w-full name white-grad"
+                class="field name white-grad w-full"
               />
               <input
                 type="text"
                 id="phone"
                 name="phone"
                 placeholder="Мобильный телефон"
-                class="field w-full lg:w-[60%] phone white-grad"
+                class="field phone white-grad w-full lg:w-[60%]"
               />
               <input
                 id="birth"
                 type="text"
                 name="birth"
                 placeholder="Дата рождения"
-                class="field w-full lg:w-[37.6%] white-grad"
+                class="field white-grad w-full lg:w-[37.6%]"
               />
             </div>
 
             <span
-              class="block mb-4 lg:mb-[33px] text-[15px] font-light leading-6 text-white/80"
+              class="mb-4 block text-[15px] font-light leading-6 text-white/80 lg:mb-[33px]"
             >
               Гражданство РФ?
             </span>
 
             <!-- citizenship -->
             <div
-              class="flex flex-col lg:flex-row gap-y-[7px] lg:gap-0 lg:justify-between mb-4 lg:mb-[48px]"
+              class="mb-4 flex flex-col gap-y-[7px] lg:mb-[48px] lg:flex-row lg:justify-between lg:gap-0"
             >
               <div
                 data-citizen="active"
-                class="flex justify-between w-full lg:w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] cursor-pointer radio active white-grad"
+                class="radio active white-grad flex h-[56px] w-full cursor-pointer justify-between rounded-[12px] bg-white py-4 pl-[18px] pr-[22px] lg:w-[46%]"
               >
                 <span
-                  class="font-other text-[15px] leading-6 font-normal text-black/80"
+                  class="font-other text-[15px] font-normal leading-6 text-black/80"
                   >Да</span
                 >
                 <div
-                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
+                  class="inner-shadow flex size-[22px] items-center justify-center rounded-full"
                 >
-                  <div class="size-[12px] bg-white rounded-full"></div>
+                  <div class="size-[12px] rounded-full bg-white"></div>
                 </div>
               </div>
               <div
                 data-citizen
-                class="flex justify-between w-full lg:w-[46%] h-[56px] py-4 pl-[18px] pr-[22px] bg-white rounded-[12px] cursor-pointer radio white-grad"
+                class="radio white-grad flex h-[56px] w-full cursor-pointer justify-between rounded-[12px] bg-white py-4 pl-[18px] pr-[22px] lg:w-[46%]"
               >
                 <span
-                  class="font-other text-[15px] leading-6 font-normal text-black/80"
+                  class="font-other text-[15px] font-normal leading-6 text-black/80"
                   >Нет</span
                 >
                 <div
-                  class="flex justify-center items-center size-[22px] rounded-full inner-shadow"
+                  class="inner-shadow flex size-[22px] items-center justify-center rounded-full"
                 >
-                  <div class="size-[12px] bg-white rounded-full"></div>
+                  <div class="size-[12px] rounded-full bg-white"></div>
                 </div>
               </div>
             </div>
             <input type="hidden" id="citizen" name="citizen" value="Да" />
 
             <!-- dividier -->
-            <div class="hidden lg:block h-[2px] bg-darkgray mb-[47px]"></div>
+            <div class="mb-[47px] hidden h-[2px] bg-darkgray lg:block"></div>
 
             <div
-              class="flex flex-col lg:flex-row lg:justify-between items-start mb-0 lg:mb-4"
+              class="mb-0 flex flex-col items-start lg:mb-4 lg:flex-row lg:justify-between"
             >
               <p
-                class="block mb-[26px] lg:mb-0 max-w-[260px] lg:max-w-none lg:w-[243px] font-other text-[10px] leading-5 text-white/[54%]"
+                class="mb-[26px] block max-w-[260px] font-other text-[10px] leading-5 text-white/[54%] lg:mb-0 lg:w-[243px] lg:max-w-none"
               >
                 Заполняя форму, я принимаю 
                 <a href="#" class="text-primary"
@@ -427,7 +431,7 @@
               <div class="mx-auto lg:mx-0">
                 <button
                   type="submit"
-                  class="px-[10px] py-[18px] w-[168px] lg:w-[160px] rounded-xl text-[15px] lg:text-[16px] font-normal text-white grad deposit-btn grad"
+                  class="grad deposit-btn grad w-[168px] rounded-xl px-[10px] py-[18px] text-[15px] font-normal text-white lg:w-[160px] lg:text-[16px]"
                 >
                   Оставить заявку
                 </button>
@@ -438,43 +442,43 @@
           <!-- roi -->
           <div class="top-0 -order-1 lg:order-1 lg:w-[302px]">
             <div
-              class="mb-4 lg:mb-[23px] px-5 pr-2 pt-[10px] pb-[12px] h-[101px] rounded-lg bg-darkgray result-block"
+              class="result-block mb-4 h-[101px] rounded-lg bg-darkgray px-5 pb-[12px] pr-2 pt-[10px] lg:mb-[23px]"
             >
               <span
-                class="block mb-[6px] text-[13px] font-light leading-5 text-black/[54%]"
+                class="mb-[6px] block text-[13px] font-light leading-5 text-black/[54%]"
                 >Накопление в конце срока</span
               >
-              <div class="flex items-center mb-3 w-[169px]">
+              <div class="mb-3 flex w-[169px] items-center">
                 <div
-                  class="size-[21px] mr-[11px] bg-[url('../img/roi-icon.png')] bg-contain bg-no-repeat"
+                  class="mr-[11px] size-[21px] bg-[url('../img/roi-icon.png')] bg-contain bg-no-repeat"
                 ></div>
-                <strong class="text-[22px] black/80 font-extrabold leading-7"
+                <strong class="black/80 text-[22px] font-extrabold leading-7"
                   ><span id="roi-text">608 497</span> ₽</strong
                 >
                 <input type="hidden" id="roi" name="roi" />
               </div>
-              <span class="block text-[11px] leading-4 font-light text-black/40"
+              <span class="block text-[11px] font-light leading-4 text-black/40"
                 >Расчет носит информационный характер</span
               >
             </div>
 
             <div
-              class="flex justify-between lg:flex-wrap lg:justify-start mb-3"
+              class="mb-3 flex justify-between lg:flex-wrap lg:justify-start"
             >
               <!-- annual yield -->
-              <div class="lg:w-full lg:mb-[25px]">
+              <div class="lg:mb-[25px] lg:w-full">
                 <div class="flex items-center">
                   <span
-                    class="text-[11px] lg:text-[13px] font-light leading-5 text-white/[80%] h-5 overflow-y-hidden lg:overflow-y-visible"
+                    class="h-5 overflow-y-hidden text-[11px] font-light leading-5 text-white/[80%] lg:overflow-y-visible lg:text-[13px]"
                     >Доходность<span class="hidden lg:inline">, годовых</span>
                   </span>
                   <div
                     title="Если вы решите оставлять заработанные проценты на вкладе, на них тоже будут начисляться проценты — так доходность вклада окажется выше, чем процентная ставка по нему"
-                    class="hidden lg:block size-[15.75px] ml-[27px] bg-[url('../img/qmark-icon.svg')] bg-contain bg-no-repeat cursor-pointer"
+                    class="ml-[27px] hidden size-[15.75px] cursor-pointer bg-[url('../img/qmark-icon.svg')] bg-contain bg-no-repeat lg:block"
                   ></div>
                 </div>
                 <strong
-                  class="block text-white/[80%] text-[18px] lg:text-[22px] font-extrabold leading-7"
+                  class="block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
                   ><span id="yeild-text">21.7</span> %</strong
                 >
                 <input type="hidden" id="yield" name="yield" />
@@ -483,11 +487,11 @@
               <!-- rate -->
               <div class="lg:mr-[84px]">
                 <span
-                  class="block text-[11px] lg:text-[13px] font-light leading-5 text-white/[80%]"
+                  class="block text-[11px] font-light leading-5 text-white/[80%] lg:text-[13px]"
                   >Ставка</span
                 >
                 <strong
-                  class="block text-white/[80%] text-[18px] lg:text-[22px] font-extrabold leading-7"
+                  class="block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
                   ><span id="rate-text">19.8</span> %</strong
                 >
                 <input type="hidden" id="rate" name="rate" />
@@ -495,11 +499,11 @@
               <!--  period -->
               <div>
                 <span
-                  class="block text-[11px] lg:text-[13px] font-light leading-5 text-white/[80%]"
+                  class="block text-[11px] font-light leading-5 text-white/[80%] lg:text-[13px]"
                   >Срок вклада</span
                 >
                 <strong
-                  class="block text-white/[80%] text-[18px] lg:text-[22px] font-extrabold leading-7"
+                  class="block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
                   ><span data-period>12</span> месяцев</strong
                 >
               </div>
@@ -513,99 +517,99 @@
 
     <section class="mb-[35px] lg:mb-[122px]">
       <h2
-        class="mb-[37px] lg:mb-[68px] font-secondary text-center text-[44px] lg:text-[80px] leading-[48px] font-bold uppercase text-white/[80%]"
+        class="mb-[37px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/[80%] lg:mb-[68px] lg:text-[80px]"
       >
         Наша компания
       </h2>
       <div
-        class="mx-auto max-w-[320px] lg:max-w-none lg:flex lg:justify-between lg:items-center p-8 lg:pt-[47px] lg:pb-[44px] lg:pl-[54px] lg:pr-[58px] lg:rounded-3xl lg:w-[872px] lg:min-h-[513px] rounded-xl shadow-section"
+        class="shadow-section mx-auto max-w-[320px] rounded-xl p-8 lg:flex lg:min-h-[513px] lg:w-[872px] lg:max-w-none lg:items-center lg:justify-between lg:rounded-3xl lg:pb-[44px] lg:pl-[54px] lg:pr-[58px] lg:pt-[47px]"
       >
         <div class="mb-[42px] lg:w-[234px]">
           <div
-            class="mx-auto size-[180px] bg-[url('../img/igor.png')] bg-contain bg-no-repeat mb-[16px]"
+            class="mx-auto mb-[16px] size-[180px] bg-[url('../img/igor.png')] bg-contain bg-no-repeat"
           ></div>
           <b
-            class="block mb-[30px] text-white/80 text-center text-[30px] leading-[30px] font-extrabold"
+            class="mb-[30px] block text-center text-[30px] font-extrabold leading-[30px] text-white/80"
             >Игорь Балашников</b
           >
           <span
-            class="block mb-[31px] lg:mb-7 text-white/80 text-center text-[15px] leading-5 font-light"
+            class="mb-[31px] block text-center text-[15px] font-light leading-5 text-white/80 lg:mb-7"
           >
             Вице-президент Всероссийской Федерации ИЖС
           </span>
           <span
-            class="block mx-auto w-[163px] text-white/80 text-center text-[15px] leading-5 font-light"
+            class="mx-auto block w-[163px] text-center text-[15px] font-light leading-5 text-white/80"
           >
             Основатель компании ТОПDОМ
           </span>
         </div>
 
         <div
-          class="lg:w-[473px] flex flex-col lg:flex-row lg:justify-between gap-y-5 lg:flex-wrap"
+          class="flex flex-col gap-y-5 lg:w-[473px] lg:flex-row lg:flex-wrap lg:justify-between"
         >
           <div class="mx-auto w-[202px]">
             <div
-              class="white-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
+              class="white-grad mb-[7px] flex items-center justify-center rounded-xl text-[50px] font-extrabold text-black/80"
             >
               1200+
             </div>
             <span
-              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
+              class="mx-auto block w-[176px] text-center text-[15px] font-light leading-5 text-white/80 lg:w-auto"
               >Коттеджей построили за все время работы</span
             >
           </div>
           <div class="mx-auto w-[202px]">
             <div
-              class="white-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
+              class="white-grad mb-[7px] flex items-center justify-center rounded-xl text-[50px] font-extrabold text-black/80"
             >
               14 лет
             </div>
             <span
-              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
+              class="mx-auto block w-[176px] text-center text-[15px] font-light leading-5 text-white/80 lg:w-auto"
               >Занимаемся строительством</span
             >
           </div>
           <div class="mx-auto w-[202px]">
             <div
-              class="white-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
+              class="white-grad mb-[7px] flex items-center justify-center rounded-xl text-[50px] font-extrabold text-black/80"
             >
               10 лет
             </div>
             <span
-              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
+              class="mx-auto block w-[176px] text-center text-[15px] font-light leading-5 text-white/80 lg:w-auto"
               >Опыта в сфере инвестиций</span
             >
           </div>
           <div class="mx-auto w-[202px]">
             <div
-              class="white-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
+              class="white-grad mb-[7px] flex items-center justify-center rounded-xl text-[50px] font-extrabold text-black/80"
             >
               70+
             </div>
             <span
-              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
+              class="mx-auto block w-[176px] text-center text-[15px] font-light leading-5 text-white/80 lg:w-auto"
               >Инвесторов</span
             >
           </div>
           <div class="mx-auto w-[202px]">
             <div
-              class="white-grad mb-[7px] rounded-xl flex justify-center items-end text-black/80 text-[50px] font-extrabold"
+              class="white-grad mb-[7px] flex items-end justify-center rounded-xl text-[50px] font-extrabold text-black/80"
             >
               1,7<small class="mb-[10px] text-[25px] lg:mt-[14px]">млрд</small>
             </div>
             <span
-              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
+              class="mx-auto block w-[176px] text-center text-[15px] font-light leading-5 text-white/80 lg:w-auto"
               >В управлении компании</span
             >
           </div>
           <div class="mx-auto w-[202px]">
             <div
-              class="white-grad mb-[7px] rounded-xl flex justify-center items-center text-black/80 text-[50px] font-extrabold"
+              class="white-grad mb-[7px] flex items-center justify-center rounded-xl text-[50px] font-extrabold text-black/80"
             >
               7
             </div>
             <span
-              class="block mx-auto w-[176px] lg:w-auto text-white/80 text-center text-[15px] font-light leading-5"
+              class="mx-auto block w-[176px] text-center text-[15px] font-light leading-5 text-white/80 lg:w-auto"
               >Коттеджных поселков</span
             >
           </div>
@@ -613,74 +617,74 @@
       </div>
     </section>
 
-    <section class="mb-10 lg:mb-20 max-w-[320px] mx-auto lg:max-w-none">
+    <section class="mx-auto mb-10 max-w-[320px] lg:mb-20 lg:max-w-none">
       <h2
-        class="mb-[25px] lg:mb-[71px] font-secondary text-center text-[44px] lg:text-[80px] leading-[48px] font-bold uppercase text-white/80"
+        class="mb-[25px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/80 lg:mb-[71px] lg:text-[80px]"
       >
         Наши инвесторы
       </h2>
 
       <div
-        class="max-w-[320px] lg:max-w-none lg:w-[744px] mx-auto flex flex-col gap-y-[35px] lg:gap-0 items-center lg:flex-row lg:justify-between"
+        class="mx-auto flex max-w-[320px] flex-col items-center gap-y-[35px] lg:w-[744px] lg:max-w-none lg:flex-row lg:justify-between lg:gap-0"
       >
         <div
-          class="bg-white rounded-[25px] px-5 pt-[43px] pb-[18px] w-[200px] min-h-[334px] md-shadow"
+          class="md-shadow min-h-[334px] w-[200px] rounded-[25px] bg-white px-5 pb-[18px] pt-[43px]"
         >
           <div
-            class="mb-6 h-[83px] bg-[url('../img/vdelo.png')] bg-contain bg-no-repeat bg-center"
+            class="mb-6 h-[83px] bg-[url('../img/vdelo.png')] bg-contain bg-center bg-no-repeat"
           ></div>
-          <b class="block text-[50px] leading-[48px] font-extrabold text-center"
+          <b class="block text-center text-[50px] font-extrabold leading-[48px]"
             >29</b
           >
           <span
-            class="block mb-6 text-[25px] font-light leading-[48px] text-center"
+            class="mb-6 block text-center text-[25px] font-light leading-[48px]"
             >млн руб.</span
           >
           <a
             href="#"
-            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-extrabold leading-[48px] text-center"
+            class="grad deposit-btn block rounded-xl px-4 py-1 text-center text-[15px] font-extrabold leading-[48px] text-white"
             >Сайт ВДело</a
           >
         </div>
         <div
-          class="bg-white rounded-[25px] px-5 pt-[43px] pb-[18px] w-[200px] min-h-[334px] md-shadow"
+          class="md-shadow min-h-[334px] w-[200px] rounded-[25px] bg-white px-5 pb-[18px] pt-[43px]"
         >
           <div
-            class="mb-10 text-[22px] font-extrabold leading-[30px] text-center"
+            class="mb-10 text-center text-[22px] font-extrabold leading-[30px]"
           >
             ООО МКК «ВЫХОД ЕСТЬ»
           </div>
-          <b class="block text-[50px] leading-[48px] font-extrabold text-center"
+          <b class="block text-center text-[50px] font-extrabold leading-[48px]"
             >370</b
           >
           <span
-            class="block mb-6 text-[25px] font-light leading-[48px] text-center"
+            class="mb-6 block text-center text-[25px] font-light leading-[48px]"
             >млн руб.</span
           >
           <a
             href="#"
-            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-extrabold leading-[48px] text-center"
+            class="grad deposit-btn block rounded-xl px-4 py-1 text-center text-[15px] font-extrabold leading-[48px] text-white"
             >Смотрите ролик</a
           >
         </div>
         <div
-          class="bg-white rounded-[25px] px-5 pt-[43px] pb-[18px] w-[200px] min-h-[334px] md-shadow"
+          class="md-shadow min-h-[334px] w-[200px] rounded-[25px] bg-white px-5 pb-[18px] pt-[43px]"
         >
           <div
-            class="mb-10 text-[22px] font-extrabold leading-[30px] text-center"
+            class="mb-10 text-center text-[22px] font-extrabold leading-[30px]"
           >
             ЧАСТНЫЕ ИНВЕСТОРЫ
           </div>
-          <b class="block text-[50px] leading-[48px] font-extrabold text-center"
+          <b class="block text-center text-[50px] font-extrabold leading-[48px]"
             >370</b
           >
           <span
-            class="block mb-6 text-[25px] font-light leading-[48px] text-center"
+            class="mb-6 block text-center text-[25px] font-light leading-[48px]"
             >млн руб.</span
           >
           <a
             href="#"
-            class="block py-1 px-4 grad rounded-xl deposit-btn text-white text-[15px] font-extrabold leading-[48px] text-center"
+            class="grad deposit-btn block rounded-xl px-4 py-1 text-center text-[15px] font-extrabold leading-[48px] text-white"
             >Наш ютуб канал</a
           >
         </div>
@@ -688,10 +692,10 @@
     </section>
 
     <section
-      class="mb-[37px] lg:mb-[130px] max-w-[320px] mx-auto lg:max-w-none lg:mx-auto"
+      class="mx-auto mb-[37px] max-w-[320px] lg:mx-auto lg:mb-[130px] lg:max-w-none"
     >
       <h2
-        class="mb-[17px] lg:mb-[45px] font-secondary text-center text-[44px] lg:text-[80px] leading-[48px] font-bold uppercase text-white/80"
+        class="mb-[17px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/80 lg:mb-[45px] lg:text-[80px]"
       >
         Наши коттеджные поселки
       </h2>
@@ -969,50 +973,50 @@
 
     <section class="mb-[42px] lg:mb-[100px]">
       <h2
-        class="mb-[33px] lg:mb-[39px] font-secondary text-center text-[44px] leading-[48px] font-bold uppercase text-white/80"
+        class="mb-[33px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/80 lg:mb-[39px]"
       >
         Банки партнеры
       </h2>
 
       <div
-        class="lg:px-[30px] max-w-[276px] lg:max-w-none lg:w-[880px] min-h-[210px] mx-auto bg-white big-shadow rounded-[13px] lg:rounded-[25px] flex flex-col lg:flex-row justify-between items-center flex-wrap"
+        class="big-shadow mx-auto flex min-h-[210px] max-w-[276px] flex-col flex-wrap items-center justify-between rounded-[13px] bg-white lg:w-[880px] lg:max-w-none lg:flex-row lg:rounded-[25px] lg:px-[30px]"
       >
         <div
-          class="bg-[url('../img/ross.png')] bg-contain bg-no-repeat bg-center w-full lg:w-1/3 h-[94px]"
+          class="h-[94px] w-full bg-[url('../img/ross.png')] bg-contain bg-center bg-no-repeat lg:w-1/3"
         ></div>
         <div
-          class="bg-[url('../img/alfa.png')] bg-contain bg-no-repeat bg-center w-full lg:w-1/3 h-[94px]"
+          class="h-[94px] w-full bg-[url('../img/alfa.png')] bg-contain bg-center bg-no-repeat lg:w-1/3"
         ></div>
         <div
-          class="bg-[url('../img/rosb.png')] bg-contain bg-no-repeat bg-center w-full lg:w-1/3 h-[94px]"
+          class="h-[94px] w-full bg-[url('../img/rosb.png')] bg-contain bg-center bg-no-repeat lg:w-1/3"
         ></div>
         <div
-          class="bg-[url('../img/vtb.png')] bg-contain bg-no-repeat bg-center w-full lg:w-1/3 h-[94px]"
+          class="h-[94px] w-full bg-[url('../img/vtb.png')] bg-contain bg-center bg-no-repeat lg:w-1/3"
         ></div>
         <div
-          class="bg-[url('../img/sber.png')] bg-contain bg-no-repeat bg-center w-full lg:w-1/3 h-[94px]"
+          class="h-[94px] w-full bg-[url('../img/sber.png')] bg-contain bg-center bg-no-repeat lg:w-1/3"
         ></div>
         <div
-          class="bg-[url('../img/bank.png')] bg-contain bg-no-repeat bg-center w-full lg:w-1/3 h-[94px]"
+          class="h-[94px] w-full bg-[url('../img/bank.png')] bg-contain bg-center bg-no-repeat lg:w-1/3"
         ></div>
       </div>
     </section>
 
     <section class="mb-[210px] lg:mb-[82px]">
       <h2
-        class="mb-[37px] lg:mb-[68px] font-secondary text-center text-[44px] lg:text-[80px] leading-[48px] font-bold uppercase text-white/[80%]"
+        class="mb-[37px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/[80%] lg:mb-[68px] lg:text-[80px]"
       >
         Бесплатная консультация
       </h2>
 
       <div
-        class="max-w-[276px] lg:max-w-none lg:w-[880px] px-[10px] pt-[15px] lg:pt-[32px] pb-[23px] lg:pb-[39px] lg:pl-[61px] lg:pr-[40px] rounded-[13px] lg:rounded-[25px] container shadow-section consult-wrapper"
+        class="shadow-section consult-wrapper container max-w-[276px] rounded-[13px] px-[10px] pb-[23px] pt-[15px] lg:w-[880px] lg:max-w-none lg:rounded-[25px] lg:pb-[39px] lg:pl-[61px] lg:pr-[40px] lg:pt-[32px]"
       >
         <div
-          class="mb-6 lg:mb-0 w-[255px] h-[131px] lg:h-[329px] bg-[url('../img/handshake.jpg')] bg-center bg-no-repeat rounded-[9px] lg:rounded-[28px] consult-img"
+          class="consult-img mb-6 h-[131px] w-[255px] rounded-[9px] bg-[url('../img/handshake.jpg')] bg-center bg-no-repeat lg:mb-0 lg:h-[329px] lg:rounded-[28px]"
         ></div>
         <p
-          class="mb-6 lg:mb-0 text-white/80 text-xl leading-5 font-extrabold lg:text-[30px] lg:leading-10 consult-text"
+          class="consult-text mb-6 text-xl font-extrabold leading-5 text-white/80 lg:mb-0 lg:text-[30px] lg:leading-10"
         >
           Получите консультацию инвестиционного менеджера
         </p>
@@ -1021,13 +1025,13 @@
             type="text"
             name="name"
             placeholder="Ваше имя"
-            class="field mb-[17px] w-full name white-grad"
+            class="field name white-grad mb-[17px] w-full"
           />
           <input
             type="text"
             name="name"
             placeholder="Ваш телефон"
-            class="field mb-[17px] lg:mb-[21px] w-full phone white-grad"
+            class="field phone white-grad mb-[17px] w-full lg:mb-[21px]"
           />
           <input
             type="hidden"
@@ -1036,7 +1040,7 @@
           />
           <button
             type="submit"
-            class="px-[10px] py-[18px] w-full lg:w-[264px] rounded-xl text-[16px] font-extrabold text-white grad deposit-btn grad"
+            class="grad deposit-btn grad w-full rounded-xl px-[10px] py-[18px] text-[16px] font-extrabold text-white lg:w-[264px]"
           >
             Получить консультацию
           </button>
@@ -1046,22 +1050,22 @@
 
     <section>
       <div
-        class="max-w-[276px] lg:max-w-none flex flex-col gap-y-[23px] lg:gap-y-[43px] lg:w-[880px] container"
+        class="container flex max-w-[276px] flex-col gap-y-[23px] lg:w-[880px] lg:max-w-none lg:gap-y-[43px]"
       >
         <!-- card -->
         <div
-          class="lg:flex lg:justify-between rounded-[13px] lg:rounded-[25px] px-[10px] py-[17px] lg:pt-8 lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] shadow-section"
+          class="shadow-section rounded-[13px] px-[10px] py-[17px] lg:flex lg:justify-between lg:rounded-[25px] lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] lg:pt-8"
         >
           <div
-            class="bg-cover bg-no-repeat bg-top bg-[url('../img/invest_1.jpg')] w-full h-[131px] lg:w-[255px] lg:h-[329px] rounded-[9px] lg:rounded-[28px] mb-6 lg:mb-0 lg:order-1"
+            class="mb-6 h-[131px] w-full rounded-[9px] bg-[url('../img/invest_1.jpg')] bg-cover bg-top bg-no-repeat lg:order-1 lg:mb-0 lg:h-[329px] lg:w-[255px] lg:rounded-[28px]"
           ></div>
           <div>
             <b
-              class="block mb-6 lg:mb-[39px] lg:h-[105px] text-white/80 font-extrabold text-[18px] leading-[20px] lg:text-[30px] lg:leading-[35px] lg:w-[417px]"
+              class="mb-6 block text-[18px] font-extrabold leading-[20px] text-white/80 lg:mb-[39px] lg:h-[105px] lg:w-[417px] lg:text-[30px] lg:leading-[35px]"
               >Инвестиции в строительство загородной недвижимости с залогом</b
             >
             <p
-              class="text-white/80 text-[15px] leading-[15px] lg:text-lg lg:leading-[22px] lg:w-[451px]"
+              class="text-[15px] leading-[15px] text-white/80 lg:w-[451px] lg:text-lg lg:leading-[22px]"
             >
               Инвестиции в загородную недвижимость являются одним из наиболее
               надежных и прибыльных способов вложения капитала. Недвижимость
@@ -1074,18 +1078,18 @@
         </div>
         <!-- card -->
         <div
-          class="lg:flex lg:justify-between rounded-[13px] lg:rounded-[25px] px-[10px] py-[17px] lg:pt-8 lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] shadow-section"
+          class="shadow-section rounded-[13px] px-[10px] py-[17px] lg:flex lg:justify-between lg:rounded-[25px] lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] lg:pt-8"
         >
           <div
-            class="bg-cover bg-no-repeat bg-top bg-[url('../img/invest_2.jpg')] w-full h-[131px] lg:w-[255px] lg:h-[329px] rounded-[9px] lg:rounded-[28px] mb-6 lg:mb-0 lg:order-1"
+            class="mb-6 h-[131px] w-full rounded-[9px] bg-[url('../img/invest_2.jpg')] bg-cover bg-top bg-no-repeat lg:order-1 lg:mb-0 lg:h-[329px] lg:w-[255px] lg:rounded-[28px]"
           ></div>
           <div>
             <b
-              class="block mb-6 lg:mb-[39px] lg:h-[105px] text-white/80 font-extrabold text-[18px] leading-[20px] lg:text-[30px] lg:leading-[35px] lg:w-[417px]"
+              class="mb-6 block text-[18px] font-extrabold leading-[20px] text-white/80 lg:mb-[39px] lg:h-[105px] lg:w-[417px] lg:text-[30px] lg:leading-[35px]"
               >Рост стоимости загородной недвижимости
             </b>
             <p
-              class="text-white/80 text-[15px] leading-[15px] lg:text-lg lg:leading-[22px] lg:w-[451px]"
+              class="text-[15px] leading-[15px] text-white/80 lg:w-[451px] lg:text-lg lg:leading-[22px]"
             >
               Одним из главных преимуществ инвестиций в загородную недвижимость
               является ее постоянный рост стоимости. Независимо от экономической
@@ -1098,19 +1102,19 @@
         </div>
         <!-- card -->
         <div
-          class="lg:flex lg:justify-between rounded-[13px] lg:rounded-[25px] px-[10px] py-[17px] lg:pt-8 lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] shadow-section"
+          class="shadow-section rounded-[13px] px-[10px] py-[17px] lg:flex lg:justify-between lg:rounded-[25px] lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] lg:pt-8"
         >
           <div
-            class="bg-cover bg-no-repeat bg-top bg-[url('../img/invest_3.jpg')] w-full h-[131px] lg:w-[255px] lg:h-[329px] rounded-[9px] lg:rounded-[28px] mb-6 lg:mb-0 lg:order-1"
+            class="mb-6 h-[131px] w-full rounded-[9px] bg-[url('../img/invest_3.jpg')] bg-cover bg-top bg-no-repeat lg:order-1 lg:mb-0 lg:h-[329px] lg:w-[255px] lg:rounded-[28px]"
           ></div>
           <div>
             <b
-              class="block mb-6 lg:mb-[39px] lg:h-[105px] text-white/80 font-extrabold text-[18px] leading-[20px] lg:text-[30px] lg:leading-[35px] lg:w-[417px]"
+              class="mb-6 block text-[18px] font-extrabold leading-[20px] text-white/80 lg:mb-[39px] lg:h-[105px] lg:w-[417px] lg:text-[30px] lg:leading-[35px]"
               >Диверсификация<br />
               портфеля
             </b>
             <p
-              class="text-white/80 text-[15px] leading-[15px] lg:text-lg lg:leading-[22px] lg:w-[451px]"
+              class="text-[15px] leading-[15px] text-white/80 lg:w-[451px] lg:text-lg lg:leading-[22px]"
             >
               Инвестиции в загородную недвижимость позволяют диверсифицировать
               инвестиционный портфель. Это означает, что вы распределите свои
@@ -1123,19 +1127,19 @@
         </div>
         <!-- card -->
         <div
-          class="lg:flex lg:justify-between rounded-[13px] lg:rounded-[25px] px-[10px] py-[17px] lg:pt-8 lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] shadow-section"
+          class="shadow-section rounded-[13px] px-[10px] py-[17px] lg:flex lg:justify-between lg:rounded-[25px] lg:pb-[41px] lg:pl-[64px] lg:pr-[70px] lg:pt-8"
         >
           <div
-            class="bg-cover bg-no-repeat bg-top bg-[url('../img/invest_4.jpg')] w-full h-[131px] lg:w-[255px] lg:h-[329px] rounded-[9px] lg:rounded-[28px] mb-6 lg:mb-0 lg:order-1"
+            class="mb-6 h-[131px] w-full rounded-[9px] bg-[url('../img/invest_4.jpg')] bg-cover bg-top bg-no-repeat lg:order-1 lg:mb-0 lg:h-[329px] lg:w-[255px] lg:rounded-[28px]"
           ></div>
           <div>
             <b
-              class="block mb-6 lg:mb-[39px] lg:h-[105px] text-white/80 font-extrabold text-[18px] leading-[20px] lg:text-[30px] lg:leading-[35px] lg:w-[180px]"
+              class="mb-6 block text-[18px] font-extrabold leading-[20px] text-white/80 lg:mb-[39px] lg:h-[105px] lg:w-[180px] lg:text-[30px] lg:leading-[35px]"
               >Защита <br />
               от инфляции
             </b>
             <p
-              class="text-white/80 text-[15px] leading-[15px] lg:text-lg lg:leading-[22px] lg:w-[451px]"
+              class="text-[15px] leading-[15px] text-white/80 lg:w-[451px] lg:text-lg lg:leading-[22px]"
             >
               Загородная недвижимость является отличным средством защиты от
               инфляции. В отличие от денег, которые со временем теряют свою
