@@ -634,6 +634,15 @@
     box-shadow: inset 0px 4px 4px 0px rgba(84, 84, 84, 0.25);
   }
 
+  /* .sticky {
+    position: sticky;
+    top: 0;
+  } */
+
+  .sticky.stuck {
+    background-color: white; /* change background color when stuck */
+  }
+
   @media (min-width: 1024px) {
     section {
       /* max-width: 1920px; */

@@ -2,33 +2,37 @@ const deposit = document.getElementById('deposit');
 const depositInput = document.getElementById('deposit-input');
 const depositValue = document.getElementById('deposit-value');
 const depositRange = document.getElementById('deposit-range');
-const roiInput = document.getElementById('roi')
-const yieldInput = document.getElementById('yield')
-const rateInput = document.getElementById('rate')
+const roiInput = document.getElementById('roi');
+const yieldInput = document.getElementById('yield');
+const rateInput = document.getElementById('rate');
 
 const months = document.querySelectorAll('[data-period]');
 const monthsInput = document.getElementById('months-input');
 const monthsRange = document.getElementById('months-range');
 
 const paymentsList = document.getElementById('payments');
-const rateText = document.getElementById('rate-text')
-const yieldText = document.getElementById('yeild-text')
-const roiText = document.getElementById('roi-text')
+const rateText = document.getElementById('rate-text');
+const yieldText = document.getElementById('yeild-text');
+const roiText = document.getElementById('roi-text');
 
-const freq = ['monthly', 'quarterly', 'semi-annually', 'annually']
-const DEP_MIN = +depositInput.min
-const DEP_MAX = +depositInput.max
+const freq = ['monthly', 'quarterly', 'semi-annually', 'annually'];
+const DEP_MIN = +depositInput.min;
+const DEP_MAX = +depositInput.max;
 
 // set initial result values
-roiInput.value = roiText.innerText
-yieldInput.value = yieldText.innerText
-rateInput.value = rateText.innerText
+roiInput.value = roiText.innerText;
+yieldInput.value = yieldText.innerText;
+rateInput.value = rateText.innerText;
 
-depositInput.addEventListener('input', () => calc(depositInput, depositRange, deposit));
-depositValue.addEventListener('input', onDepositChange)
-depositValue.addEventListener('focusout', onDepositFocusout)
+depositInput.addEventListener('input', () =>
+  calc(depositInput, depositRange, deposit),
+);
+depositValue.addEventListener('input', onDepositChange);
+depositValue.addEventListener('focusout', onDepositFocusout);
 
-monthsInput.addEventListener('input', () => calc(monthsInput, monthsRange, months));
+monthsInput.addEventListener('input', () =>
+  calc(monthsInput, monthsRange, months),
+);
 
 paymentsList.addEventListener('click', onRateClick);
 
@@ -41,29 +45,37 @@ paymentsList.addEventListener('click', onRateClick);
  */
 function calc(input, range, text) {
   if (text.length) {
-    text.forEach((item) => item.innerText = input.value)
+    text.forEach((item) => (item.innerText = input.value));
   } else {
-    text.innerText = numberWithSpaces(input.value)
+    text.innerText = numberWithSpaces(input.value);
   }
   const payments = [...document.querySelectorAll('[data-payment]')];
-  const index = payments.findIndex((item) => item.classList.contains("active"))
+  const index = payments.findIndex((item) => item.classList.contains('active'));
 
-  roiText.innerText = numberWithSpaces(Math.round(calcCompoundInterest(depositInput.value, rateText.innerText, monthsInput.value, freq[index])))
-  roiInput.value = roiText.innerText
-  yieldInput.value = yieldText.innerText
-  rateInput.value = rateText.innerText
+  roiText.innerText = numberWithSpaces(
+    Math.round(
+      calcCompoundInterest(
+        depositInput.value,
+        rateText.innerText,
+        monthsInput.value,
+        freq[index],
+      ),
+    ),
+  );
+  roiInput.value = roiText.innerText;
+  yieldInput.value = yieldText.innerText;
+  rateInput.value = rateText.innerText;
 
   if (input.id === 'deposit-input') {
-    depositValue.value = numberWithSpaces(input.value)
-    depositValue.dataset.rawValue = input.value
-    deposit.innerText = numberWithSpaces(input.value)
-  }
-  else {
-    monthsInput.value = input.value
-    months.innerText = input.value
+    depositValue.value = numberWithSpaces(input.value);
+    depositValue.dataset.rawValue = input.value;
+    deposit.innerText = numberWithSpaces(input.value);
+  } else {
+    monthsInput.value = input.value;
+    months.innerText = input.value;
   }
 
-  range.style.width = mapRange(+input.min, +input.max, +input.value)
+  range.style.width = mapRange(+input.min, +input.max, +input.value);
 }
 
 /**
@@ -73,11 +85,11 @@ function calc(input, range, text) {
  */
 function onDepositChange(e) {
   e.target.value = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
-  deposit.innerText = e.target.value
+  deposit.innerText = e.target.value;
 
   // value is rendered with spaces, but raw value is stored in data-raw-value
   e.target.value = e.target.value.replace(/\B(?=(\d{3})+(?!\d))/g, ' '); // Add space every 3 digits
-  e.target.dataset.rawValue = e.target.value.replace(/\s/g, "");
+  e.target.dataset.rawValue = e.target.value.replace(/\s/g, '');
 }
 
 /**
@@ -88,24 +100,28 @@ function onDepositChange(e) {
  */
 function onDepositFocusout(e) {
   if (+e.target.dataset.rawValue <= DEP_MIN) {
-    e.target.value = numberWithSpaces(DEP_MIN)
-    e.target.dataset.rawValue = DEP_MIN
-    deposit.innerText = numberWithSpaces(DEP_MIN)
-    depositInput.value = DEP_MIN
+    e.target.value = numberWithSpaces(DEP_MIN);
+    e.target.dataset.rawValue = DEP_MIN;
+    deposit.innerText = numberWithSpaces(DEP_MIN);
+    depositInput.value = DEP_MIN;
 
-    depositRange.style.width = 0
+    depositRange.style.width = 0;
   } else if (+e.target.dataset.rawValue >= DEP_MAX) {
-    e.target.value = numberWithSpaces(DEP_MAX)
-    e.target.dataset.rawValue = DEP_MAX
-    deposit.innerText = numberWithSpaces(DEP_MAX)
-    depositInput.value = DEP_MAX
+    e.target.value = numberWithSpaces(DEP_MAX);
+    e.target.dataset.rawValue = DEP_MAX;
+    deposit.innerText = numberWithSpaces(DEP_MAX);
+    depositInput.value = DEP_MAX;
 
-    depositRange.style.width = 100 + '%'
+    depositRange.style.width = 100 + '%';
   } else {
-    deposit.innerText = e.target.value
-    depositInput.value = +e.target.dataset.rawValue
+    deposit.innerText = e.target.value;
+    depositInput.value = +e.target.dataset.rawValue;
 
-    depositRange.style.width = mapRange(DEP_MIN, DEP_MAX, +e.target.dataset.rawValue)
+    depositRange.style.width = mapRange(
+      DEP_MIN,
+      DEP_MAX,
+      +e.target.dataset.rawValue,
+    );
   }
 }
 
@@ -115,13 +131,22 @@ function onDepositFocusout(e) {
  * @return {void}
  */
 function onRateClick() {
-  const rates = [19.8, 20.6, 21, 25]
+  const rates = [19.8, 20.6, 21, 25];
   const payments = [...document.querySelectorAll('[data-payment]')];
-  const index = payments.findIndex((item) => item.classList.contains("active"))
+  const index = payments.findIndex((item) => item.classList.contains('active'));
 
-  rateText.innerText = rates[index]
-  yieldText.innerText = calculateAPY(rateText.innerText, freq[index])
-  roiText.innerText = numberWithSpaces(Math.round(calcCompoundInterest(depositInput.value, rateText.innerText, monthsInput.value, freq[index])))
+  rateText.innerText = rates[index];
+  yieldText.innerText = calculateAPY(rateText.innerText, freq[index]);
+  roiText.innerText = numberWithSpaces(
+    Math.round(
+      calcCompoundInterest(
+        depositInput.value,
+        rateText.innerText,
+        monthsInput.value,
+        freq[index],
+      ),
+    ),
+  );
 }
 
 /**
@@ -139,7 +164,9 @@ function calcCompoundInterest(initialInvestment, interestRate, months, period) {
 
   const effectiveInterestRate = interestRate / 100;
   const periodicInterestRate = effectiveInterestRate / n;
-  const totalAmount = initialInvestment * Math.pow(1 + periodicInterestRate, n * (months / periodsPerYear));
+  const totalAmount =
+    initialInvestment *
+    Math.pow(1 + periodicInterestRate, n * (months / periodsPerYear));
   return totalAmount;
 }
 
@@ -153,8 +180,8 @@ function calcCompoundInterest(initialInvestment, interestRate, months, period) {
 function calculateAPY(interestRate, period) {
   const n = periodToNumber(period);
 
-  const apy = (Math.pow((1 + (interestRate / 100 / n)), n) - 1) * 100;
-  return gigaRound(apy)
+  const apy = (Math.pow(1 + interestRate / 100 / n, n) - 1) * 100;
+  return gigaRound(apy);
 }
 
 /**
@@ -191,7 +218,7 @@ function periodToNumber(period) {
  * @return {number} The rounded number
  */
 function gigaRound(num) {
-  return Math.round((num + Number.EPSILON) * 100) / 100
+  return Math.round((num + Number.EPSILON) * 100) / 100;
 }
 
 /**
@@ -201,7 +228,7 @@ function gigaRound(num) {
  * @return {string} The number converted into a string with spaces.
  */
 function numberWithSpaces(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 }
 
 /**
@@ -213,11 +240,9 @@ function numberWithSpaces(x) {
  * @return {string} The percentage value of the mapped value that can be used to set the width of an element.
  */
 function mapRange(min, max, val) {
-  if (val >= max)
-    val = max
-  if (val <= min)
-    val = min
+  if (val >= max) val = max;
+  if (val <= min) val = min;
 
-  const percent = (val - min) / (max - min) * 100;
-  return percent + '%'
+  const percent = ((val - min) / (max - min)) * 100;
+  return percent + '%';
 }

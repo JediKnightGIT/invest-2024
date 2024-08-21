@@ -1192,6 +1192,16 @@ input[type='range']:active::-moz-range-thumb {
   box-shadow: inset 0px 4px 4px 0px rgba(84, 84, 84, 0.25);
 }
 
+/* .sticky {
+    position: sticky;
+    top: 0;
+  } */
+
+.sticky.stuck {
+  background-color: white;
+  /* change background color when stuck */
+}
+
 @media (min-width: 1024px) {
   section {
     /* max-width: 1920px; */
@@ -1480,6 +1490,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .inset-0 {
@@ -3708,6 +3722,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1024px) {
+  .lg\:static {
+    position: static;
+  }
+
   .lg\:relative {
     position: relative;
   }
