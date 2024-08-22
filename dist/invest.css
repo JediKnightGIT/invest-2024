@@ -1859,6 +1859,10 @@ input[type='range']:active::-moz-range-thumb {
   width: 100%;
 }
 
+.w-\[237px\] {
+  width: 237px;
+}
+
 .max-w-\[220px\] {
   max-width: 220px;
 }

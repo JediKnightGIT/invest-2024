@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function submitForm(e) {
+  async function submitForm(e) {
     e.preventDefault();
 
     const formData = new FormData(e.target);
@@ -88,6 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Log the form data to the console
     for (let pair of formData.entries()) {
       console.log(pair[0] + ': ' + pair[1]);
+    }
+
+    const response = await fetch('/blagodarim', {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (response.ok) {
+      const url = response.url;
+      window.location.href = url;
     }
   }
 });

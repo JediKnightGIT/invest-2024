@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./dist/invest.css" />
     <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/is-mobile.js" defer></script>
     <script src="./js/sticky.js" defer></script>
     <script src="./js/slider.js" defer></script>
     <script src="./js/calc.js" defer></script>
@@ -429,6 +430,14 @@
                 >
                 о продуктах и услугах Компании
               </p>
+              <input type="hidden" name="form" value="Калькулятор инвестиций" />
+
+              <input type="hidden" name="page" value="/" />
+              <input
+                type="hidden"
+                name="url"
+                value="<?= $_SERVER['REQUEST_URI'] ?>"
+              />
               <div class="mx-auto lg:mx-0">
                 <button
                   type="submit"
@@ -976,7 +985,7 @@
 
     <section class="mb-[42px] lg:mb-[100px]">
       <h2
-        class="mb-[33px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/80 lg:mb-[39px]"
+        class="mb-[33px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/80 lg:mb-[39px] lg:text-[80px]"
       >
         Банки партнеры
       </h2>
@@ -1007,7 +1016,7 @@
 
     <section class="mb-[210px] lg:mb-[82px]">
       <h2
-        class="mb-[37px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/[80%] lg:mb-[68px] lg:text-[80px]"
+        class="mx-auto mb-[37px] w-[237px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/[80%] lg:mb-[68px] lg:w-full lg:text-[80px]"
       >
         Бесплатная консультация
       </h2>
@@ -1041,6 +1050,14 @@
             name="form"
             value="Консультация по инвестициям"
           />
+
+          <input type="hidden" name="page" value="/" />
+          <input
+            type="hidden"
+            name="url"
+            value="<?= $_SERVER['REQUEST_URI'] ?>"
+          />
+
           <button
             type="submit"
             class="grad deposit-btn grad w-full rounded-xl px-[10px] py-[18px] text-[16px] font-extrabold text-white lg:w-[264px]"
