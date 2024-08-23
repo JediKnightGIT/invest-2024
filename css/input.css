@@ -8,13 +8,13 @@
   /* #region Gilroy */
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-ExtraBold.eot');
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix')
+      url('../fonts/Gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -22,12 +22,12 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-Heavy.eot');
+    src: url('../fonts/Gilroy/Gilroy-Heavy.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-Heavy.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-Heavy.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-Heavy.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-Heavy.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -35,13 +35,13 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-SemiBold.eot');
+    src: url('../fonts/Gilroy/Gilroy-SemiBold.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-SemiBold.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-SemiBold.eot?#iefix')
+      url('../fonts/Gilroy/Gilroy-SemiBold.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -49,12 +49,12 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-Light.eot');
+    src: url('../fonts/Gilroy/Gilroy-Light.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-Light.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -62,13 +62,13 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy/Gilroy-Regular.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-Regular.eot?#iefix')
+      url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -76,12 +76,13 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-Medium.eot');
+    src: url('../fonts/Gilroy/Gilroy-Medium.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-Medium.eot?#iefix')
+        format('embedded-opentype'),
+      url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -89,13 +90,13 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-UltraLight.eot');
+    src: url('../fonts/Gilroy/Gilroy-UltraLight.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-UltraLight.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-UltraLight.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-UltraLight.eot?#iefix')
+      url('../fonts/Gilroy/Gilroy-UltraLight.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-UltraLight.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-UltraLight.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-UltraLight.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-UltraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -103,12 +104,12 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy/Gilroy-Bold.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -116,12 +117,12 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-Thin.eot');
+    src: url('../fonts/Gilroy/Gilroy-Thin.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-Thin.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-Thin.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-Thin.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-Thin.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-Thin.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy/Gilroy-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -129,12 +130,12 @@
 
   @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy/Gilroy-Black.eot');
+    src: url('../fonts/Gilroy/Gilroy-Black.eot');
     src:
-      url('./fonts/Gilroy/Gilroy-Black.woff2') format('woff2'),
-      url('./fonts/Gilroy/Gilroy-Black.woff') format('woff'),
-      url('./fonts/Gilroy/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/Gilroy/Gilroy-Black.ttf') format('truetype');
+      url('../fonts/Gilroy/Gilroy-Black.woff2') format('woff2'),
+      url('../fonts/Gilroy/Gilroy-Black.woff') format('woff'),
+      url('../fonts/Gilroy/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy/Gilroy-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -144,13 +145,13 @@
   /* #region Bebas Neue */
   @font-face {
     font-family: 'Bebas Neue';
-    src: url('./fonts/BebasNeue/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeue/BebasNeueRegular.eot');
     src:
-      url('./fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
-      url('./fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
-      url('./fonts/BebasNeue/BebasNeueRegular.eot?#iefix')
+      url('../fonts/BebasNeue/BebasNeueRegular.woff2') format('woff2'),
+      url('../fonts/BebasNeue/BebasNeueRegular.woff') format('woff'),
+      url('../fonts/BebasNeue/BebasNeueRegular.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+      url('../fonts/BebasNeue/BebasNeueRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -158,13 +159,13 @@
 
   @font-face {
     font-family: 'Bebas Neue';
-    src: url('./fonts/BebasNeue/BebasNeueBold.eot');
+    src: url('../fonts/BebasNeue/BebasNeueBold.eot');
     src:
-      url('./fonts/BebasNeue/BebasNeueBold.woff2') format('woff2'),
-      url('./fonts/BebasNeue/BebasNeueBold.woff') format('woff'),
-      url('./fonts/BebasNeue/BebasNeueBold.eot?#iefix')
+      url('../fonts/BebasNeue/BebasNeueBold.woff2') format('woff2'),
+      url('../fonts/BebasNeue/BebasNeueBold.woff') format('woff'),
+      url('../fonts/BebasNeue/BebasNeueBold.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/BebasNeue/BebasNeueBold.ttf') format('truetype');
+      url('../fonts/BebasNeue/BebasNeueBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -172,13 +173,13 @@
 
   @font-face {
     font-family: 'Bebas Neue';
-    src: url('./fonts/BebasNeue/BebasNeueLight.eot');
+    src: url('../fonts/BebasNeue/BebasNeueLight.eot');
     src:
-      url('./fonts/BebasNeue/BebasNeueLight.woff2') format('woff2'),
-      url('./fonts/BebasNeue/BebasNeueLight.woff') format('woff'),
-      url('./fonts/BebasNeue/BebasNeueLight.eot?#iefix')
+      url('../fonts/BebasNeue/BebasNeueLight.woff2') format('woff2'),
+      url('../fonts/BebasNeue/BebasNeueLight.woff') format('woff'),
+      url('../fonts/BebasNeue/BebasNeueLight.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/BebasNeue/BebasNeueLight.ttf') format('truetype');
+      url('../fonts/BebasNeue/BebasNeueLight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -186,13 +187,13 @@
 
   @font-face {
     font-family: 'Bebas Neue';
-    src: url('./fonts/BebasNeue/BebasNeue-Thin.eot');
+    src: url('../fonts/BebasNeue/BebasNeue-Thin.eot');
     src:
-      url('./fonts/BebasNeue/BebasNeue-Thin.woff2') format('woff2'),
-      url('./fonts/BebasNeue/BebasNeue-Thin.woff') format('woff'),
-      url('./fonts/BebasNeue/BebasNeue-Thin.eot?#iefix')
+      url('../fonts/BebasNeue/BebasNeue-Thin.woff2') format('woff2'),
+      url('../fonts/BebasNeue/BebasNeue-Thin.woff') format('woff'),
+      url('../fonts/BebasNeue/BebasNeue-Thin.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/BebasNeue/BebasNeue-Thin.ttf') format('truetype');
+      url('../fonts/BebasNeue/BebasNeue-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -200,13 +201,13 @@
 
   @font-face {
     font-family: 'Bebas Neue Book';
-    src: url('./fonts/BebasNeue/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeue/BebasNeueBook.eot');
     src:
-      url('./fonts/BebasNeue/BebasNeueBook.woff2') format('woff2'),
-      url('./fonts/BebasNeue/BebasNeueBook.woff') format('woff'),
-      url('./fonts/BebasNeue/BebasNeueBook.eot?#iefix')
+      url('../fonts/BebasNeue/BebasNeueBook.woff2') format('woff2'),
+      url('../fonts/BebasNeue/BebasNeueBook.woff') format('woff'),
+      url('../fonts/BebasNeue/BebasNeueBook.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/BebasNeue/BebasNeueBook.ttf') format('truetype');
+      url('../fonts/BebasNeue/BebasNeueBook.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -216,13 +217,13 @@
   /* #region Segoe UI */
   @font-face {
     font-family: 'Segoe UI';
-    src: url('./fonts/SegoeUI/SegoeUI-Light.eot');
+    src: url('../fonts/SegoeUI/SegoeUI-Light.eot');
     src:
-      url('./fonts/SegoeUI/SegoeUI-Light.woff2') format('woff2'),
-      url('./fonts/SegoeUI/SegoeUI-Light.woff') format('woff'),
-      url('./fonts/SegoeUI/SegoeUI-Light.eot?#iefix')
+      url('../fonts/SegoeUI/SegoeUI-Light.woff2') format('woff2'),
+      url('../fonts/SegoeUI/SegoeUI-Light.woff') format('woff'),
+      url('../fonts/SegoeUI/SegoeUI-Light.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/SegoeUI/SegoeUI-Light.ttf') format('truetype');
+      url('../fonts/SegoeUI/SegoeUI-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -230,13 +231,13 @@
 
   @font-face {
     font-family: 'Segoe UI';
-    src: url('./fonts/SegoeUI/SegoeUI-SemiBold.eot');
+    src: url('../fonts/SegoeUI/SegoeUI-SemiBold.eot');
     src:
-      url('./fonts/SegoeUI/SegoeUI-SemiBold.woff2') format('woff2'),
-      url('./fonts/SegoeUI/SegoeUI-SemiBold.woff') format('woff'),
-      url('./fonts/SegoeUI/SegoeUI-SemiBold.eot?#iefix')
+      url('../fonts/SegoeUI/SegoeUI-SemiBold.woff2') format('woff2'),
+      url('../fonts/SegoeUI/SegoeUI-SemiBold.woff') format('woff'),
+      url('../fonts/SegoeUI/SegoeUI-SemiBold.eot?#iefix')
         format('embedded-opentype'),
-      url('./fonts/SegoeUI/SegoeUI-SemiBold.ttf') format('truetype');
+      url('../fonts/SegoeUI/SegoeUI-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -244,12 +245,12 @@
 
   @font-face {
     font-family: 'Segoe UI';
-    src: url('./fonts/SegoeUI/SegoeUI.eot');
+    src: url('../fonts/SegoeUI/SegoeUI.eot');
     src:
-      url('./fonts/SegoeUI/SegoeUI.woff2') format('woff2'),
-      url('./fonts/SegoeUI/SegoeUI.woff') format('woff'),
-      url('./fonts/SegoeUI/SegoeUI.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/SegoeUI/SegoeUI.ttf') format('truetype');
+      url('../fonts/SegoeUI/SegoeUI.woff2') format('woff2'),
+      url('../fonts/SegoeUI/SegoeUI.woff') format('woff'),
+      url('../fonts/SegoeUI/SegoeUI.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SegoeUI/SegoeUI.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -257,12 +258,13 @@
 
   @font-face {
     font-family: 'Segoe UI';
-    src: url('./fonts/SegoeUI/SegoeUI-Bold.eot');
+    src: url('../fonts/SegoeUI/SegoeUI-Bold.eot');
     src:
-      url('./fonts/SegoeUI/SegoeUI-Bold.woff2') format('woff2'),
-      url('./fonts/SegoeUI/SegoeUI-Bold.woff') format('woff'),
-      url('./fonts/SegoeUI/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
-      url('./fonts/SegoeUI/SegoeUI-Bold.ttf') format('truetype');
+      url('../fonts/SegoeUI/SegoeUI-Bold.woff2') format('woff2'),
+      url('../fonts/SegoeUI/SegoeUI-Bold.woff') format('woff'),
+      url('../fonts/SegoeUI/SegoeUI-Bold.eot?#iefix')
+        format('embedded-opentype'),
+      url('../fonts/SegoeUI/SegoeUI-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
