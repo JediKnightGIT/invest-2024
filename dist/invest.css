@@ -2290,15 +2290,15 @@ input[type='range']:active::-moz-range-thumb {
 }
 
 .font-other {
-  font-family: Segoe UI, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .font-primary {
-  font-family: Gilroy, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
 }
 
 .font-secondary {
-  font-family: Bebas Neue, sans-serif;
+  font-family: 'Bebas Neue', Arial, sans-serif;
 }
 
 .text-\[10px\] {
