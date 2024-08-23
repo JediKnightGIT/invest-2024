@@ -250,8 +250,8 @@
       local('Segoe UI Light'),
       local('SegoeUI-Light'),
       url('/fonts/SegoeUI/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/SegoeUI/SegoeUI-Light.woff') format('woff'),
       url('/fonts/SegoeUI/SegoeUI-Light.woff2') format('woff2'),
+      url('/fonts/SegoeUI/SegoeUI-Light.woff') format('woff'),
       url('/fonts/SegoeUI/SegoeUI-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
