@@ -986,13 +986,14 @@ input[type='range']:active::-moz-range-thumb {
 }
 
 .text-white-grad {
-  /** TEXT GRADIENT */
   color: #fff;
-  background-image: -webkit-linear-gradient(-90deg, #fff 0%, #999999 100%);
-  background-clip: text;
+  background: linear-gradient(-90deg, #fff 0%, #999999 100%);
   -webkit-background-clip: text;
-  text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 .hero {
