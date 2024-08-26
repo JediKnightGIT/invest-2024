@@ -3495,10 +3495,11 @@ button.swiper-pagination-bullet {
   background: -moz-linear-gradient(white, #999999);
   background: -ms-linear-gradient(white, #999999);
   background: -o-linear-gradient(white, #999999); */
-  background: linear-gradient(white, #999999) !important;
-  background-clip: text !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  /* background: linear-gradient(white, #999999);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
   color: #fff;
 }
 
@@ -3749,6 +3750,10 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
 
+  .lg\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .lg\:mb-7 {
     margin-bottom: 1.75rem;
   }
@@ -3855,10 +3860,6 @@ button.swiper-pagination-bullet {
 
   .lg\:mt-\[3px\] {
     margin-top: 3px;
-  }
-
-  .lg\:mb-6 {
-    margin-bottom: 1.5rem;
   }
 
   .lg\:block {
@@ -4179,6 +4180,10 @@ button.swiper-pagination-bullet {
     font-size: 13px;
   }
 
+  .lg\:text-\[140px\] {
+    font-size: 140px;
+  }
+
   .lg\:text-\[150px\] {
     font-size: 150px;
   }
@@ -4228,16 +4233,16 @@ button.swiper-pagination-bullet {
     line-height: 1.75rem;
   }
 
-  .lg\:text-\[140px\] {
-    font-size: 140px;
-  }
-
   .lg\:leading-10 {
     line-height: 2.5rem;
   }
 
   .lg\:leading-\[110px\] {
     line-height: 110px;
+  }
+
+  .lg\:leading-\[148px\] {
+    line-height: 148px;
   }
 
   .lg\:leading-\[22px\] {
@@ -4254,10 +4259,6 @@ button.swiper-pagination-bullet {
 
   .lg\:leading-\[80px\] {
     line-height: 80px;
-  }
-
-  .lg\:leading-\[148px\] {
-    line-height: 148px;
   }
 }
 
