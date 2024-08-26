@@ -441,6 +441,19 @@
     color: #fff;
   }
 
+  .test {
+    display: block;
+    height: contain;
+    max-width: max-content !important;
+    font-size: 63px;
+    font-weight: 900;
+    background: linear-gradient(to right, yellow, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+  }
+
   .hero {
     overflow: hidden;
   }
