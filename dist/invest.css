@@ -993,7 +993,7 @@ input[type='range']:active::-moz-range-thumb {
     background: -moz-linear-gradient(white, #999999);
     background: -ms-linear-gradient(white, #999999);
     background: -o-linear-gradient(white, #999999); */
-  background: linear-gradient(white, #999999);
+  background: linear-gradient(to right, yellow, green);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
