@@ -1664,17 +1664,15 @@ button.swiper-pagination-bullet {
 /* #endregion */
 
 .text-white-grad {
-  height: contain;
-  max-width: max-content !important;
   /* background: -webkit-linear-gradient(white, #999999);
   background: -moz-linear-gradient(white, #999999);
   background: -ms-linear-gradient(white, #999999);
   background: -o-linear-gradient(white, #999999); */
-  background: linear-gradient(white, #999999);
+  background: linear-gradient(white, #999999) !important;
 
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 
   color: #fff;
 }
