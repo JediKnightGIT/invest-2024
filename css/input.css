@@ -424,34 +424,20 @@
   }
 
   .text-white-grad {
-    background: -webkit-linear-gradient(-90deg, #fff 0%, #999999 100%);
-    background: -moz-linear-gradient(-90deg, #fff 0%, #999999 100%);
-    background: -ms-linear-gradient(-90deg, #fff 0%, #999999 100%);
-    background: -o-linear-gradient(-90deg, #fff 0%, #999999 100%);
-    background: linear-gradient(-90deg, #fff 0%, #999999 100%);
+    max-width: max-content !important;
+    height: contain;
+
+    background: -webkit-linear-gradient(to bottom, white, #999999);
+    background: -moz-linear-gradient(to bottom, white, #999999);
+    background: -ms-linear-gradient(to bottom, white, #999999);
+    background: -o-linear-gradient(to bottom, white, #999999);
+    background: linear-gradient(to bottom, white, #999999);
 
     background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-
-    text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 
     color: #fff;
-  }
-
-  .test {
-    display: block;
-    height: contain;
-    max-width: max-content !important;
-    font-size: 63px;
-    font-weight: 900;
-    background: linear-gradient(to right, yellow, green);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: red;
   }
 
   .hero {

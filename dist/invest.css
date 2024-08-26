@@ -986,28 +986,14 @@ input[type='range']:active::-moz-range-thumb {
 }
 
 .text-white-grad {
-  background: linear-gradient(-90deg, #fff 0%, #999999 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  color: #fff;
-}
-
-.test {
-  display: block;
-  height: contain;
   max-width: -moz-max-content !important;
   max-width: max-content !important;
-  font-size: 63px;
-  font-weight: 900;
-  background: linear-gradient(to right, yellow, green);
+  height: contain;
+  background: linear-gradient(to bottom, white, #999999);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: red;
+  color: #fff;
 }
 
 .hero {
