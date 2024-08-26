@@ -424,14 +424,11 @@
   }
 
   .text-white-grad {
-    max-width: max-content !important;
-    height: contain;
-
-    background: -webkit-linear-gradient(to bottom, white, #999999);
-    background: -moz-linear-gradient(to bottom, white, #999999);
-    background: -ms-linear-gradient(to bottom, white, #999999);
-    background: -o-linear-gradient(to bottom, white, #999999);
-    background: linear-gradient(to bottom, white, #999999);
+    /* background: -webkit-linear-gradient(white, #999999);
+    background: -moz-linear-gradient(white, #999999);
+    background: -ms-linear-gradient(white, #999999);
+    background: -o-linear-gradient(white, #999999); */
+    background: linear-gradient(white, #999999);
 
     background-clip: text;
     -webkit-background-clip: text;

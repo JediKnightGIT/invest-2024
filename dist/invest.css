@@ -986,10 +986,11 @@ input[type='range']:active::-moz-range-thumb {
 }
 
 .text-white-grad {
-  max-width: -moz-max-content !important;
-  max-width: max-content !important;
-  height: contain;
-  background: linear-gradient(to bottom, white, #999999);
+  /* background: -webkit-linear-gradient(white, #999999);
+    background: -moz-linear-gradient(white, #999999);
+    background: -ms-linear-gradient(white, #999999);
+    background: -o-linear-gradient(white, #999999); */
+  background: linear-gradient(white, #999999);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
