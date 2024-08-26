@@ -424,25 +424,17 @@
   }
 
   .text-white-grad {
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    width: 330px;
-
+    display: block;
     /* background: -webkit-linear-gradient(white, #999999);
     background: -moz-linear-gradient(white, #999999);
     background: -ms-linear-gradient(white, #999999);
     background: -o-linear-gradient(white, #999999); */
-    background: linear-gradient(to right, yellow, green);
+    background: linear-gradient(white, #999999);
 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    font-family: Arial, sans-serif;
-    font-size: 65px;
-    font-weight: 700;
-    line-height: 60px;
-    text-align: center;
     color: #fff;
   }
 

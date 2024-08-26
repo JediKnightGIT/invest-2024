@@ -986,22 +986,15 @@ input[type='range']:active::-moz-range-thumb {
 }
 
 .text-white-grad {
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  width: 330px;
+  display: block;
   /* background: -webkit-linear-gradient(white, #999999);
     background: -moz-linear-gradient(white, #999999);
     background: -ms-linear-gradient(white, #999999);
     background: -o-linear-gradient(white, #999999); */
-  background: linear-gradient(to right, yellow, green);
+  background: linear-gradient(white, #999999);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Arial, sans-serif;
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 60px;
-  text-align: center;
   color: #fff;
 }
 
@@ -1538,6 +1531,10 @@ input[type='range']:active::-moz-range-thumb {
   margin-bottom: 2.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -1842,6 +1839,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .w-\[260px\] {
   width: 260px;
+}
+
+.w-\[330px\] {
+  width: 330px;
 }
 
 .w-\[96px\] {
@@ -2339,6 +2340,10 @@ input[type='range']:active::-moz-range-thumb {
   font-size: 50px;
 }
 
+.text-\[65px\] {
+  font-size: 65px;
+}
+
 .text-\[80px\] {
   font-size: 80px;
 }
@@ -2410,6 +2415,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .leading-\[48px\] {
   line-height: 48px;
+}
+
+.leading-\[60px\] {
+  line-height: 60px;
 }
 
 .leading-\[61px\] {
