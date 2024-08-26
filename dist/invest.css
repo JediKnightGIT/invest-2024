@@ -2404,6 +2404,10 @@ input[type='range']:active::-moz-range-thumb {
   line-height: 48px;
 }
 
+.leading-\[60px\] {
+  line-height: 60px;
+}
+
 .leading-\[61px\] {
   line-height: 61px;
 }
@@ -3491,6 +3495,9 @@ button.swiper-pagination-bullet {
 /* #endregion */
 
 .text-white-grad {
+  height: contain;
+  max-width: -moz-max-content !important;
+  max-width: max-content !important;
   /* background: -webkit-linear-gradient(white, #999999);
   background: -moz-linear-gradient(white, #999999);
   background: -ms-linear-gradient(white, #999999);
