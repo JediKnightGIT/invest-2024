@@ -423,21 +423,6 @@
     background: white;
   }
 
-  .text-white-grad {
-    display: block;
-    /* background: -webkit-linear-gradient(white, #999999);
-    background: -moz-linear-gradient(white, #999999);
-    background: -ms-linear-gradient(white, #999999);
-    background: -o-linear-gradient(white, #999999); */
-    background: linear-gradient(white, #999999);
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    color: #fff;
-  }
-
   .hero {
     overflow: hidden;
   }
@@ -1677,6 +1662,20 @@ button.swiper-pagination-bullet {
   font-size: 20px;
 }
 /* #endregion */
+
+.text-white-grad {
+  /* background: -webkit-linear-gradient(white, #999999);
+  background: -moz-linear-gradient(white, #999999);
+  background: -ms-linear-gradient(white, #999999);
+  background: -o-linear-gradient(white, #999999); */
+  background: linear-gradient(white, #999999);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  color: #fff;
+}
 
 @media (min-width: 1024px) {
   /* #region Villages */
