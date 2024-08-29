@@ -2048,8 +2048,8 @@ input[type='range']:active::-moz-range-thumb {
   background-image: url('../img/qmark-icon.svg');
 }
 
-.bg-\[url\(\'\.\.\/img\/roi-icon\.png\'\)\] {
-  background-image: url('../img/roi-icon.png');
+.bg-\[url\(\'\.\.\/img\/roi-icon\.svg\'\)\] {
+  background-image: url('../img/roi-icon.svg');
 }
 
 .bg-\[url\(\'\.\.\/img\/rosb\.png\'\)\] {
@@ -3418,7 +3418,7 @@ button.swiper-pagination-bullet {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background-image: url('../img/arrow_right.png');
+  background-image: url('../img/arrow_right.svg');
   background-size: contain;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -4087,6 +4087,10 @@ button.swiper-pagination-bullet {
     border-radius: 1.5rem;
   }
 
+  .lg\:rounded-\[18px\] {
+    border-radius: 18px;
+  }
+
   .lg\:rounded-\[25px\] {
     border-radius: 25px;
   }
@@ -4098,6 +4102,11 @@ button.swiper-pagination-bullet {
   .lg\:px-\[30px\] {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .lg\:py-\[26px\] {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .lg\:pb-\[105px\] {
