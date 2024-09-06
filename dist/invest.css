@@ -1130,7 +1130,7 @@ input[type='range']:active::-moz-range-thumb {
 }
 
 .right-ellipse-5 {
-  transform: translate(50px, 100px);
+  transform: translate(50px, 0);
   width: 470px;
   height: 451px;
 }
@@ -1281,20 +1281,20 @@ input[type='range']:active::-moz-range-thumb {
 
 @media (min-width: 1280px) {
   .mini-ellipse-1 {
-    transform: translate(-73px, -37px);
+    transform: translate(-423px, -50px);
   }
 
   .mini-ellipse-2 {
-    transform: translate(252px, -37px);
+    transform: translate(-103px, -50px);
   }
 
   .mini-ellipse-3 {
-    transform: translate(576px, -37px);
+    transform: translate(217px, -50px);
   }
 
-  .mini-ellipse-4 {
-    transform: translate(898px, -37px);
-  }
+  /* .mini-ellipse-4 {
+      transform: translate(898px, -37px);
+    } */
 }
 
 @media (min-width: 1920px) {
@@ -2313,6 +2313,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .text-\[40px\] {
   font-size: 40px;
+}
+
+.text-\[42px\] {
+  font-size: 42px;
 }
 
 .text-\[44px\] {
@@ -3361,7 +3365,7 @@ button.swiper-pagination-bullet {
 .villages__slide-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 290px;
 }
 
@@ -3560,14 +3564,15 @@ button.swiper-pagination-bullet {
 
   .villages__name {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    height: 60px;
     font-size: 30px;
     letter-spacing: 3.1px;
     text-align: left;
   }
 
   .villages__text {
-    margin-bottom: 0;
+    margin-bottom: 40px;
     font-size: 13px;
     line-height: 18px;
     text-align: left;
@@ -3874,21 +3879,17 @@ button.swiper-pagination-bullet {
     display: flex;
   }
 
-  .lg\:grid {
-    display: grid;
-  }
-
   .lg\:size-\[51px\] {
     width: 51px;
     height: 51px;
   }
 
-  .lg\:h-\[103px\] {
-    height: 103px;
-  }
-
   .lg\:h-\[105px\] {
     height: 105px;
+  }
+
+  .lg\:h-\[135px\] {
+    height: 135px;
   }
 
   .lg\:h-\[329px\] {
@@ -4035,10 +4036,6 @@ button.swiper-pagination-bullet {
     max-width: none;
   }
 
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -4065,6 +4062,11 @@ button.swiper-pagination-bullet {
 
   .lg\:gap-0 {
     gap: 0px;
+  }
+
+  .lg\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
   }
 
   .lg\:gap-y-16 {
@@ -4107,6 +4109,11 @@ button.swiper-pagination-bullet {
   .lg\:py-\[26px\] {
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:pb-\[105px\] {
@@ -4272,12 +4279,6 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1280px) {
-  @media (min-width: 1024px) {
-    .xl\:lg\:flex-row {
-      flex-direction: row;
-    }
-  }
-
   .xl\:top-\[-400px\] {
     top: -400px;
   }
@@ -4296,10 +4297,6 @@ button.swiper-pagination-bullet {
 
   .xl\:flex-nowrap {
     flex-wrap: nowrap;
-  }
-
-  .xl\:justify-between {
-    justify-content: space-between;
   }
 
   .xl\:text-\[100px\] {
