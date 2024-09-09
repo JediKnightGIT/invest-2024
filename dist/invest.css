@@ -4106,14 +4106,14 @@ button.swiper-pagination-bullet {
     padding-right: 30px;
   }
 
-  .lg\:py-\[26px\] {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:py-\[26px\] {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .lg\:pb-\[105px\] {
@@ -4126,10 +4126,6 @@ button.swiper-pagination-bullet {
 
   .lg\:pb-\[39px\] {
     padding-bottom: 39px;
-  }
-
-  .lg\:pb-\[41px\] {
-    padding-bottom: 41px;
   }
 
   .lg\:pb-\[44px\] {
@@ -4166,10 +4162,6 @@ button.swiper-pagination-bullet {
 
   .lg\:pr-\[70px\] {
     padding-right: 70px;
-  }
-
-  .lg\:pt-8 {
-    padding-top: 2rem;
   }
 
   .lg\:pt-\[200px\] {

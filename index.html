@@ -189,15 +189,15 @@
                     Сумма вклада
                   </span>
                   <b class="block text-[14px] font-extrabold leading-6">
-                    <span id="deposit">500 000</span> ₽
+                    <span id="deposit">1 000 000</span> ₽
                   </b>
                   <input
                     id="deposit-value"
                     type="text"
-                    placeholder="500 000"
-                    value="500 000"
+                    placeholder="1 000 000"
+                    value="1 000 000"
                     maxlength="10"
-                    data-raw-value="500000"
+                    data-raw-value="1000000"
                     class="transition-[background-color border] absolute inset-0 h-full w-full rounded-xl bg-transparent pl-[19px] pt-[23px] text-[14px] font-extrabold leading-6 text-transparent duration-[200ms] ease-in-out focus:border-[1px] focus:border-black/30 focus:bg-white focus:text-black focus:outline-0"
                   />
 
@@ -208,10 +208,10 @@
                       id="deposit-input"
                       name="deposit"
                       type="range"
-                      min="500000"
+                      min="1000000"
                       max="30000000"
                       step="50000"
-                      value="500000"
+                      value="1000000"
                     />
                     <div
                       id="deposit-range"
@@ -222,7 +222,7 @@
                 <div class="flex justify-between">
                   <span
                     class="text-[11px] font-light leading-5 text-white/[54%]"
-                    >500 000 ₽</span
+                    >1 000 000 ₽</span
                   >
                   <span
                     class="text-[11px] font-light leading-5 text-white/[54%]"
@@ -241,7 +241,7 @@
                     Срок вклада
                   </span>
                   <b class="block text-[14px] font-extrabold leading-6">
-                    <span data-period>12</span> месяцев
+                    <span data-period>1</span> год(а)
                   </b>
 
                   <div
@@ -251,10 +251,10 @@
                       id="months-input"
                       name="months"
                       type="range"
-                      min="12"
-                      max="24"
+                      min="1"
+                      max="7"
                       step="1"
-                      value="12"
+                      value="1"
                     />
                     <div
                       id="months-range"
@@ -265,11 +265,11 @@
                 <div class="flex justify-between">
                   <span
                     class="text-[11px] font-light leading-5 text-white/[54%]"
-                    >12 месяцев</span
+                    >1 год(а)</span
                   >
                   <span
                     class="text-[11px] font-light leading-5 text-white/[54%]"
-                    >24 месяца</span
+                    >7 лет</span
                   >
                 </div>
               </div>
@@ -483,17 +483,19 @@
                 <div class="flex items-center">
                   <span
                     class="sticky-color h-5 overflow-y-hidden text-[11px] font-light leading-5 text-white/[80%] lg:overflow-y-visible lg:text-[13px]"
-                    >Доходность<span class="hidden lg:inline">, в рублях</span>
+                    >Ваша доходность<span class="hidden lg:inline">
+                      в рублях</span
+                    >
                   </span>
-                  <div
+                  <!-- <div
                     title="Если вы решите оставлять заработанные проценты на вкладе, на них тоже будут начисляться проценты — так доходность вклада окажется выше, чем процентная ставка по нему"
                     class="ml-[27px] hidden size-[15.75px] cursor-pointer bg-[url('../img/qmark-icon.svg')] bg-contain bg-no-repeat lg:block"
-                  ></div>
+                  ></div> -->
                 </div>
                 <strong
                   class="sticky-color block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
-                  ><span id="yeild-text">21.7</span> %</strong
-                >
+                  ><span id="yeild-text">21.7</span>
+                </strong>
                 <input type="hidden" id="yield" name="yield" />
               </div>
 
@@ -517,7 +519,7 @@
                 >
                 <strong
                   class="sticky-color block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
-                  ><span data-period>12</span> месяцев</strong
+                  ><span data-period>1</span> год(а)</strong
                 >
               </div>
             </div>

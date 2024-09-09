@@ -15,7 +15,9 @@ const rateText = document.getElementById('rate-text');
 const yieldText = document.getElementById('yeild-text');
 const roiText = document.getElementById('roi-text');
 
-const freq = ['monthly', 'quarterly', 'semi-annually', 'annually'];
+const payments = [...document.querySelectorAll('[data-payment]')];
+
+const freq = ['месяц', 'квартал', 'полгода', 'год'];
 const DEP_MIN = +depositInput.min;
 const DEP_MAX = +depositInput.max;
 
@@ -74,7 +76,10 @@ function calc(input, range, text) {
     monthsInput.value = input.value;
     months.innerText = input.value;
   }
-
+  yieldText.innerText = calcYieldPerPeriod(
+    depositValue.dataset.rawValue,
+    freq[index],
+  );
   range.style.width = mapRange(+input.min, +input.max, +input.value);
 }
 
@@ -136,7 +141,8 @@ function onRateClick() {
   const index = payments.findIndex((item) => item.classList.contains('active'));
 
   rateText.innerText = rates[index];
-  yieldText.innerText = calculateAPY(rateText.innerText, freq[index]);
+  // yieldText.innerText = calculateAPY(rateText.innerText, freq[index]);
+
   roiText.innerText = numberWithSpaces(
     Math.round(
       calcCompoundInterest(
@@ -147,6 +153,19 @@ function onRateClick() {
       ),
     ),
   );
+  roiInput.value = roiText.innerText;
+  yieldText.innerText = calcYieldPerPeriod(
+    depositValue.dataset.rawValue,
+    freq[index],
+  );
+}
+
+function calcYieldPerPeriod(initialInvestment, period) {
+  const n = periodToNumber(period);
+  const result = numberWithSpaces(
+    (roiText.innerText.split(' ').join('') - initialInvestment) / n,
+  );
+  return result + ` в ${period}`;
 }
 
 /**
@@ -158,15 +177,17 @@ function onRateClick() {
  * @param {string} period - The compounding period.
  * @return {number} The total amount of compound interest.
  */
-function calcCompoundInterest(initialInvestment, interestRate, months, period) {
-  const periodsPerYear = 12;
-  const n = periodToNumber(period);
+
+function calcCompoundInterest(initialInvestment, interestRate, months) {
+  // const periodsPerYear = 12;
+  // const n = periodToNumber(period);
 
   const effectiveInterestRate = interestRate / 100;
-  const periodicInterestRate = effectiveInterestRate / n;
-  const totalAmount =
-    initialInvestment *
-    Math.pow(1 + periodicInterestRate, n * (months / periodsPerYear));
+  // const periodicInterestRate = effectiveInterestRate / n;
+  const totalAmount = initialInvestment * (1 + effectiveInterestRate * months);
+  // const totalAmount =
+  //   initialInvestment *
+  //   Math.pow(1 + periodicInterestRate, n * (months / periodsPerYear));
   return totalAmount;
 }
 
@@ -187,22 +208,22 @@ function calculateAPY(interestRate, period) {
 /**
  * Maps period to a number.
  *
- * @param {'monthly' | 'quarterly' | 'semi-annually' | 'annually'} period
+ * @param {'месяц' | 'квартал' | 'полгода' | 'год'} period
  * @return {number} period number.
  */
 function periodToNumber(period) {
   let n;
   switch (period) {
-    case 'monthly':
+    case 'месяц':
       n = 12;
       break;
-    case 'quarterly':
+    case 'квартал':
       n = 4;
       break;
-    case 'semi-annually':
+    case 'полгода':
       n = 2;
       break;
-    case 'annually':
+    case 'год':
       n = 1;
       break;
     default:
@@ -246,3 +267,11 @@ function mapRange(min, max, val) {
   const percent = ((val - min) / (max - min)) * 100;
   return percent + '%';
 }
+
+calc(depositInput, depositRange, 1000000);
+calc(monthsInput, monthsRange, 12);
+const index = payments.findIndex((item) => item.classList.contains('active'));
+yieldText.innerText = calcYieldPerPeriod(
+  depositValue.dataset.rawValue,
+  freq[index],
+);
