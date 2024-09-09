@@ -34,6 +34,7 @@ module.exports = {
         DEFAULT: '0 4px 4px rgb(9, 162, 24)',
         lg: '0 8px 16px white',
         black: '0 14px 15px rgba(0, 0, 0, .5)',
+        smblack: '0 4px 4px rgba(0, 0, 0, .25)',
       },
     },
   },

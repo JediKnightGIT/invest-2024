@@ -158,18 +158,16 @@
       </div>
     </section>
 
-    <section
-      class="mx-auto mb-[80px] max-w-[320px] px-[11px] lg:mb-[146px] lg:max-w-none"
-    >
+    <section class="mx-auto mb-[80px] px-[11px] lg:mb-[146px] lg:max-w-none">
       <div
-        class="shadow-section container min-h-[745px] rounded-[12px] px-3 pb-[25px] pt-[12px] lg:w-[990px] lg:pb-[105px] lg:pt-[59px]"
+        class="shadow-section container min-h-[745px] rounded-[12px] lg:w-[990px] lg:pb-[105px] lg:pt-[59px]"
       >
         <form
           id="calc-form"
           method="POST"
           class="relative flex flex-col lg:mx-auto lg:w-[786px] lg:flex-row lg:justify-between"
         >
-          <div class="lg:mt-[3px] lg:w-[444px]">
+          <div class="px-3 lg:mt-[3px] lg:w-[444px]">
             <span
               class="mb-[18px] block font-secondary text-[23px] font-bold uppercase leading-[28px] text-white/[80%]"
               >Подберите условия</span
@@ -184,7 +182,7 @@
                   class="white-grad relative mb-[5px] min-h-[56px] rounded-xl bg-[#244A7F0F] pl-[20px] pr-[30px] pt-[8px] lg:w-[212px]"
                 >
                   <span
-                    class="relative z-10 block text-[13px] font-light text-black/[54%]"
+                    class="relative z-10 block text-[13px] font-bold text-black/[54%]"
                   >
                     Сумма вклада
                   </span>
@@ -285,7 +283,7 @@
                 class="radio white-grad active flex h-[44px] cursor-pointer justify-between rounded-[12px] py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] font-light leading-6 text-black/80"
+                  class="font-primary text-[10px] font-extrabold leading-6 text-black/80"
                   >Ежемесячные выплаты</span
                 >
                 <div
@@ -299,7 +297,7 @@
                 class="radio white-grad flex h-[44px] cursor-pointer justify-between rounded-[12px] bg-white py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] font-light leading-6 text-black/80"
+                  class="font-primary text-[10px] font-extrabold leading-6 text-black/80"
                   >Ежеквартальные выплаты</span
                 >
                 <div
@@ -313,7 +311,7 @@
                 class="radio white-grad flex h-[44px] cursor-pointer justify-between rounded-[12px] bg-white py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] font-light leading-6 text-black/80"
+                  class="font-primary text-[10px] font-extrabold leading-6 text-black/80"
                   >Выплата раз в пол года</span
                 >
                 <div
@@ -327,7 +325,7 @@
                 class="radio white-grad flex h-[44px] cursor-pointer justify-between rounded-[12px] bg-white py-[11px] pl-[22px] pr-[15px] lg:w-[213px]"
               >
                 <span
-                  class="font-primary text-[10px] font-light leading-6 text-black/80"
+                  class="font-primary text-[10px] font-extrabold leading-6 text-black/80"
                   >Выплата раз в год</span
                 >
                 <div
@@ -357,20 +355,20 @@
                 type="text"
                 name="name"
                 placeholder="Фамилия, имя и отчество"
-                class="field name white-grad w-full"
+                class="field name white-grad w-full font-extrabold placeholder:font-extrabold"
               />
               <input
                 type="text"
                 id="phone"
                 name="phone"
                 placeholder="Мобильный телефон"
-                class="field phone white-grad w-full lg:w-[60%]"
+                class="field phone white-grad w-full font-extrabold placeholder:font-extrabold lg:w-[60%]"
               />
               <input
                 type="date"
                 name="birth"
                 placeholder="Дата рождения"
-                class="field white-grad w-full lg:w-[37.6%]"
+                class="field date white-grad w-full font-extrabold lg:w-[37.6%]"
               />
             </div>
 
@@ -389,7 +387,7 @@
                 class="radio active white-grad flex h-[56px] w-full cursor-pointer justify-between rounded-[12px] bg-white py-4 pl-[18px] pr-[22px] lg:w-[46%]"
               >
                 <span
-                  class="font-other text-[15px] font-normal leading-6 text-black/80"
+                  class="font-other text-[15px] font-extrabold leading-6 text-black/80"
                   >Да</span
                 >
                 <div
@@ -403,7 +401,7 @@
                 class="radio white-grad flex h-[56px] w-full cursor-pointer justify-between rounded-[12px] bg-white py-4 pl-[18px] pr-[22px] lg:w-[46%]"
               >
                 <span
-                  class="font-other text-[15px] font-normal leading-6 text-black/80"
+                  class="font-other text-[15px] font-extrabold leading-6 text-black/80"
                   >Нет</span
                 >
                 <div
@@ -419,17 +417,12 @@
             <div class="mb-[47px] hidden h-[2px] bg-darkgray lg:block"></div>
 
             <div
-              class="mb-0 flex flex-col items-start lg:mb-4 lg:flex-row lg:justify-between"
+              class="mb-0 flex flex-col items-start pb-[25px] lg:mb-4 lg:flex-row lg:justify-between"
             >
               <p
-                class="mb-[26px] block max-w-[260px] font-other text-[10px] leading-5 text-white/[54%] lg:mb-0 lg:w-[243px] lg:max-w-none"
+                class="text-shadow-smblack mb-[26px] block max-w-[260px] font-other text-[19px] font-extrabold leading-5 text-[#27d024] lg:mb-0 lg:w-[243px] lg:max-w-none"
               >
-                Заполняя форму, я принимаю 
-                <a href="#" class="text-primary"
-                  >условия передачи информации и даю согласие на получение
-                  информации</a
-                >
-                о продуктах и услугах Компании
+                Чтобы рассчитать Ваш доход по Акционной ставке оставьте заявку
               </p>
               <input type="hidden" name="form" value="Калькулятор инвестиций" />
 
@@ -442,7 +435,7 @@
               <div class="mx-auto lg:mx-0">
                 <button
                   type="submit"
-                  class="grad deposit-btn grad w-[168px] rounded-xl px-[10px] py-[18px] text-[15px] font-normal text-white lg:w-[160px] lg:text-[16px]"
+                  class="grad deposit-btn grad w-[168px] rounded-xl px-[10px] py-[18px] text-[15px] font-extrabold text-white lg:w-[160px] lg:text-[16px]"
                 >
                   Оставить заявку
                 </button>
@@ -452,13 +445,16 @@
 
           <!-- roi -->
           <div
-            class="sticky top-0 -order-1 rounded-[12px] lg:static lg:order-1 lg:w-[302px]"
+            class="sticky top-0 -order-1 rounded-[12px] px-3 pt-[12px] lg:static lg:order-1 lg:w-[302px]"
           >
+            <div
+              class="absolute left-0 top-0 -z-10 h-[189px] w-full rounded-xl bg-[rgba(11,11,11,0.95)]"
+            ></div>
             <div
               class="result-block mb-4 h-[101px] rounded-lg bg-darkgray px-5 pb-[12px] pr-2 pt-[10px] lg:mb-[23px]"
             >
               <span
-                class="mb-[6px] block text-[13px] font-light leading-5 text-black/[54%]"
+                class="mb-[6px] block text-[13px] font-extrabold leading-5 text-black/[54%]"
                 >Накопление в конце срока</span
               >
               <div class="mb-3 flex w-[169px] items-center">
@@ -470,19 +466,20 @@
                 >
                 <input type="hidden" id="roi" name="roi" />
               </div>
-              <span class="block text-[11px] font-light leading-4 text-black/40"
+              <span
+                class="block text-[11px] font-extrabold leading-4 text-black/40"
                 >Расчет носит информационный характер</span
               >
             </div>
 
             <div
-              class="mb-3 flex justify-between lg:flex-wrap lg:justify-start"
+              class="mb-3 flex justify-between px-[10px] lg:flex-wrap lg:justify-start"
             >
               <!-- annual yield -->
               <div class="lg:mb-[25px] lg:w-full">
                 <div class="flex items-center">
                   <span
-                    class="sticky-color h-5 overflow-y-hidden text-[11px] font-light leading-5 text-white/[80%] lg:overflow-y-visible lg:text-[13px]"
+                    class="h-5 overflow-y-hidden text-[11px] font-light leading-5 text-white/[80%] lg:overflow-y-visible lg:text-[13px]"
                     >Ваша доходность<span class="hidden lg:inline">
                       в рублях</span
                     >
@@ -493,7 +490,7 @@
                   ></div> -->
                 </div>
                 <strong
-                  class="sticky-color block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
+                  class="block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
                   ><span id="yeild-text">21.7</span>
                 </strong>
                 <input type="hidden" id="yield" name="yield" />
@@ -502,11 +499,11 @@
               <!-- rate -->
               <div class="lg:mr-[84px]">
                 <span
-                  class="sticky-color block text-[11px] font-light leading-5 text-white/[80%] lg:text-[13px]"
+                  class="block text-[11px] font-light leading-5 text-white/[80%] lg:text-[13px]"
                   >Ставка</span
                 >
                 <strong
-                  class="sticky-color block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
+                  class="block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
                   ><span id="rate-text">19.8</span> %</strong
                 >
                 <input type="hidden" id="rate" name="rate" />
@@ -514,11 +511,11 @@
               <!--  period -->
               <div>
                 <span
-                  class="sticky-color block text-[11px] font-light leading-5 text-white/[80%] lg:text-[13px]"
+                  class="block text-[11px] font-light leading-5 text-white/[80%] lg:text-[13px]"
                   >Срок вклада</span
                 >
                 <strong
-                  class="sticky-color block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
+                  class="block text-[18px] font-extrabold leading-7 text-white/[80%] lg:text-[22px]"
                   ><span data-period>1</span> год(а)</strong
                 >
               </div>
@@ -599,7 +596,7 @@
             <div
               class="white-grad mb-[7px] flex items-center justify-center rounded-xl text-[42px] font-extrabold text-black/80"
             >
-              100 000+
+              10 000+
             </div>
             <span
               class="mx-auto block w-[176px] text-center text-[15px] font-light leading-5 text-white/80 lg:w-auto"
@@ -994,7 +991,7 @@
       <h2
         class="mx-auto mb-[37px] w-[237px] text-center font-secondary text-[44px] font-bold uppercase leading-[48px] text-white/[80%] lg:mb-[68px] lg:w-full lg:text-[80px]"
       >
-        Выездная платная консультация инвестиций "под ключ"
+        Бесплатная консультация
       </h2>
 
       <div
@@ -1004,22 +1001,22 @@
           class="consult-img mb-6 h-[131px] w-[255px] rounded-[9px] bg-[url('../img/handshake.jpg')] bg-center bg-no-repeat lg:mb-0 lg:h-[329px] lg:rounded-[28px]"
         ></div>
         <p
-          class="consult-text mb-6 text-xl font-extrabold leading-5 text-white/80 lg:mb-0 lg:text-[30px] lg:leading-10"
+          class="consult-text mb-6 text-xl font-extrabold leading-5 text-white/80 lg:mb-0 lg:w-[469px] lg:text-[30px] lg:leading-10"
         >
-          Получите консультацию инвестиционного менеджера
+          Выездная платная консультация инвестиций "под ключ"
         </p>
         <form action="/blagodarim" method="post" class="consult-form">
           <input
             type="text"
             name="name"
             placeholder="Ваше имя"
-            class="field name white-grad mb-[17px] w-full"
+            class="field name white-grad mb-[17px] w-full lg:w-[422px]"
           />
           <input
             type="text"
             name="name"
             placeholder="Ваш телефон"
-            class="field phone white-grad mb-[17px] w-full lg:mb-[21px]"
+            class="field phone white-grad mb-[17px] w-full lg:mb-[21px] lg:w-[422px]"
           />
           <input
             type="hidden"

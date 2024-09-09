@@ -44,19 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  birthInput.addEventListener('input', (event) => {
-    const value = event.target.value.replace(/\D/g, ''); // Remove non-digit characters
-    const formattedValue = value.replace(/(\d{2})(\d{2})(\d{4})/, '$1.$2.$3'); // Format the value
+  // birthInput.addEventListener('input', (event) => {
+  //   const value = event.target.value.replace(/\D/g, ''); // Remove non-digit characters
+  //   const formattedValue = value.replace(/(\d{2})(\d{2})(\d{4})/, '$1.$2.$3'); // Format the value
 
-    if (formattedValue.length > 10) {
-      event.target.value = formattedValue.slice(0, 10); // Limit the input to 10 characters
-    } else {
-      event.target.value = formattedValue;
-    }
-  });
+  //   if (formattedValue.length > 10) {
+  //     event.target.value = formattedValue.slice(0, 10); // Limit the input to 10 characters
+  //   } else {
+  //     event.target.value = formattedValue;
+  //   }
+  // });
 
-  birthInput.addEventListener('focus', clearDate);
-  birthInput.addEventListener('blur', clearDate);
+  // birthInput.addEventListener('focus', clearDate);
+  // birthInput.addEventListener('blur', clearDate);
 
   calcForm.addEventListener('submit', submitForm);
 

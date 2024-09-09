@@ -72,14 +72,14 @@ function calc(input, range, text) {
     depositValue.value = numberWithSpaces(input.value);
     depositValue.dataset.rawValue = input.value;
     deposit.innerText = numberWithSpaces(input.value);
+    yieldText.innerText = calcYieldPerPeriod(
+      depositValue.dataset.rawValue,
+      freq[index],
+    );
   } else {
     monthsInput.value = input.value;
     months.innerText = input.value;
   }
-  yieldText.innerText = calcYieldPerPeriod(
-    depositValue.dataset.rawValue,
-    freq[index],
-  );
   range.style.width = mapRange(+input.min, +input.max, +input.value);
 }
 
