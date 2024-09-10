@@ -631,6 +631,10 @@
     background: rgba(255, 255, 255, 0.05);
   }
 
+  .sticky-bg.stuck {
+    background-color: rgba(11, 11, 11, 0.95);
+  }
+
   @media (min-width: 1024px) {
     section {
       /* max-width: 1920px; */
@@ -1530,6 +1534,7 @@ button.swiper-pagination-bullet {
 }
 .villages__name {
   display: block;
+  height: 60px;
   margin: 15px 0;
 
   font-size: 30px;
@@ -1543,6 +1548,7 @@ button.swiper-pagination-bullet {
 .villages__text {
   margin: 0;
   margin-bottom: 39px;
+  height: 72px;
 
   font-size: 11px;
   line-height: 18px;
@@ -1706,11 +1712,12 @@ button.swiper-pagination-bullet {
   .villages__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 
-    padding-top: 43px;
-    padding-left: 64px;
-    padding-right: 49px;
-    padding-bottom: 28px;
+    padding-top: 19px;
+    padding-left: 20px;
+    padding-right: 56px;
+    padding-bottom: 41px;
 
     max-width: none;
     width: 880px;
@@ -1719,12 +1726,15 @@ button.swiper-pagination-bullet {
     border-radius: 25px;
   }
   .villages__slider {
+    position: relative;
+    top: 30px;
+
     margin-bottom: 0;
-    width: 380px;
-    height: 333px;
+    width: 482px;
+    height: 357px;
   }
   .villages__text-slider {
-    width: 290px;
+    width: 283px;
   }
   .villages__slide.swiper-slide {
     display: -webkit-box;
@@ -1735,41 +1745,42 @@ button.swiper-pagination-bullet {
     justify-content: space-between;
   }
   .villages__img {
-    width: 380px;
-    height: 283px;
+    width: 482px;
+    height: 327px;
   }
   .villages__slide-text {
     width: 290px;
     height: 300px;
   }
   .villages__name {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 30px;
-    height: 60px;
+    width: 243px;
 
     font-size: 30px;
     letter-spacing: 3.1px;
     text-align: left;
   }
   .villages__text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    height: 90px;
 
     font-size: 13px;
     line-height: 18px;
     text-align: left;
   }
   .villages__pagination.swiper-pagination {
-    top: 305px;
+    top: 338px;
     left: 0;
   }
   .villages__pagination.swiper-pagination .swiper-pagination-bullet {
     margin: 0 2.5px;
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
   }
   .villages__pagination.swiper-pagination .swiper-pagination-bullet-active {
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
   }
   .villages__arrow.swiper-button-next,
   .villages__arrow.swiper-button-prev {

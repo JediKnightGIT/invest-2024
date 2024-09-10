@@ -56,7 +56,7 @@ function calc(input, range, text) {
 
   roiText.innerText = numberWithSpaces(
     Math.round(
-      calcCompoundInterest(
+      calcInterest(
         depositInput.value,
         rateText.innerText,
         monthsInput.value,
@@ -141,11 +141,11 @@ function onRateClick() {
   const index = payments.findIndex((item) => item.classList.contains('active'));
 
   rateText.innerText = rates[index];
-  // yieldText.innerText = calculateAPY(rateText.innerText, freq[index]);
+  // yieldText.innerText = calcAPY(rateText.innerText, freq[index]);
 
   roiText.innerText = numberWithSpaces(
     Math.round(
-      calcCompoundInterest(
+      calcInterest(
         depositInput.value,
         rateText.innerText,
         monthsInput.value,
@@ -162,8 +162,13 @@ function onRateClick() {
 
 function calcYieldPerPeriod(initialInvestment, period) {
   const n = periodToNumber(period);
+
   const result = numberWithSpaces(
-    (roiText.innerText.split(' ').join('') - initialInvestment) / n,
+    gigaRound(
+      (roiText.innerText.split(' ').join('') - initialInvestment) /
+        +monthsInput.value /
+        n,
+    ),
   );
   return result + ` в ${period}`;
 }
@@ -178,7 +183,7 @@ function calcYieldPerPeriod(initialInvestment, period) {
  * @return {number} The total amount of compound interest.
  */
 
-function calcCompoundInterest(initialInvestment, interestRate, months) {
+function calcInterest(initialInvestment, interestRate, months) {
   // const periodsPerYear = 12;
   // const n = periodToNumber(period);
 
@@ -198,7 +203,7 @@ function calcCompoundInterest(initialInvestment, interestRate, months) {
  * @param {string} period - The compounding period.
  * @return {number} The calculated APY.
  */
-function calculateAPY(interestRate, period) {
+function calcAPY(interestRate, period) {
   const n = periodToNumber(period);
 
   const apy = (Math.pow(1 + interestRate / 100 / n, n) - 1) * 100;
