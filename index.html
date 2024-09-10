@@ -16,6 +16,18 @@
   </head>
 
   <body class="font-primary lg:relative lg:overflow-x-hidden lg:pb-[545px]">
+    <div
+      class="absolute left-1/2 top-5 flex -translate-x-1/2 flex-col lg:w-full lg:flex-row lg:justify-between xl:w-[1251px]"
+    >
+      <img
+        src="./img/topdom_new_logo.png"
+        width="175"
+        height="49"
+        alt="Логотип ТопДом"
+        class="h-[49px] w-[175px] object-contain lg:h-[84px] lg:w-[300px]"
+      />
+    </div>
+
     <div class="calc-left-ellipse ellipse"></div>
     <div class="calc-right-ellipse ellipse"></div>
     <div class="slider-left-ellipse ellipse"></div>
@@ -1018,28 +1030,77 @@
       </h2>
 
       <div
-        class="shadow-section consult-wrapper container max-w-[276px] rounded-[13px] px-[10px] pb-[23px] pt-[15px] lg:w-[880px] lg:max-w-none lg:rounded-[25px] lg:pb-[39px] lg:pl-[61px] lg:pr-[40px] lg:pt-[32px]"
+        class="shadow-section consult-wrapper container max-w-[276px] items-center rounded-[13px] px-[10px] pb-[23px] pt-[15px] lg:w-[880px] lg:max-w-none lg:rounded-[25px] lg:pb-[39px] lg:pl-[61px] lg:pr-[40px] lg:pt-[32px]"
       >
-        <div
-          class="consult-img mb-6 h-[131px] w-[255px] rounded-[9px] bg-[url('../img/handshake.jpg')] bg-center bg-no-repeat lg:mb-0 lg:h-[329px] lg:rounded-[28px]"
-        ></div>
+        <div class="consult-img mb-[36px] px-1 lg:mb-0 lg:w-[335px] lg:px-0">
+          <div class="mb-[26px] flex items-center lg:mb-[38px]">
+            <div
+              class="result-block mr-[17px] flex h-[69px] w-[67px] items-center justify-center rounded-xl"
+            >
+              <div
+                class="size-[32px] bg-contain bg-center bg-no-repeat lg:size-[44px]"
+                style="background-image: url('./img/clock_icon.png')"
+              ></div>
+            </div>
+
+            <p
+              class="lg-w-full w-[189px] text-[15px] font-normal leading-[18px] text-white/80 lg:w-[257px] lg:text-[20px] lg:leading-[25px]"
+            >
+              Приедем к Вам в удобное место и время
+            </p>
+          </div>
+          <div class="mb-[26px] flex items-center lg:mb-[38px]">
+            <div
+              class="result-block mr-[17px] flex h-[69px] w-[67px] items-center justify-center rounded-xl"
+            >
+              <div
+                class="size-[29px] bg-contain bg-center bg-no-repeat lg:size-[41px]"
+                style="background-image: url('./img/list_icon.png')"
+              ></div>
+            </div>
+
+            <p
+              class="lg-w-full w-[189px] text-[15px] font-normal leading-[18px] text-white/80 lg:w-[257px] lg:text-[20px] lg:leading-[25px]"
+            >
+              Покажем коммерческие документы по финансовым результатам компании
+            </p>
+          </div>
+          <div class="flex items-center">
+            <div
+              class="result-block mr-[17px] flex h-[69px] w-[67px] items-center justify-center rounded-xl"
+            >
+              <div
+                class="size-[35px] bg-contain bg-center bg-no-repeat lg:size-[49px]"
+                style="background-image: url('./img/user_icon.png')"
+              ></div>
+            </div>
+
+            <p
+              class="lg-w-full w-[189px] text-[15px] font-normal leading-[18px] text-white/80 lg:w-[257px] lg:text-[20px] lg:leading-[25px]"
+            >
+              Согласование индивидуальных условий
+            </p>
+          </div>
+        </div>
+
         <p
-          class="consult-text mb-6 text-xl font-extrabold leading-5 text-white/80 lg:mb-0 lg:w-[469px] lg:text-[30px] lg:leading-10"
+          class="consult-text mb-6 text-xl font-extrabold leading-5 text-white/80 lg:w-[343px] lg:text-[30px] lg:leading-10"
         >
-          Выездная платная консультация инвестиций "под ключ"
+          Выездная <br />
+          платная консультация инвестиций "под ключ"
         </p>
         <form action="/blagodarim" method="post" class="consult-form">
           <input
             type="text"
             name="name"
             placeholder="Ваше имя"
-            class="field name white-grad mb-[17px] w-full lg:w-[422px]"
+            class="field name white-grad mb-[17px] w-full lg:w-[304px]"
           />
           <input
             type="text"
             name="name"
             placeholder="Ваш телефон"
-            class="field phone white-grad mb-[17px] w-full lg:mb-[21px] lg:w-[422px]"
+            class="field phone white-grad mb-[17px] w-full lg:mb-[21px] lg:w-[304px]"
           />
           <input
             type="hidden"

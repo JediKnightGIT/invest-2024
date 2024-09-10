@@ -667,8 +667,8 @@
     }
     .hero-ellipse-right {
       right: auto;
-      top: 420px;
-      left: 890px;
+      top: 460px;
+      left: 1104px;
 
       width: 771px;
       height: 735px;
@@ -754,7 +754,7 @@
       transform: translate(240px, 340px) scaleX(1);
     }
     .hero-coins {
-      transform: translate(450px, 369px);
+      transform: translate(560px, 419px);
     }
     .hero-curve {
       transform: translate(-110px, 230px);
@@ -1820,7 +1820,7 @@ button.swiper-pagination-bullet {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 0.5fr 1fr;
-    column-gap: 72px;
+    column-gap: 101px;
   }
 
   .consult-img {
