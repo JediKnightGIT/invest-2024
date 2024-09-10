@@ -13,3 +13,14 @@ if (isMobile.any()) {
     }
   });
 }
+
+const openDepositBtn = document.getElementById('open-deposit-fixed');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    openDepositBtn.classList.remove('hidden');
+    openDepositBtn.classList.add('block');
+  } else {
+    openDepositBtn.classList.add('hidden');
+    openDepositBtn.classList.remove('block');
+  }
+});
