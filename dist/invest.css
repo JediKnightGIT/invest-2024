@@ -1541,6 +1541,14 @@ input[type='range']:active::-moz-range-thumb {
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
+.z-\[1\] {
+  z-index: 1;
+}
+
 .-order-1 {
   order: -1;
 }
@@ -1807,6 +1815,10 @@ input[type='range']:active::-moz-range-thumb {
   height: 44px;
 }
 
+.h-\[49px\] {
+  height: 49px;
+}
+
 .h-\[56px\] {
   height: 56px;
 }
@@ -1833,14 +1845,6 @@ input[type='range']:active::-moz-range-thumb {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[63px\] {
-  height: 63px;
-}
-
-.h-\[49px\] {
-  height: 49px;
 }
 
 .min-h-\[210px\] {
@@ -1903,6 +1907,10 @@ input[type='range']:active::-moz-range-thumb {
   width: 169px;
 }
 
+.w-\[175px\] {
+  width: 175px;
+}
+
 .w-\[176px\] {
   width: 176px;
 }
@@ -1949,10 +1957,6 @@ input[type='range']:active::-moz-range-thumb {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[175px\] {
-  width: 175px;
 }
 
 .max-w-\[220px\] {
@@ -2027,6 +2031,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .gap-y-10 {
   row-gap: 2.5rem;
+}
+
+.gap-y-7 {
+  row-gap: 1.75rem;
 }
 
 .gap-y-\[12px\] {
@@ -3662,6 +3670,190 @@ button.swiper-pagination-bullet {
   color: #fff;
 }
 
+/* MAP START */
+
+.footer__map.test {
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  display: flex;
+}
+
+.map-yandex.test {
+  height: 300px;
+}
+
+.map-msk.test {
+  background: url('../img/map_msk_test.jpg') #ffffff no-repeat;
+  background: url('../img/map_msk_test.webp') #ffffff no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity 0.7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default::after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* MAP END */
+
+.footer {
+  margin-top: 60px;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.footer__map.test {
+  margin: 0 auto;
+  max-width: 1420px;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  display: flex;
+}
+
+.footer__part--right {
+  width: 40% !important;
+}
+
+.ymap-container.map-msk.test {
+  width: 60%;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.footer__nav-name {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0abc22;
+}
+
+.footer__contacts {
+  margin-bottom: 30px;
+}
+
+.footer__contact {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 58px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  font-style: normal;
+}
+
+.footer__contact::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer__contact--location::before {
+  background-image: url(../img/location-dot-solid.svg) !important;
+}
+
+.footer__contact--call::before {
+  background-image: url(../img/phone-solid.svg) !important;
+}
+
+.footer__contact--sms::before {
+  background-image: url(../img/sms.svg);
+}
+
+.footer__reqs {
+  display: flex;
+  justify-content: space-between;
+  width: 335px;
+}
+
+.footer__req {
+  font-size: 11px;
+  font-weight: 400;
+  color: #898989;
+}
+
+.oferta_info .footer__req {
+  font-size: 11px;
+  font-weight: 400;
+  color: #898989;
+}
+
 @media (min-width: 1024px) {
   /* #region Villages */
 
@@ -4090,14 +4282,6 @@ button.swiper-pagination-bullet {
     height: 83px;
   }
 
-  .lg\:h-\[126px\] {
-    height: 126px;
-  }
-
-  .lg\:h-\[84px\] {
-    height: 84px;
-  }
-
   .lg\:min-h-\[513px\] {
     min-height: 513px;
   }
@@ -4242,14 +4426,6 @@ button.swiper-pagination-bullet {
     width: 100%;
   }
 
-  .lg\:w-\[340px\] {
-    width: 340px;
-  }
-
-  .lg\:w-\[300px\] {
-    width: 300px;
-  }
-
   .lg\:max-w-\[920px\] {
     max-width: 920px;
   }
@@ -4376,10 +4552,6 @@ button.swiper-pagination-bullet {
     padding-bottom: 44px;
   }
 
-  .lg\:pb-\[545px\] {
-    padding-bottom: 545px;
-  }
-
   .lg\:pl-\[54px\] {
     padding-left: 54px;
   }
@@ -4430,6 +4602,11 @@ button.swiper-pagination-bullet {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-\[13px\] {
@@ -4539,8 +4716,8 @@ button.swiper-pagination-bullet {
     width: 1214px;
   }
 
-  .xl\:w-\[1251px\] {
-    width: 1251px;
+  .xl\:max-w-\[1800px\] {
+    max-width: 1800px;
   }
 
   .xl\:flex-nowrap {

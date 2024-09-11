@@ -11,21 +11,28 @@
     <script src="./js/slider.js" defer></script>
     <script src="./js/calc.js" defer></script>
     <script src="./js/form.js" defer></script>
+    <script src="./js/map.js" defer></script>
 
     <title>topdom invest</title>
   </head>
 
-  <body class="font-primary lg:relative lg:overflow-x-hidden lg:pb-[545px]">
+  <body class="font-primary lg:relative lg:overflow-x-hidden">
     <div
-      class="absolute left-1/2 top-5 flex -translate-x-1/2 flex-col lg:w-full lg:flex-row lg:justify-between xl:w-[1251px]"
+      class="absolute left-1/2 top-5 z-[1] flex -translate-x-1/2 flex-col gap-y-7 lg:w-full lg:flex-row lg:justify-between xl:max-w-[1800px]"
     >
-      <img
-        src="./img/topdom_new_logo.png"
-        width="175"
-        height="49"
-        alt="Логотип ТопДом"
-        class="h-[49px] w-[175px] object-contain lg:h-[84px] lg:w-[300px]"
-      />
+      <a href="/">
+        <img
+          src="./img/topdom_new_logo.png"
+          width="175"
+          height="49"
+          alt="Логотип ТопДом"
+          class="h-[49px] w-[175px] object-contain"
+        />
+      </a>
+
+      <a href="tel:88006000787" class="text-xl text-white lg:text-3xl"
+        >8-800-600-07-87</a
+      >
     </div>
 
     <div class="calc-left-ellipse ellipse"></div>
@@ -67,7 +74,7 @@
           <div class="hero-card">
             <span
               class="mb-[16px] block h-6 w-[181px] rounded-[7px] border border-solid border-white text-center text-[15px] font-light text-white lg:flex lg:h-[83px] lg:w-[595px] lg:items-center lg:justify-center lg:rounded-[18px] lg:text-[40px] lg:leading-10"
-              >Акция до конца августа</span
+              >Акция до конца осени</span
             >
             <div class="flex">
               <b
@@ -1233,8 +1240,70 @@
     <a
       href="#open-deposit"
       id="open-deposit-fixed"
-      class="grad deposit-btn fixed bottom-6 left-1/2 hidden -translate-x-1/2 rounded-xl px-5 py-3 text-center text-xl font-extrabold leading-[48px] text-white lg:px-10 lg:text-[40px]"
+      class="grad deposit-btn fixed bottom-6 left-1/2 z-50 hidden -translate-x-1/2 rounded-xl px-5 py-3 text-center text-xl font-extrabold leading-[48px] text-white lg:px-10 lg:text-[40px]"
       >Открыть вклад</a
     >
+    <footer class="footer">
+      <div class="footer__map test">
+        <div class="footer__part footer__part--right">
+          <b class="footer__nav-name">Контакты</b>
+
+          <div class="footer__contacts">
+            <address class=" ">
+              <a
+                href="https://yandex.ru/maps/-/CDFAvL6L"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="adress_footer footer__contact footer__contact--location"
+                >г. Москва , ул. Пресненская набережная 8, ст.1, деловой центр
+                "Москва сити", башня "Москва", 50 этаж, офис 501</a
+              >
+              <a
+                href="https://yandex.ru/maps/-/CDFAzB8p"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="adress_footer footer__contact footer__contact--location"
+                >МО, г. Котельники, Дзержинское шоссе, вл. 7/7, Выставка домов
+                "Малоэтажная страна"</a
+              >
+            </address>
+            <a
+              onclick=""
+              href="tel:+78006000787"
+              class="footer__contact footer__contact--call"
+            >
+              +7 (800) 600 07 87
+            </a>
+            <a
+              href="mailto:topdom.msk@mail.ru"
+              class="footer__contact footer__contact--sms"
+            >
+              topdom.msk@mail.ru
+            </a>
+          </div>
+          <div class="footer__reqs">
+            <div class="footer__reqs-part">
+              <span class="footer__req">ИНН: 165919144915 </span>
+              <span class="footer__req">ОГРН: 317169000165378</span>
+            </div>
+            <div class="footer__reqs-part">
+              <span class="footer__req">Р/с: 40802810300000518787 </span>
+              <span class="footer__req">ИП Балашников Э.В.</span>
+            </div>
+          </div>
+          <div class="oferta_info">
+            <span class="footer__req">
+              * Цена на сайте не является публичной офертой. Точную стоимость
+              строительства уточняйте в отделе продаж.
+            </span>
+          </div>
+        </div>
+        <div class="ymap-container map-msk test">
+          <div class="loader loader-default"></div>
+          <div class="map-yandex test" id="map-yandex"></div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer__map -->
   </body>
 </html>

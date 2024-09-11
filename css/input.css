@@ -1693,6 +1693,225 @@ button.swiper-pagination-bullet {
   color: #fff;
 }
 
+/* MAP START */
+
+.footer__map.test {
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  display: flex;
+}
+
+.map-yandex.test {
+  height: 300px;
+}
+
+.map-msk.test {
+  background: url('../img/map_msk_test.jpg') #ffffff no-repeat;
+  background: url('../img/map_msk_test.webp') #ffffff no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  -webkit-transition: opacity 0.7s ease;
+  -o-transition: opacity 0.7s ease;
+  transition: opacity 0.7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.loader:after,
+.loader:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default::after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MAP END */
+
+.footer {
+  margin-top: 60px;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.footer__map.test {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: auto;
+  display: flex;
+}
+
+.footer__map.test {
+  max-width: 1420px;
+  margin-bottom: 0;
+}
+
+.footer__map.test {
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  display: flex;
+}
+
+.footer__part--right {
+  width: 40% !important;
+}
+
+.ymap-container.map-msk.test {
+  width: 60%;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.footer__nav-name {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0abc22;
+}
+
+.footer__contacts {
+  margin-bottom: 30px;
+}
+
+.footer__contact {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 58px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  font-style: normal;
+}
+
+.footer__contact::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer__contact--location::before {
+  background-image: url(../img/location-dot-solid.svg) !important;
+}
+
+.footer__contact--call::before {
+  background-image: url(../img/phone-solid.svg) !important;
+}
+
+.footer__contact--sms::before {
+  background-image: url(../img/sms.svg);
+}
+
+.footer__reqs {
+  display: flex;
+  justify-content: space-between;
+  width: 335px;
+}
+
+.footer__req {
+  font-size: 11px;
+  font-weight: 400;
+  color: #898989;
+}
+
+.oferta_info .footer__req {
+  font-size: 11px;
+  font-weight: 400;
+  color: #898989;
+}
+
 @media (min-width: 1024px) {
   /* #region Villages */
   .villages {
