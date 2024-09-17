@@ -18,7 +18,7 @@ if (isMobile.any()) {
   function sticky() {
     const stickyRect = stickyElement.getBoundingClientRect();
 
-    if (stickyRect.top === 0) {
+    if (stickyRect.top <= 0) {
       stickyElement.classList.add('stuck');
       stickyBg.classList.add('stuck');
     } else {
