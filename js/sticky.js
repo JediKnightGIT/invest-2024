@@ -1,8 +1,8 @@
 if (isMobile.any()) {
   const stickyElement = document.querySelector('.sticky');
   const stickyBg = document.querySelector('.sticky-bg');
-  window.addEventListener('scroll', () => sticky);
-  window.addEventListener('touchmove', () => sticky);
+  window.addEventListener('scroll', sticky);
+  window.addEventListener('touchmove', sticky);
 
   const openDepositBtn = document.getElementById('open-deposit-fixed');
   window.addEventListener('scroll', () => {
