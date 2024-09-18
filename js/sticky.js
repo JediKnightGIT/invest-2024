@@ -21,7 +21,7 @@ if (isMobile.any()) {
         e.target.classList.toggle('stuck', e.intersectionRatio < 1);
         stickyBg.classList.toggle('stuck', e.intersectionRatio < 1);
       },
-      { root: null, rootMargin: '0px', threshold: [0.9] },
+      { threshold: [1] },
     );
 
     observer.observe(stickyElement);
