@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const birthInput = document.getElementById('date');
   const nameInputs = document.querySelectorAll('.name');
   const phoneInputs = document.querySelectorAll('.phone');
-  const fakeDate = document.getElementById('fake-date');
+  const fakeDate = document.getElementById('fake-date-ios');
 
   const payments = document.querySelectorAll('[data-payment]');
   const citizenships = document.querySelectorAll('[data-citizen]');

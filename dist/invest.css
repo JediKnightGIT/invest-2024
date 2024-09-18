@@ -1536,6 +1536,10 @@ input[type='range']:active::-moz-range-thumb {
   top: -14px;
 }
 
+.-top-\[1px\] {
+  top: -1px;
+}
+
 .-z-10 {
   z-index: -10;
 }

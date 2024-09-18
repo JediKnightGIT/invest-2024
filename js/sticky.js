@@ -1,12 +1,8 @@
 if (isMobile.any()) {
-  window.addEventListener('scroll', sticky);
-  window.addEventListener('touchmove', sticky);
-  // window.addEventListener('touchstart', sticky);
-  // window.addEventListener('touchend', sticky);
-  // window.addEventListener('touchcancel', sticky);
+  sticky();
 
-  const openDepositBtn = document.getElementById('open-deposit-fixed');
   window.addEventListener('scroll', () => {
+    const openDepositBtn = document.getElementById('open-deposit-fixed');
     if (window.scrollY > 0) {
       openDepositBtn.classList.remove('hidden');
       openDepositBtn.classList.add('block');
@@ -20,23 +16,14 @@ if (isMobile.any()) {
     const stickyElement = document.querySelector('.sticky');
     const stickyBg = document.querySelector('.sticky-bg');
 
-    const stickyTop = parseInt(window.getComputedStyle(stickyElement).top);
-    const currentTop = stickyElement.getBoundingClientRect().top;
-    stickyElement.classList.toggle('stuck', currentTop === stickyTop);
-    stickyBg.classList.toggle('stuck', currentTop === stickyTop);
+    const observer = new IntersectionObserver(
+      ([e]) => {
+        e.target.classList.toggle('stuck', e.intersectionRatio < 1);
+        stickyBg.classList.toggle('stuck', e.intersectionRatio < 1);
+      },
+      { threshold: [1] },
+    );
 
-    // const stickyRect = stickyElement.getBoundingClientRect();
-
-    // if (
-    //   stickyRect.top > 0 &&
-    //   stickyElement.classList.contains('stuck') &&
-    //   stickyBg.classList.contains('stuck')
-    // ) {
-    //   stickyElement.classList.remove('stuck');
-    //   stickyBg.classList.remove('stuck');
-    // } else {
-    //   stickyElement.classList.add('stuck');
-    //   stickyBg.classList.add('stuck');
-    // }
+    observer.observe(stickyElement);
   }
 }
