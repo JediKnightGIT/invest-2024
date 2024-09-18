@@ -376,7 +376,7 @@
             </span>
 
             <div
-              class="mb-[27px] flex flex-col justify-between gap-y-[12px] lg:mb-[37px] lg:flex-row lg:flex-wrap"
+              class="relative mb-[27px] flex flex-col justify-between gap-y-[12px] lg:mb-[37px] lg:flex-row lg:flex-wrap"
             >
               <input
                 type="text"
@@ -392,14 +392,19 @@
                 class="field phone white-grad w-full font-extrabold placeholder:font-extrabold lg:w-[60%]"
               />
               <input
+                id="date"
                 type="date"
                 name="birth"
                 placeholder="Дата рождения"
                 class="field date white-grad w-full font-extrabold lg:w-[37.6%]"
                 value="Дата рождения"
-                readonly
-                onfocus="this.removeAttribute('readonly');"
               />
+              <div
+                id="fake-date"
+                class="field date white-grad absolute bottom-0 flex w-full items-center font-extrabold lg:hidden lg:w-[37.6%]"
+              >
+                Дата рождения
+              </div>
             </div>
 
             <!-- <span

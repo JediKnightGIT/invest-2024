@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const birthInput = document.getElementById('birth');
+  const birthInput = document.getElementById('date');
   const nameInputs = document.querySelectorAll('.name');
   const phoneInputs = document.querySelectorAll('.phone');
+  const fakeDate = document.getElementById('fake-date');
 
   const payments = document.querySelectorAll('[data-payment]');
   const citizenships = document.querySelectorAll('[data-citizen]');
@@ -42,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
       inputValue = '+7' + inputValue.substr(1); // добавляем +7 в начало
       event.target.value = inputValue;
     });
+  });
+
+  fakeDate.addEventListener('click', function () {
+    this.style.display = 'none';
+    birthInput.showPicker();
   });
 
   // birthInput.addEventListener('input', (event) => {

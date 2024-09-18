@@ -3688,9 +3688,11 @@ button.swiper-pagination-bullet {
 
 .footer__map.test {
   width: 100%;
+  max-width: 1420px;
   height: auto;
   min-height: auto;
   display: flex;
+  margin: 0 auto;
 }
 
 .map-yandex.test {
