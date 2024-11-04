@@ -1957,18 +1957,6 @@ input[type='range']:active::-moz-range-thumb {
   width: 100%;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
 .max-w-\[220px\] {
   max-width: 220px;
 }
@@ -2329,11 +2317,6 @@ input[type='range']:active::-moz-range-thumb {
   padding-bottom: 18px;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2522,14 +2505,14 @@ input[type='range']:active::-moz-range-thumb {
   font-size: 80px;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
