@@ -337,20 +337,20 @@
   input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    margin-top: -3px; /* Centers thumb on the track */
+    margin-top: -7px; /* Centers thumb on the track */
 
     /*custom styles*/
     background-color: white;
     box-shadow: inset 0px 4px 4px 0px rgba(84, 84, 84, 0.25);
-    width: 8px;
-    height: 8px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
 
     cursor: grab;
     transition: 0.1s ease-in;
   }
   input[type='range']::-webkit-slider-thumb:hover {
-    margin-top: -3px;
+    margin-top: -7px;
     transform-origin: center;
     transform: scale(1.2);
   }
@@ -365,21 +365,22 @@
 
   /* slider thumb */
   input[type='range']::-moz-range-thumb {
+    margin-top: -7px;
     border: none; /*Removes extra border that FF applies*/
     border-radius: 0; /*Removes default border-radius that FF applies*/
 
     /*custom styles*/
     background-color: white;
     box-shadow: inset 0px 4px 4px 0px rgba(84, 84, 84, 0.25);
-    width: 8px;
-    height: 8px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
 
     cursor: grab;
     transition: 0.1s ease-in;
   }
   input[type='range']::-moz-range-thumb:hover {
-    margin-top: -3px;
+    margin-top: -7px;
     transform-origin: center;
     transform: scale(1.2);
   }

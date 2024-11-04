@@ -884,13 +884,13 @@ input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   /* Override default look */
   appearance: none;
-  margin-top: -3px;
+  margin-top: -7px;
   /* Centers thumb on the track */
   /*custom styles*/
   background-color: white;
   box-shadow: inset 0px 4px 4px 0px rgba(84, 84, 84, 0.25);
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   cursor: grab;
   -webkit-transition: 0.1s ease-in;
@@ -898,7 +898,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 input[type='range']::-webkit-slider-thumb:hover {
-  margin-top: -3px;
+  margin-top: -7px;
   transform-origin: center;
   transform: scale(1.2);
 }
@@ -916,6 +916,7 @@ input[type='range']::-moz-range-track {
 /* slider thumb */
 
 input[type='range']::-moz-range-thumb {
+  margin-top: -7px;
   border: none;
   /*Removes extra border that FF applies*/
   border-radius: 0;
@@ -923,8 +924,8 @@ input[type='range']::-moz-range-thumb {
   /*custom styles*/
   background-color: white;
   box-shadow: inset 0px 4px 4px 0px rgba(84, 84, 84, 0.25);
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   cursor: grab;
   -moz-transition: 0.1s ease-in;
@@ -932,7 +933,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 input[type='range']::-moz-range-thumb:hover {
-  margin-top: -3px;
+  margin-top: -7px;
   transform-origin: center;
   transform: scale(1.2);
 }
@@ -1504,6 +1505,10 @@ input[type='range']:active::-moz-range-thumb {
   left: -3px;
 }
 
+.-top-\[1px\] {
+  top: -1px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1534,10 +1539,6 @@ input[type='range']:active::-moz-range-thumb {
 
 .top-\[-14px\] {
   top: -14px;
-}
-
-.-top-\[1px\] {
-  top: -1px;
 }
 
 .-z-10 {
@@ -1900,10 +1901,6 @@ input[type='range']:active::-moz-range-thumb {
   width: 168px;
 }
 
-.w-\[169px\] {
-  width: 169px;
-}
-
 .w-\[175px\] {
   width: 175px;
 }
@@ -1930,6 +1927,10 @@ input[type='range']:active::-moz-range-thumb {
 
 .w-\[207px\] {
   width: 207px;
+}
+
+.w-\[215px\] {
+  width: 215px;
 }
 
 .w-\[237px\] {
